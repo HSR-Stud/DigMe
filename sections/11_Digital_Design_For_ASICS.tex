@@ -1,11 +1,11 @@
-\section{Digital Design For ASICS}
+\section{Digital Design For ASICs}$~$ \\
 Moderne FPGA-Designs haben viel gemeinsam mit modernen ASIC-Designs. Trotzdem gibt es einige grundlegende Unterschiede.
-\subsection{Zielanwendungen}
-Im Vergleich zu FPGA-Designs sprechen die ASIC-Designs einen anderen Markt an. ASIC-Designs eignen sich in der Regel für Anwendungen mit hohem Produktionsvolumen, d.h. mindestens 100'000 Stücke pro Jahr, weil die NRE Kosten (einmalige Entwicklungskosten) sehr hoch sind. 
-\paragraph{Gesamtkosten pro Einheit} 
+\subsection{Zielanwendungen}$~$ \\
+Im Vergleich zu FPGA-Designs sprechen die ASIC-Designs einen anderen Markt an. ASIC-Designs eignen sich in der Regel für Anwendungen mit hohem Produktionsvolumen, d.h. mindestens 100'000 Stücke pro Jahr, weil die NRE Kosten (einmalige Entwicklungskosten) sehr hoch sind.
+\paragraph{Gesamtkosten pro Einheit}$~$ \\
 $c=\frac{c_0}{n}+c_1$ \ \ \ c\textsubscript{0}: Summe der einmaligen Entwicklungskosten $\rightarrow$ konstant // n: Anzahl der entwickelten ASICS // c\textsubscript{1}: Kosteninkrement pro erzeugter Schaltung (für Rohwafer, Waferbearbeitung, Prüfung, Verpackung, Logistik usw.) $\rightarrow$ linear steigend
 \begin{multicols}{2}
-\textbf{c\textsubscript{0} ist ist abhängig von:} 
+\textbf{c\textsubscript{0} ist ist abhängig von:}
 \begin{compactitem}
     \item Herstellungsprozess und Prozessoptionen, die die Masken- und die Waferherstellungskosten bestimmen
     \item Lizenzkosten und Lizenzgebühren für IP-Cores
@@ -14,7 +14,7 @@ $c=\frac{c_0}{n}+c_1$ \ \ \ c\textsubscript{0}: Summe der einmaligen Entwicklung
     \item Aufbau der Versorgungs- und Logistikkette
     \item etc.
 \end{compactitem}
-\textbf{c\textsubscript{1} ist abhängig von:} 
+\textbf{c\textsubscript{1} ist abhängig von:}
 \begin{compactitem}
     \item Schaltungsgrösse
     \item Testzeit
@@ -24,7 +24,7 @@ $c=\frac{c_0}{n}+c_1$ \ \ \ c\textsubscript{0}: Summe der einmaligen Entwicklung
 \end{compactitem}
 \ \\ \ \\
 \end{multicols}
-Beim FPGA-Design ist c\textsubscript{0} relativ klein im Vergleich zum ASIC-Design. Die Startkosten bei c\textsubscript{1} sind beim FPGA-Design tiefer als im ASIC-Design. Jedoch steigen die Kosten beim FPGA-Design steiler an als beim ASIC-Design. Der Schnittpunkt der beiden Gesamtkosten ergibt ungefähr Volumengrenze zwischen FPGA- und ASIC-Entwicklung. 
+Beim FPGA-Design ist c\textsubscript{0} relativ klein im Vergleich zum ASIC-Design. Die Startkosten bei c\textsubscript{1} sind beim FPGA-Design tiefer als im ASIC-Design. Jedoch steigen die Kosten beim FPGA-Design steiler an als beim ASIC-Design. Der Schnittpunkt der beiden Gesamtkosten ergibt ungefähr Volumengrenze zwischen FPGA- und ASIC-Entwicklung.
 \subsection{Design Flow}
 \begin{figure}[H]
     \includegraphics[width=1\textwidth]{images/ASIC_FPGA.png}
@@ -34,8 +34,8 @@ Beim FPGA-Design ist c\textsubscript{0} relativ klein im Vergleich zum ASIC-Desi
 \begin{compactitem}
     \item Target device bestimmen/auswählen (Hersteller, Familie, FPGA Typ)
     \item Wahl des Sythetisiertools
-    \item Constraints hinzufügen (im XDC-Format) 
-    \item Für kombinatorischen Teil werden LUTs und für den sequentiellen Teil FF erzeugt. 
+    \item Constraints hinzufügen (im XDC-Format)
+    \item Für kombinatorischen Teil werden LUTs und für den sequentiellen Teil FF erzeugt.
     \item Hat Scankette eingebaut, da Scan und JTAG beim Programmieren gebraucht wird.
 \end{compactitem}
 \paragraph{ASIC}
@@ -50,7 +50,7 @@ Beim FPGA-Design ist c\textsubscript{0} relativ klein im Vergleich zum ASIC-Desi
         \item High Performance (12 tracks high): Grosse Transistorgrösse für optimale Geschwindigkeit, auch low power features
     \end{compactitem}
     \item Wahl der Soft- und Hard IP Blöcke (Block RAMs, DSP Blöcke, etc. sind normalerweise nicht vorhanden $\rightarrow$ kaufen
-    \item Constraints hinzufügen (im SDC-Format) 
+    \item Constraints hinzufügen (im SDC-Format)
     \item Erzeugung generische Netzliste (im .edif Format), welche grundlegende boolesche Funktionen, die keine realen Gatter mit Layout und Timing sind, verwendet. Technologieunabhängig.
     \item Mapping, bei welchem die Grundfunktionen auf reale Zellen aus der Zellbibliothek abgebildet werden.
     \item Hat keine eingebauten Testfunktionen. Die Testlogik wird erzeugt und während der Synthese hinzugefügt $\rightarrow$ FFs werden durch Scan-FFs ersetzt. Scan-Kette wird erzeugt.
@@ -62,10 +62,10 @@ Floorplanning bezieht sich darauf, einzelne Elemente, Schaltungsblöcke und IOs 
 \subsubsection{Place and Route (FPGA vs. ASIC)}
 \paragraph{FPGA}
 \begin{compactitem}
-        \item Zuweisung der verschiedenen Netzlistenelemente zu vorhandenen LUTs, FFs und Hardware-Makros auf dem FPGA-Chip $\rightarrow$ wird automatisch bei ''Run Implementation'' und ''Generating Bitstream'' zugewiesen. 
+        \item Zuweisung der verschiedenen Netzlistenelemente zu vorhandenen LUTs, FFs und Hardware-Makros auf dem FPGA-Chip $\rightarrow$ wird automatisch bei ''Run Implementation'' und ''Generating Bitstream'' zugewiesen.
         \item Einfluss nur bedingt via Physical Constraints
 \end{compactitem}
-\paragraph{ASIC}
+\paragraph{ASIC}$~$ \\
 Besitzt mehrere Teilschritte:
 \begin{compactitem}
         \item Power Planning: Generiert den Powerring, der VDD und VSS um den gesamten Chip erzeugt. Für horizontale Verbindungen und vertikale Verbindungen werden unterschiedliche Metallschichten verwendet.
@@ -75,13 +75,13 @@ Besitzt mehrere Teilschritte:
         \item Nach erfolgreichem Place and Routing wird der Leerraum in den Standardzellenfeldern mit sogenannten Füllerzellen gefüllt, um "Löcher" in den Zeilen zu schliessen. Dies ist notwendig, um kontinuierliche p- und n-Wannen entlang einer ganzen Standardzellenreihe zu haben.
 \end{compactitem}
 \subsubsection{Verifikation FPGA vs. ASIC}
-\paragraph{FPGA}
+\paragraph{FPGA}$~$ \\
 Verifikation gleich nach herunterladen der Programmdaten möglich. Man muss nicht auf einen Prototypen warten.
-\paragraph{ASIC}
-Verifikation nicht gleich möglich. Folgende Schritte müssen VOR der Verifikation vollzogen werden: 
+\paragraph{ASIC}$~$ \\
+Verifikation nicht gleich möglich. Folgende Schritte müssen VOR der Verifikation vollzogen werden:
 \begin{compactitem}
         \item Sign-off: Daten der Prdouktion übermitteln und prüfen lassen
-        \item Generierung der Maske 
+        \item Generierung der Maske
         \item Waferbearbeitung
         \item Wafertests, Wafer Dicing (schneiden), Verpacken
 \end{compactitem}

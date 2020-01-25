@@ -24,7 +24,7 @@
         \item Caches
         \item Betrieb bis 1 GHz
         \item Voll integrierte Speichercontroller
-        \item I/O Peripherie (MIO - Multiplexed In/Out to 54 Pins, EMIO - Shared with PL) 
+        \item I/O Peripherie (MIO - Multiplexed In/Out to 54 Pins, EMIO - Shared with PL)
     \end{compactitem}
 \end{multicols}
 \subsubsection{Programmierbare Logik (PL)}
@@ -42,7 +42,7 @@
     \ \\
 \end{multicols}
 
-\begin{multicols}{2} 
+\begin{multicols}{2}
     \subsection{Design Herausforderungen und Bedarf}
     \subsubsection{Herausforderungen}
     \begin{compactitem}
@@ -52,46 +52,22 @@
     \end{compactitem}
     \subsubsection{Bedarf}
     \begin{compactitem}
-        \item Wiederverwendbarkeit: Systemfunktionalität kann nicht länger von Anfang an entwickelt werden $\rightarrow$ Komponenten und Subsysteme wiederverwenden $\rightarrow$ IP-basiertes Design 
+        \item Wiederverwendbarkeit: Systemfunktionalität kann nicht länger von Anfang an entwickelt werden $\rightarrow$ Komponenten und Subsysteme wiederverwenden $\rightarrow$ IP-basiertes Design
         \item Hierarchie: Weitere Hierarchiestufen sind erforderlich (sowohl Hard- wie auch Software) $\rightarrow$ IP-basiertes Design
         \item Parallel statt sequentiell: Hard- und Software sind parallel zu entwickeln
         \item Teams und Tools: Entwerfen von Systemen fordert grosse Teams und gute Werkzeuge, die die Komplexität verwalten können
     \end{compactitem}
-    \subsection{IP-basiertes Design}
-    \subsubsection{Definition IP Core}
-    Als IP Core (Intellectual Property Core) wird ein vielfach einsetzbarer, vorgefertigter Funktionsblock eines Chipdesigns bezeichnet. Dieser enthält das geistige Eigentum (intellectual property) des Entwicklers oder Herstellers und wird in der Regel lizenziert bzw. hinzugekauft, um es in ein eigenes Design zu integrieren.
-    \subsubsection{IP Core Typen}
-    \begin{compactitem}
-        \item Hard IP Core: Blackbox in optimierter Layoutform. Sind als fertige Schaltung herstellerseitig unveränderbar in den Chip des FPGAs integriert
-        \item Firm IP Core: Synthetisierte Netzliste, die simuliert und wenn nötig geändert werden kann 
-        \item Soft IP Core: RTL Design. Benutzer muss synthetisieren und layouten 
-    \end{compactitem}
+
     \ \\ \ \\
 \end{multicols}
-\begin{minipage}{0.40\textwidth}
-    \subsubsection{Bezug von IP Core}
-    \begin{compactitem}
-        \item Ältere bereits vorhandene in-house IP
-        \item Neu entwickelte in-house IP
-        \item Drittanbieter IP
-    \end{compactitem}
-\end{minipage}
-\hfill
-\begin{minipage}{0.55\textwidth}
-    \subsubsection{Lizenzmodelle}
-    \begin{compactitem}
-        \item Free und Open Source
-        \item Kommerzielle Lieferanten (XILINX, CADENCE, ..)
-        \item Aggregator (sammelt und kategorisiert IP Cores und verkauft sie weiter)
-    \end{compactitem}
-\end{minipage}
-\begin{multicols}{2} 
+
+\begin{multicols}{2}
     \subsection{Traditioneller Design Flow}
      \begin{figure}[H]
      	\includegraphics[width=0.53\textwidth]{images/Design_Flow_traditionell.png}
      \end{figure}
      \ \\ \ \\
-    \subsection{System Level Design Flow} 
+    \subsection{System Level Design Flow}
     \begin{compactitem}
         \item Höhere Abstraktionsebene
         \item Partitionierung der SW und HW und Schnittstellendefinition
@@ -106,20 +82,18 @@
  \subsubsection{Vivado IDE Solution}
  \paragraph{Haupteigenschaften}
  \begin{compactitem}
-     \item Interaktives Design und Analyse: Timing Analysen, Konnektivität, Ressourcen Nutzung, Timinig Constraints Analysen, .. 
+     \item Interaktives Design und Analyse: Timing Analysen, Konnektivität, Ressourcen Nutzung, Timinig Constraints Analysen, ..
      \item RTL Entwicklung und Analyse: Entwicklung von HDL, Hierarchische Erweiterung, Schemaerzeugung
      \item XSIM-Simulator-Integration
      \item Synthese und Umsetzung in einem Package
      \item I/O-Pin-Planung: Interaktive regelbasierte I/O Zuordnung
  \end{compactitem}
  \begin{multicols}{2}
-     \paragraph{Design Database}
+     \paragraph{Design Database}$~$ \\
      Prozesse greifen auf die darunterliegende Datenbank des Designs zu. Jeder Prozess modifiziert eine vorhandene Netzliste oder erstellt eine neue. Während des ganzen Entwurfprozesses werden verschiedene Netzlisten (Elaborated, Synthesized, Implemented) verwendet.
-     \subsubsection{Xilinx Software Development Kit (XSDK)}
+     \subsubsection{Xilinx Software Development Kit (XSDK)}$~$ \\
     XSDK ist ein separates Tool von Vivado und kann eigenständig für SW-Teams installiert werden. Es ist eine voll ausgestattete Software-Design-Umgebung.
      \begin{figure}[H]
      	\includegraphics[width=0.25\textwidth]{images/Design_Database.png}
-     \end{figure}  
+     \end{figure}
  \end{multicols}
-
- 

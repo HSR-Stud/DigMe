@@ -1,32 +1,37 @@
-\section{Verifikation}
+\section{Verifikation}$~$ \\
 Oft wird die Verifikation als letzter Schritt nach dem Design bezeichnet. Doch die Verifikation beginnt viel früher und sie ist mehr als nur der Beweis der funktionalen Korrektheit. Sie beginnt auf Anforderungsebene und ist ein konstanter Prozess, der parallel zum Designprozess läuft.
 \begin{compactitem}
-    \item Verifikation bei Spezifikation: Ist das was ich möchte wirklich das was ich benötige? 
+    \item Verifikation bei Spezifikation: Ist das was ich möchte wirklich das was ich benötige?
     \item Verifikation beim Design: Habe ich tatsächlich das entwickelt, was gefordert wurde?
-    \item Verifikation beim Testen: Kann ich defekte von fehlerhaften Schaltungen unterscheiden? 
+    \item Verifikation beim Testen: Kann ich defekte von fehlerhaften Schaltungen unterscheiden?
 \end{compactitem}
-Verschiedener Quellen zufolge wird deutlich, dass der Gesamtaufwand für die Verifikation mehr als 50\% des gesamten Entwicklungsaufwands beträgt - Tendenz wachsend! 
-\subsection{Dynamische Verifikationsmethoden}
-Überprüft das Eingangs-/Ausgangsverhalten einer Schaltung. Eine Schaltung mit k Zuständen s und n Eingängen x wird durch ihre Zustandstabelle repräsentiert. Der Ausgang ist definiert durch: $y=f(x,s)$. Eine Möglichkeit dieser Verifikation wäre, bei jeder möglichen Kombination von x und s den Ausgang zu prüfen (Exhaustive Verification). In der Praxis ist dies nur für kleine Schaltkreise möglich, da die Anzahl der Testfälle schnell gegen Unendlich anwachsen. Ein realistischer Kompromiss ist erforderlich, um viele potenzielle Fehler bei vernünftigem Aufwand zu finden. Eine Kombination folgender Methoden ist von Vorteil:
+Verschiedener Quellen zufolge wird deutlich, dass der Gesamtaufwand für die Verifikation mehr als 50\% des gesamten Entwicklungsaufwands beträgt - Tendenz wachsend!
+
+\subsection{Dynamische Verifikationsmethoden}$~$ \\
+Überprüft das Eingangs-/Ausgangsverhalten einer Schaltung. Eine Schaltung mit k Zuständen s und n Eingängen x wird durch ihre Zustandstabelle repräsentiert. Der Ausgang ist definiert durch: $y=f(x,s)$. Eine Möglichkeit dieser Verifikation wäre, bei jeder möglichen Kombination von x und s den Ausgang zu prüfen (Exhaustive Verification). In der Praxis ist dies nur für kleine Schaltkreise möglich, da die Anzahl der Testfälle schnell gegen Unendlich anwachst. Ein realistischer Kompromiss ist erforderlich, um viele potenzielle Fehler mit vernünftigem Aufwand zu finden. Eine Kombination folgender Methoden ist von Vorteil:
 \begin{compactitem}
-    \item Anwenden der assertion-basierten Verifikation 
-    \item Sammeln von Testfällen aus mehreren Quellen 
+    \item Anwenden der assertion-basierten Verifikation
+    \item Sammeln von Testfällen aus mehreren Quellen
     \item Arbeitskräfte in zwei unabhängige Teams für Schaltungsentwurf und Testdesign einteilen.
-    \item Rapid Prototyping (schnelles und frühes erstellen von Prototypen)
+    \item Rapid Prototyping (schnelles und frühes Erstellen von Prototypen)
 \end{compactitem}
+
 \subsubsection{Assertion-basierte Verifikation}
 Assertions sind kleine Codefragmente, die in den regulären Code eingebaut werden. Diese Fragmente fungieren als In-Code-Sanity-Checks. Sie sind nicht für die Synthese gedacht. Synthesizer können die meisten dieser Aussagen automatisch ignorieren.
 Assertions müssen unerwartete Bedingungen bereits vor dem Debuggen überprüfen. Solche Bedingungen sind z.B.:
 \begin{compactitem}
     \item Speicheradressen ausserhalb des erlaubten Bereichs
-    \item Eintretende Fehlerzustände in Zustandsmaschinen 
+    \item Eintretende Fehlerzustände in Zustandsmaschinen
     \item Unvorhergesehene Eingabewerte
     \item Numerischer Über-/Unterlauf
 \end{compactitem}
-\lstinputlisting[language=VHDL]{code/assert.vhd}
-Die assert-Anweisung testet eine Condition (boolesche Bedingung). Wenn diese falsch ist, wird der Report ausgegeben. Mit Severity gibt man den Typ der Meldung an (warning, error, failure).
+\lstinputlisting[language=VHDL,style=VHDL]{code/assert.vhd}
+In VHDL 2008:
+\lstinputlisting[language=VHDL,style=VHDL]{code/assert2008.vhd}
+Die assert-Anweisung testet eine Condition (boolesche Bedingung). Wenn diese falsch ist, wird der Report ausgegeben. Mit Severity gibt man den Typ der Meldung an (note, warning, error, failure).
+
 \subsubsection{Auswahl von Testfällen}
-Die Stimulis sollten mit Vorsicht angewendet werden. Nachfolgend eine Auflistung von einigen wichtigen Testfällen:
+Die Stimuli sollten mit Vorsicht angewendet werden. Nachfolgend eine Auflistung von einigen wichtigen Testfällen:
 \begin{compactitem}
     \item Stimuli anwenden, welche die Standardfunktionalität der Schaltung widerspiegeln. $\rightarrow$ Typisch für den Designer: Man definiert Testfälle um zu beweisen, dass die Schaltung die erwartete Funktionalität zeigt.
     \item Stimuli anwenden, welche wahrscheinlich zu ungewöhnlichen arithmetischen Bedingungen führen (z.B. Unter-/Überlauf, Teilung durch sehr kleine Zahlen usw.).
@@ -35,47 +40,31 @@ Die Stimulis sollten mit Vorsicht angewendet werden. Nachfolgend eine Auflistung
     \item Anwenden von zufällig ausgewählten Testfällen.
 \end{compactitem}
 Real-World-Daten und zufällige Testfälle können nur angewendet werden, wenn die erwartete Antwort auf zufällige Eingabedaten bekannt ist. Diese Methode fragt nach einem goldenen Referenzmodell, das die erwartete Antwort für Zufallsdaten erzeugt. Solche goldenen Referenzmodelle können bereits bestehende Schaltungen bei einer Schaltungsrekonstruktion sein, sie kann ein High-Level-Modell sein (z.B. Matlab oder Simulink-Darstellung einer Schaltung) oder eine als Rapid Prototype implementierte Hardware-Darstellung (z.B. als SoC Direkt mit HLS oder System Generator synthetisiert).
-\subsection{Funktionelle Verifikation}
-\begin{compactitem}
-    \item Simulation: Modell auf Host Gerät ausführen
-    \begin{compactitem}
-        \item Sehr gute Beobachtbarkeit und Debugging
-        \item Oft nicht real-time, langsam in der Ausführung, nicht möglich für grosse SoCs
-    \end{compactitem}
-    \item Emulation: Modell mittels Hardware ausführen
-    \begin{compactitem}
-        \item Schneller als Simulation, immernoch einige Debug- und Tracingfunktionen
-        \item Aufwand für die Implementierung des Modells auf die Hardware
-    \end{compactitem}
-    \item (Physical) Prototyping: Synthetisierter High level oder RTL Code direkt mittels rekonfigurierbarer Hardware ausführen (Spezialform von Emulation)
-    \begin{compactitem}
-        \item Real-time, grosse SoCs oft machbar
-        \item Begrenzte Beobachtbarkeit und Debugging
-    \end{compactitem}
-\end{compactitem}
-\subsection{Simulation}
-Für kleine Block Level Verifikationen genügt eine kleine Testbench in VHDL. Für grössere Schaltungen ist jedoch ein allgemeiner Ansatz erforderlich. Stimuli und erwartete Response werden als Eingabe- und Ausgabevektoren in einer Datei angegeben. Mittels read-Funktion (im TEXTIO Package) wird Zeile für Zeile eingelesen, mit den tatsächlichen Signalen verglichen und überprüft. Bei einer nicht Übereinstimmung erscheint während der Simulation eine dementsprechende Konsolenmeldung. In einem synchronen Design muss ein fester Zeitplan für Stimuli und Response eingehalten werden. Dieser regelmässige Zeitplan muss daher den folgenden Regeln entsprechen:
+
+\subsection{Simulation}$~$ \\
+Für kleine Block Level Verifikationen genügt eine kleine Testbench in VHDL. Für grössere Schaltungen ist jedoch ein allgemeiner Ansatz erforderlich. Stimuli und erwartete Response werden als Eingabe- und Ausgabevektoren in einer Datei angegeben. Mittels read-Funktion (im TEXTIO Package) wird Zeile für Zeile eingelesen, mit den tatsächlichen Signalen verglichen und überprüft. Bei einer Nicht-Übereinstimmung erscheint während der Simulation eine dementsprechende Konsolenmeldung. In einem synchronen Design muss ein fester Zeitplan für Stimuli und Response eingehalten werden. Dieser regelmässige Zeitplan muss daher den folgenden Regeln entsprechen:
 \begin{compactitem}
     \item Für jeden Testfall ein periodisches Taktsignal angeben
     \item Pro Taktzyklus ein Stimulus/Response-Paar verwenden
     \item Ein streng regelmässiges Muster für Stimuli/Response anwenden
 \end{compactitem}
-\lstinputlisting[language=VHDL]{code/Automated_test_procedure.vhd}
-Die Simulation kann in verschiedenen Designebenen durchgeführt werden: 
+Automatisierte Test-Prozedur:
+\lstinputlisting[language=VHDL,style=VHDL]{code/Automated_test_procedure.vhd}
+Die Simulation kann in verschiedenen Designebenen durchgeführt werden:
 \begin{multicols}{3}
     \begin{compactitem}
         \item Behavioral Simulation
         \begin{compactitem}
-            \item Wird auf Stufe HDL durchgeführt $\rightarrow$ schnell 
+            \item Wird auf Stufe HDL durchgeführt $\rightarrow$ schnell
             \item Verifiziert nur die Funktionalität
-            \item Es werden keine Timing Informationen berücksichtigt
+            \item Es werden keine Timing-Informationen berücksichtigt
         \end{compactitem}
         \item Post Synthesis Simulation
         \begin{compactitem}
-            \item Strukturierte Simulation
-            \item Verifiziert die synthetisierte Netzliste 
+            \item Strukturelle Simulation
+            \item Verifiziert die synthetisierte Netzliste
             \item Timing möglich, jedoch ungewöhnlich (da kein Routing) \ \\
-        \end{compactitem} 
+        \end{compactitem}
         \item Post Implementation Simulation
         \begin{compactitem}
             \item Funktionelle und Timing Simulation möglich
@@ -84,18 +73,22 @@ Die Simulation kann in verschiedenen Designebenen durchgeführt werden:
     \end{compactitem}
 \end{multicols}
 
-\subsection{Debugging}
+\subsection{Debugging}$~$ \\
 Die Simulation weist zwar auf ein Fehlverhalten der Schaltung hin, zeigt jedoch nicht die genaue Ursache. Das Lokalisieren eines Fehlers nennt man Debugging.\\
 Es gibt zwei (bzw. drei) Bedingungen für das Finden von Fehlern:
 \begin{compactitem}
     \item Fehlersensibilisierung (bug sensitization): Stimuli müssen die Knoten auf die invertierten logischen Werte treiben können um einen Bug an einem bestimmten Knoten ausfindig machen zu können.
-    \item Fehlerfortpflanzung und Beobachtung (bug propagation and observation): Ein falscher Logikwert an einem Knoten muss beobachtbar sein oder er muss zumindest an einen Knoten weitergegeben werden können, der beobachtbar ist. 
+    \item Fehlerfortpflanzung und Beobachtung (bug propagation and observation): Ein falscher Logikwert an einem Knoten muss beobachtbar sein oder er muss zumindest an einen Knoten weitergegeben werden können, der beobachtbar ist.
 \end{compactitem}
+
 \subsubsection{Simulationswerkzeuge}
 Mit purer Input/Output Simulation kann man die obigen Bedingungen nicht erfüllen. Spezielle Simulationswerkzeuge bieten jedoch perfekte Beobachtbarkeit, mit welchen alle internen Knoten beobachtet werden können. Auch bei der Sensibilisierung dienen diese Simulationswerkzeuge perfekt: Während eine Testbench nur die Eingänge einer zu prüfenden Schaltung ansteuern kann, können hier interne Knoten direkt durch Erzwingen von Signalen auf einen festen Wert angesteuert werden.
+
 \subsubsection{Emulation}
 Während bei der Simulation beinahe das ganze Spektrum der Debuggingtools verwendet werden kann, sind Fehler bei der Emulation viel schwieriger zu finden. Es gibt fast keine Möglichkeit, interne Knoten von integrierten Schaltungen beobachten zu können. Aufgrund der umprogrammierbaren Struktur eines FPGA ist jeder Schaltungsknoten inhärent zu beobachten und kann inhärent stimuliert werden. Dies geschieht über die eingebaute JTAG-Schnittstelle. XILINX stellt zwei spezielle Blöcke zur Verfügung:
-\paragraph{Virtual input and output (VIO)}
+
+\paragraph{Virtual input and output (VIO)}$~$ \\
 Interne Knoten können als Ein- oder Ausgänge definiert werden. Der Mechanismus funktioniert über die JTAG-Schnittstelle. VIO Blöcke sind Hardwarekomponenten. Sie müssen in den Code integriert werden. Anschliessend werden sie instanziiert, synthetisiert und schliesslich implementiert. Die neu generierten Ein- und Ausgänge des VIO können während der Debug-Session getrieben und analysiert werden.
-\paragraph{Integrated Logic Analyzer (ILA)}
+
+\paragraph{Integrated Logic Analyzer (ILA)}$~$ \\
 ILA dient zur Überwachung interner programmierbarer Logiksignale für die Nachanalyse. ILA Blöcke bieten mehrere konfigurierbare Triggereinheiten und bis zu 64 konfigurierbare Sonden für die Analyse in einer GUI-Darstellung. ILA bietet auch Cross-Trigger-Funktionalität zwischen dem ARM-Prozessor und dem logic fabric part.

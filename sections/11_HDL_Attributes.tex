@@ -1,37 +1,43 @@
-\section{HDL Attributes}
-Wenn die Vivado-Synthese das Attribut unterstützt, wird eine Logik erstellt, die das verwendete Attribut wiedergibt. Wenn das Attribut vom Tool nicht erkannt wird, übergibt die Vivado-Synthese das Attribut und seinen Wert an die erzeugte Netzliste. Es wird davon ausgegangen, dass ein Tool weiter unten im Flow das Attribut verwenden kann. 
-\subsection{Attribute in XDC Files}
+\section{HDL Attributes}$~$ \\
+Wenn die Vivado-Synthese das Attribut unterstützt, wird eine Logik erstellt, die das verwendete Attribut wiedergibt. Wenn das Attribut vom Tool nicht erkannt wird, übergibt die Vivado-Synthese das Attribut und seinen Wert an die erzeugte Netzliste. Es wird davon ausgegangen, dass ein Tool weiter unten im Flow das Attribut verwenden kann.
+
+\subsection{Attribute in XDC Files}$~$ \\
 Einige Synthese-Attribute können auch aus einer XDC-Datei sowie der ursprünglichen RTL-Datei gesetzt werden. Im Allgemeinen sind Attribute, die in den Endstadien der Synthese verwendet werden, in der XDC-Datei erlaubt. Attribute, die zu Beginn der Synthese verwendet werden und den Compiler beeinflussen, sind im XDC nicht zulässig. Zum Beispiel KEEP und DONT\_TOUCH sind nicht erlaubt, da zum Zeitpunkt des Auslesens des Attributs die Komponenten, welche das Attribut KEEP oder DONT\_TOUCH aufweisen, bereits optimiert wurden und somit zu diesem Zeitpunkt nicht mehr existieren.
-\\set\_property \textless attribute\textgreater \textless value\textgreater \textless target\textgreater 
+\\set\_property \textless attribute\textgreater \textless value\textgreater \textless target\textgreater
 \\set\_property MAX\_FANOUT 15 [get\_cells in1\_int\_reg]
 
 \subsection{Allgemeine Attribute}
 \subsubsection{ASYNC\_REG}
 Der Zweck dieses Attributs ist es, dem Tool mitzuteilen, dass ein Register asynchrone Daten im D-Eingangspin relativ zum Source Clock empfangen kann oder dass das Register ein Synchronisationsregister innerhalb einer Synchronisationskette ist.
 Dieses Attribut kann auf jedes Register angewandt werden. Werte sind FALSE (Default) und TRUE. Es kann im RTL oder XDC File gesetzt werden.
-\lstinputlisting[language=VHDL]{code/ASYNC_REG.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/ASYNC_REG.vhd}
+
 \subsubsection{KEEP}
 Vermeidet Optimierungen, bei denen Signale entweder optimiert oder in Logikblöcke absorbiert werden.
-\lstinputlisting[language=VHDL]{code/KEEP.vhd}
-\paragraph{KEEP\_HIERARCHY}
+\lstinputlisting[language=VHDL,style=VHDL]{code/KEEP.vhd}
+
+\paragraph{KEEP\_HIERARCHY}$~$ \\
 Das Synthese-Tool versucht normalerweise die gleichen allgemeinen Hierarchien zu behalten, die im RTL spezifiziert werden. Aus Gründen der Belastbarkeitsqualität (Quality of resilience (QoR)) könnte die Hierarchie abgeflacht oder modifiziert werden. Mit KEEP\_HIERARCHY kann das verhindert werden. Kann nur im RTL gesetzt werden. Sollte nicht auf Tristate oder I/O Buffer Module angewendet werden.
-\lstinputlisting[language=VHDL]{code/KEEP_HIERARCHY.vhd}
-\paragraph{DONT\_TOUCH}
-DONT\_TOUCH funktioniert wie KEEP oder KEEP\_HIERARCHY. DONT\_TOUCH basiert auf Vorwärts Annotation. 
+\lstinputlisting[language=VHDL,style=VHDL]{code/KEEP_HIERARCHY.vhd}
+
+\paragraph{DONT\_TOUCH}$~$ \\
+DONT\_TOUCH funktioniert wie KEEP oder KEEP\_HIERARCHY. DONT\_TOUCH basiert auf Vorwärts Annotation.
 
 \subsection{FSM Attribute}
 \subsubsection{FSM\_ENCODING}
 Bestimmt welcher Codierungsstil verwendet werden soll. Der Wert \textit{auto} ist der Defaultwert. Es wird die am besten geeignetste FSM-Codierung ausgewählt. Akzeptable Werte sind: \textit{one\_hot}, \textit{sequential}, \textit{johnson}, \textit{gray}, \textit{none} und \textit{auto}.
-\lstinputlisting[language=VHDL]{code/FSM_ENCODING.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/FSM_ENCODING.vhd}
+
 \subsubsection{FSM\_SAVE\_STATE}
-Kann man bestimmen, was bei einem nicht definierten Zustand zu tun ist. Dabei wird die entsprechende Logik eingefügt. Akzeptable Werte sind: 
+Hiermit kann man bestimmen, was bei einem nicht definierten Zustand zu tun ist. Dabei wird die entsprechende Logik eingefügt. Akzeptable Werte sind:
 \begin{compactitem}
     \item auto: Verwendet eine Hamming-3-Codierung für die Autokorrektur für ein Bit/Flip.
     \item reset\_state: Erzwingt die State Machine in den Reset-Zustand mit Hamming-2-Codierung für ein Bit/Flip. Rücksetzbedingung nicht vergessen!
     \item power\_on\_state: Erzwingt die State Machine in den Power-On-Zustand mit Hamming-2-Codierung für ein Bit/Flip.
     \item default\_state: Erzwingt die State Machine in den Zustand, der mit dem Standardzustand im RTL angegeben wird (auch wenn dieser Zustand nicht erreichbar ist), mittels Hamming-2-Codierung für ein Bit / Flip.
 \end{compactitem}
-\lstinputlisting[language=VHDL]{code/FSM_SAVE_STATE.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/FSM_SAVE_STATE.vhd}
+
 \subsection{Andere Attribute}
 \begin{compactitem}
     \item MAX\_FANOUT: Gibt Fanout-Grenzwerte für Register und Signale bekannt.

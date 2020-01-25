@@ -1,28 +1,12 @@
 \section{Serial Communication Interfaces}
-\subsection{Begriffe}
-Verschiedene Begriffe existieren im Zusammenhang mit Schnittstellen:
+\subsection{SPI (Serial Peripheral Interface)}$~$ \\
+In einem SPI Netzwerk kann jeweils nur ein Master vorhanden sein. Jedoch ist es möglich, dass mehrere Slaves am selben Bus angeschlossen sind. Die folgenden Signale werden für die SPI Schnittstelle benötigt:
 \begin{compactitem}
-    \item \textbf{Synchron / Asynchron}: Synchrone Schnittstellen haben ein Taktsignal, welches signalisiert, wann Daten gültig sind. Asynchrone Schnittstellen brauchen dagegen kein Taktsignal. Synchronisation geschieht über einen Handshakingprozess.
-    \item \textbf{Seriell / Parallel}: Daten werden seriell oder parallel (mit mehreren Signalleitungen gleichzeitig) übertragen.
-    \item \textbf{On-Chip / Off-Chip Communication}: Kommunikation im Chip selbst wird oftmals parallel gelöst. Eine Kommunikation zwischen zwei verschiedenen Chips wird oft seriell implementiert.
+    \item \textbf{SCLK}: Taktsignal
+    \item \textbf{MOSI / SDO}: Datensignal vom Master zum Slave.
+    \item \textbf{MISO / SDI}: Datensignal vom Slave zum Master.
+    \item \textbf{CS}: Signalisiert dem Slave eine aktive Kommunikation. Sind mehrere Slaves am selben Bus angeschlossen, so existiert oft für jeden Slave ein eigenes CS-Signal.
 \end{compactitem}
-
-\begin{multicols}{2}
-    \subsection{Netzwerk Arten}
-    Verschiedene Netzwerk Arten existieren in der Praxis:
-    \begin{figure}[H]
-        \includegraphics[width=0.5\textwidth]{images/netzwerkarten.png}
-    \end{figure}
-
-    \subsection{SPI (Serial Pheripheral Interface)}
-    In einem SPI Netzwerk kann jeweils nur ein Master vorhanden sein. Jedoch ist es möglich, dass mehrere Slaves am selben Bus angeschlossen sind. Die folgenden Signale werden für die SPI Schnittstelle benötigt:
-    \begin{compactitem}
-        \item \textbf{SCLK}: Taktsignal
-        \item \textbf{MOSI / SDO}: Datensignal vom Master zum Slave.
-        \item \textbf{MISO / SDI}: Datensignal vom Slave zum Master.
-        \item \textbf{CS}: Signalisiert dem Slave eine aktive Kommunikation. Sind mehrere Slaves am selben Bus angeschlossen, so existiert oft für jeden Slave ein eigenes CS-Signal.
-    \end{compactitem}
-\end{multicols}
 
 \subsubsection{Taktpolarität und Taktphase}
 Es gibt insgesamt vier SPI-Modi. Diese unterscheiden sich in der Taktpolarität und Taktphase.
@@ -48,22 +32,22 @@ Die Hardware für eine SPI Schnittstelle kann mittels zwei Schieberegistern (ein
 \end{multicols}
 
 \subsubsection{Implementierung in VHDL}
-\lstinputlisting[language=VHDL]{code/spiMaster.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/spiMaster.vhd}
 
-\subsection{I\textsuperscript{2}C (Inter-Integrated-Circuit)}
+\subsection{I\textsuperscript{2}C (Inter-Integrated Circuit)}$~$ \\
 Das I\textsuperscript{2}C Interface ist ein bidirektionales Bussystem. Es können beliebig viele Master und Slaves angehängt werden. Die folgenden Signale werden für die I\textsuperscript{2}C Schnittstelle benötigt:
 \begin{compactitem}
     \item \textbf{SCL}: Taktsignal
-    \item \textbf{SDA}: Bidirektionales Datensignal   
+    \item \textbf{SDA}: Bidirektionales Datensignal
 \end{compactitem}
 
 \subsubsection{Übertragungsgeschwindigkeiten}
-Die folgenden Geschwindidkeiten sind im I\textsuperscript{2}C Standart definiert:
+Die folgenden Geschwindigkeiten sind im I\textsuperscript{2}C Standard definiert:
 \begin{compactitem}
-    \item Standard Mode: 100 kbit/s
-    \item Fast Mode: 400 kbit/s
-    \item Fast Mode Plus: 1 Mbit/s
-    \item High-Speed Mode: 3.4 Mbit/s
+    \item standard mode: 100 kbit/s
+    \item fast-mode: 400 kbit/s
+    \item fast-mode-plus: 1 Mbit/s
+    \item high-speed mode: 3.4 Mbit/s
 \end{compactitem}
 
 \subsubsection{Timing}
@@ -75,7 +59,7 @@ Eine mögliche I\textsuperscript{2}C Transaktion ist untenstehend zu sehen:
 \begin{figure}[H]
     \includegraphics[width=1\textwidth]{images/i2c_timing.png}
 \end{figure}
-Nach dem Senden des Acknowledge-Bits, kann ein jeweils ein weiteres Byte gesendet werden, ohne die Transaktion durch Senden eines Stopbits zu unterbrechen. \\
+Nach dem Senden des Acknowledge-Bits, kann jeweils ein weiteres Byte gesendet werden, ohne die Transaktion durch Senden eines Stopbits zu unterbrechen. \\
 Sollte ein Slave mehr Zeit brauchen um Daten zu verarbeiten, so kann er das SCL Signal auf Low ziehen, bis er wieder bereit ist.
 
 \subsubsection{Arbitration}
@@ -89,16 +73,16 @@ Der letzte Teilnehmer, welcher die SDA Leitung auf Low ziehen kann, gewinnt die 
     \subsubsection{Kommunikations Protokoll}
     \paragraph{Schreiben vom Master zum Slave}
     \begin{figure}[H]
-        \includegraphics[width=0.5\textwidth]{images/i2c_protocol1.png}
+        \includegraphics[width=0.5\textwidth]{images/i2c_protocolWrite.png}
     \end{figure}
-    
+
     \paragraph{Lesen vom Slave}
     \begin{figure}[H]
-        \includegraphics[width=0.5\textwidth]{images/i2c_protocol2.png}
+        \includegraphics[width=0.5\textwidth]{images/i2c_protocolRead.png}
     \end{figure}
-    
+
     \ \\ \ \\
-    
+
     \subsubsection{Hardwaremässige Implementierung}
     Damit keine Kurzschlüsse entstehen, wenn zwei Master gleichzeitig senden wollen, werden die beiden Signale über externe Pull-Up-Widerstände auf einen High Pegel gezogen.
     \begin{figure}[H]
@@ -108,10 +92,10 @@ Der letzte Teilnehmer, welcher die SDA Leitung auf Low ziehen kann, gewinnt die 
 
 \subsubsection{Implementierung in VHDL}
 Da die beiden I\textsuperscript{2}C-Signale bidirektional sind, muss in VHDL ein IO-Buffer für die beiden Signale instantiiert werden. Der nachfolgende Code instantiiert zwei solche Buffer.
-\lstinputlisting[language=VHDL]{code/i2cMaster.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/i2cMaster.vhd}
 
-\subsection{UART (Universal Asynchronous Receiver Transmitter)}
-UART ist eine Punkt-zu-Punkt Schnitstelle. Es wird pro Richtung ein Datensignal benötigt.
+\subsection{UART (Universal Asynchronous Receiver Transmitter)}$~$ \\
+UART ist eine Punkt-zu-Punkt Schnittstelle. Es wird pro Richtung ein Datensignal benötigt.
 
 \subsubsection{Timing}
 Eine UART Transaktion startet immer mit einem Startbit. Anschliessend wird ein Datenbyte gesendet, eine Parität, sowie ein Stoppbit (oder mehrere Stopbits). Da kein Takt mitgesendet wird, muss im Sender und Empfänger die Geschwindigkeit bekannt sein.
@@ -124,17 +108,5 @@ Eine UART Transaktion startet immer mit einem Startbit. Anschliessend wird ein D
     \includegraphics[width=0.75\textwidth]{images/uart_hardware.png}
 \end{figure}
 
-\subsection{LVDS}
-LVDS definiert kein Übertragungsprotokoll sondern eine Übertragungsart.
-\begin{multicols}{2}
-     \begin{figure}[H]
-        \includegraphics[width=0.5\textwidth]{images/lvds.png}
-    \end{figure}
-    
-    \subsubsection{Prinzip}
-    Die Signale werden anstelle mit einer Spannungsänderung mit einer Stromänderung übertragen. Das Signal schwingt somit nur um eine Spannung von $\pm$350mV.   
-    
-    \subsubsection{Implementierung in VHDL}
-    In VHDL kann LVDS nicht direkt synthetisiert werden. Der FPGA hat jedoch dennoch Pads, welche LVDS unterstützen. Diese müssen jedoch mithilfe von Constraints zugewiesen werden.
-    \lstinputlisting[language=tcl]{code/tcl/lvds.xdc}
-\end{multicols}
+\subsubsection{VHDL Implementation}
+\lstinputlisting[language=VHDL,style=VHDL]{code/uart.vhd}

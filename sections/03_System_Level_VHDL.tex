@@ -1,98 +1,55 @@
 \section{System Level VHDL}
-\subsection{Wiederverwendbarkeit}
+\subsection{Wiederverwendbarkeit}$~$ \\
 Bereits auf der untersten Abstraktionsebene soll wiederverwendbarer Code geschrieben werden. Um einen Code wiederverwenden zu können, muss dieser gut lesbar sein. Nachfolgend ein paar Hilfsmittel um den Code gut lesbar zu gestalten.
 \subsubsection{Kommentare}
 Zeilenkommentare $\rightarrow$ beginnen mit -{}-\\
 Blockkommentare $\rightarrow$ beginnen mit /* und enden mit */
 \subsubsection{Namenskonventionen}
-In VHDL sind keine Namenskonventionen definiert. Es wird jedoch empfohlen folgende Mindestregeln einzuhalten: 
+In VHDL sind keine Namenskonventionen definiert. Es wird jedoch empfohlen folgende Mindestregeln einzuhalten:
 \begin{compactitem}
-    \item Aussagekräftige Namen für Entitys, Architekturen, Funktionen und Prozesse verwenden
-    \item Namen sollten lowercase sein und zum trennen von Wörtern sollte man Underscores verwenden
-    \item Entitys sollten eindeutige Namen haben. Architekturen benötigen keine eindeutigen Namen. Ihr Name beschreibt eher die Natur der Architektur wie RTL, Struktur usw
-    \item Signalnamen sollten lowercase sein und zum trennen von Wörtern sollte man Underscores verwenden 
+    \item Aussagekräftige Namen für Entities, Architekturen, Funktionen und Prozesse verwenden
+    \item Namen sollten lowercase sein und zum Trennen von Wörtern sollte man Underscores verwenden
+    \item Entities sollten eindeutige Namen haben. Architekturen benötigen keine eindeutigen Namen. Ihr Name beschreibt eher die Natur der Architektur wie RTL, Struktur usw
+    \item Signalnamen sollten lowercase sein und zum Trennen von Wörtern sollte man Underscores verwenden
     \item Low-Aktive Signale sollten deutlich als solche im Signalnamen markiert werden (\textit{XXXX\_l} oder \textit{XXXX\_n})
 \end{compactitem}
-Spezielle Namenskonventionen ermöglichen es dem Vivado IP-Packager, automatisch AXI-Schnittstellensignale abzuleiten: 
+Spezielle Namenskonventionen ermöglichen es dem Vivado IP-Packager, automatisch AXI-Schnittstellensignale abzuleiten:
 \begin{compactitem}
-    \item Reset: \_reset, \_rst, \_resetn (low-aktiv), \_areset 
+    \item Reset: \_reset, \_rst, \_resetn (low-aktiv), \_areset
     \item Clock: \_clk, \_clkin, \_clk\_p (Diff. Clock), \_clk\_n (Diff. Clock)
     \item AXI Interface: \_tdata (Bsp: s0\_axis\_tdata), \_tvalid, \_tready
 \end{compactitem}
 \subsubsection{Einsatz von Konstanten}
-Wenn möglich nie Parameter gebrauchen! Konstanten sind im Bezug auf die Änderbarkeit unverzichtbar. Konstanten in VHDL-Packages können in mehreren Designeinheiten verwendet werden. Konstanten, die in Designentitäten (Deklarationsteil der Architektur) deklariert sind, können in der gesamten Architektur einschliesslich der Prozesse innerhalb dieser Architektur gesehen werden. Der Scope einer Konstante, welche in einem Prozess deklarierten wurde, ist auf diesen Prozess beschränkt.
-\lstinputlisting[language=VHDL]{code/constants.vhd}
+Wenn möglich nie Parameter gebrauchen! Konstanten sind in Bezug auf die Änderbarkeit unverzichtbar. Konstanten in VHDL-Packages können in mehreren Designeinheiten verwendet werden. Konstanten, die in Designentitäten (Deklarationsteil der Architektur) deklariert sind, können in der gesamten Architektur einschliesslich der Prozesse innerhalb dieser Architektur gesehen werden. Der Scope einer Konstante, welche in einem Prozess deklariert wurde, ist auf diesen Prozess beschränkt.
+\lstinputlisting[language=VHDL,style=VHDL]{code/constants.vhd}
 \subsubsection{Einsatz von Aliases}
-\lstinputlisting[language=VHDL]{code/aliases.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/aliases.vhd}
 \subsubsection{Einsatz von Generics}
 Generics werden zu Beginn der Entity deklariert.
-\lstinputlisting[language=VHDL]{code/generics.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/generics.vhd}
 
-\subsection{Funktionen}
-Funktionen sind Subprogramme mit einer Argumentenliste von nur Eingängen. Sie geben einen einzigen Wert eines spezifizierten Types zurück. Funktionen können entweder im Deklarationsteil einer Architektur oder in einem Package (flexibler) definiert werden. 
-\lstinputlisting[language=VHDL]{code/functions.vhd}
+\subsection{Funktionen}$~$ \\
+Funktionen sind Subprogramme mit einer Argumentenliste von nur Eingängen. Sie geben einen einzigen Wert eines spezifizierten Types zurück. Funktionen können entweder im Deklarationsteil einer Architektur oder in einem Package (flexibler) definiert werden.
+\lstinputlisting[language=VHDL,style=VHDL]{code/functions.vhd}
 \textbf{Wichtig:}
 \begin{compactitem}
-    \item Im Funktionsblock dürfen keine wait-Anweisungen oder Signalzuweisungen enthalten sein! 
+    \item Im Funktionsblock dürfen keine wait-Anweisungen oder Signalzuweisungen enthalten sein!
     \item := wird verwendet, wenn ein Wert einer \textbf{Variablen} zugewiesen wird. Wird sofort in einem Prozess zugeordnet.
     \item \textless= wird verwendet, wenn ein Signal einem Signal zugewiesen wird. Wird am Ende eines Prozesses zugewiesen.
 \end{compactitem}
 \textbf{Unterschied pure und impure Funktionen:} Bei Funktionen, welche pure sind, bekommt man bei jedem Aufruf für jeden Input den gleichen Output (z.B. sin(x)). Bei impuren Funktionen erhält man bei gleichem Input unterschiedliche Outputs. Impure Funktionen haben Seiteneffekte, wie z.B. das Updaten von Objekten ausserhalb ihres Scopes, was bei puren Funktionen nicht erlaubt ist.
-\lstinputlisting[language=VHDL]{code/functions_impure.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/functions_impure.vhd}
 
-\subsection{Prozeduren}
-Prozeduren sind sehr ähnlich wie Funktionen. Der Hauptunterschied ist, dass bei Prozeduren mehrere Ein- und Ausgangsvariablen definiert werden können. 
-\lstinputlisting[language=VHDL]{code/procedures.vhd}
+\subsection{Prozeduren}$~$ \\
+Prozeduren sind sehr ähnlich wie Funktionen. Der Hauptunterschied ist, dass bei Prozeduren mehrere Ein- und Ausgangsvariablen definiert werden können.
+\lstinputlisting[language=VHDL,style=VHDL]{code/procedures.vhd}
 \textbf{Wichtig: }
 \begin{compactitem}
     \item Prozeduren können In-, Out- oder Inout-Parameter besitzen. Diese können ein Signal, eine Variable oder eine Konstante sein. Die Voreinstellung für in-Parameter ist konstant, für out und inout variabel.
 \end{compactitem}
 
-\subsection{Packages}
+\subsection{Packages}$~$ \\
 Konstanten, Typen, Komponenten, Funktionen und Prozeduren, die an verschiedenen Stellen in einem oder mehreren Projekten verwendet werden, können in Packages gruppiert werden.
-\lstinputlisting[language=VHDL]{code/packages.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/packages.vhd}
 Packages werden in Bibliotheken kompiliert abgelegt (Standard = work library). Sie können im VHDL-Modul mit der use-Anweisung verwendet werden:
-\lstinputlisting[language=VHDL]{code/packages_use.vhd}
-
-\subsection{IP Blöcke}
-\subsubsection{Konfiguration von IP Blöcken}
-\begin{compactitem}
-    \item IP Blöcke sind meistens konfigurierbare Module. Jede Instanz eines solchen IP Blocks kann individuell konfiguriert werden.
-    \item Konfiguration von Hard IP Blöcke: Beschränkt auf das Ein- und Ausschalten bestimmter Funktionen, da Hardware nicht modifiziert werden kann.
-    \item Konfiguration von Soft und Firm IP Blöcke: Flexibler, da diese Blöcke erst nach der Konfiguration synthetisiert werden. Häufig kann Funktionalität, Implementierungsstrategie, Schnittstellentyp und Dimensionen eingestellt werden. Konfigurationsparameter werden als generische Parameter an das Modul zur Synthese übergeben.  
-\end{compactitem}
-\subsubsection{IP Packager}
-\begin{compactitem}
-    \item IP Blöcke bestehen aus vielen Teilen: 
-    \begin{compactitem}
-        \item Quelldateien (RTL, C-Code, Netzlistendateien etc.) 
-        \item Dokumentation
-        \item Simulationsmodelle
-        \item Testbenches
-        \item Beispiele
-    \end{compactitem} 
-    \item Vivado IP Packager stellt aus obigen Teilen ein Komplettpaket zusammen und legt es in ein zentrales Repositiory (IP Katalog).
-    \item IP-XACT: Standard (in XML) für die Verpackung und Dokumentation, welcher von einer Gruppe aus IP-Anbietern unter dem Namen SPIRIT Consortium definiert wurde. Beschreibt nur Schnittstelle und Organisation des Blocks und bietet damit eine Zugangstür für die verschiedenen Werkzeuge, um ihre Informationen zu finden.
-    \item component.xml: Enthält Metadaten, Ports, Schnittstellen, Konfigurationsparameter, Dateien und Dokumentation beschrieben. Ersetzt nicht HDL oder Software (enthält nur High-Level-Informationen).  
-\end{compactitem}
-\subsubsection{Einbinden von IP Blöcken in eigenes Design}
-\begin{compactenum}
-    \item IP Repository (normalerweise in Projekt oder auf Firmenlaufwerk) dem Projekt bekannt machen.
-    \item IP Block aus Katalog auswählen (add IP).
-    \item Anpassungen und Generierung spezifischer Ausgabeprodukte (output products): Anpassung erfolgt im IP Integrator. Die Parameter müssen an den RTL-Code des IP Blockes übergeben werden und der Code muss in  das Design aufgenommen werden. Bei Generierung der Ausgabeprodukte erzeugt der IP Integrator die kundenspezifischen Designinformationen.
-    \item IP verwenden: Der Baustein kann nun verwendet werden, indem er mit dem IP-Integrator im Blockdesign platziert oder in einem herkömmlichen RTL-Design instanziiert wird. 
-\end{compactenum}
-IP Blöcke können verschieden eingebunden werden:
-\begin{compactitem}
-        \item Via IP Integrator: Vivado führt die folgenden Schritte aus: Instanziierung (Block einfügen in Design), Erzeugung von System-Wrapper (strukturelle VHDL-Top-Level-Beschreibung) und Generierung der Ausgabeprodukte.
-        \item Via Instanzierungs-Template im RTL Flow: Für VHDL und Verilog werden Instanzierungs-Templates zur Verfügung gestellt. Der IP Block muss in der Design-Datei, welche eine Position höher in der Design-Hierarchie ist, instanziiert werden.   
-\end{compactitem}
-\lstinputlisting[language=VHDL]{code/component.vhd}
-\subsubsection{IP Life Cycle}
-\begin{compactitem}
-        \item Vorproduktion (pre-production): IP Core, der öffentlich verwendbar ist, aber noch keine Qualifikationen für den Einsatz in der Produktion aufweist.
-        \item Produktion (production): IP Core, der für die allgemeine öffentliche Freigabe zur Verfügung gestellt wird und verifiziert wurde. 
-        \item Eingestellt (discontinued): Ankündigung von XILINX, dass IP Core bald entfernt wird.
-        \item Ersetzt (superseded): IP Core wurde durch eine neuere Version ersetzt.
-        \item Entfernt (removed): IP Core wird nicht mehr länger vertrieben.
-\end{compactitem}
+\lstinputlisting[language=VHDL,style=VHDL]{code/packages_use.vhd}
