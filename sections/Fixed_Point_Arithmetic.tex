@@ -1,0 +1,201 @@
+\section{Fixed Point Arithmetic}
+\subsection{Einleitung}$~$ \\
+\begin{tabular}{| l | l | l |}
+\hline
+& Unsigned integer & Signed integer\\
+\hline
+Formel & $z=\sum_{k=0}^{n-1}a_k \cdot 2^k$ & $z=-(2^{n-1}) \cdot a_{n-1} + \sum_{k=0}^{n-2}2^k \cdot a_k$\\
+\hline
+Bereich & $0 \ldots 2^n-2^0$ & $-2^{n-1} \ldots 2^{n-1}-2^0$\\
+\hline
+\end{tabular}
+
+\subsection{Qn.m Format}$~$ \\
+n: Anzahl integer bits (inkl. eines allfälligen Vorzeichenbits); m: Anzahl der Nachkommastellen\\
+Es gibt zwei Möglichkeiten, eine Fix-point Zahl in VHDL zu implementieren:
+\begin{compactitem}
+  \item Nur mit dem 'numeric\_std'-Package und dabie unsigned und signed Typen zu verwenden. Der Programmierer muss praktisch alles selbst machen (z.B. Dezimalpunkt tracken)
+  \item Mithilfe des 'fixed\_pkg-Packages' (basiert auf 'numeric\_std') $\rightarrow$ einfacherer, übersichtlicherer Code; fast alle Operatoren sind für integer und reelle Typen überladen; Overflows sind nicht möglich $\rightarrow$ führt immer zu sicherer Implementation, aber nicht immer zur optimalen Lösung in Bezug auf die Vektorbreite
+\end{compactitem}
+Sizing-Regeln für 'fixed\_pkg':\\
+\begin{tabular}{| l | l |}
+\hline
+Operation & Result Range\\
+\hline
+$A+B$ & Max(A'left,B'left)+1 downto Min(A'right,B'right)\\
+\hline
+$A-B$ & Max(A'left,B'left)+1 downto Min(A'right,B'right)\\
+\hline
+$A \cdot B$ & A'left+B'left+1 downto A'right+B'right\\
+\hline
+$A \text{ rem } B$ & Min(A'left,B'left)+1 downto Min(A'right,B'right)\\
+\hline
+$\text{Signed } /$ & A'left-B'right+1 downto A'right-B'left\\
+\hline
+$\text{Signed A mod B}$ & Min(A'left,B'left) downto Min(A'right,B'right)\\
+\hline
+$\text{Signed Reciprocal(A)}$ & -A'right downto -A'left-1\\
+\hline
+$\text{Abs(A)}$ & A'left+1 downto A'right\\
+\hline
+$-A$ & A'left+1 downto A'right\\
+\hline
+$\text{Unsigned} /$ & A'left-B'right downto A'right-B'left-1\\
+\hline
+$\text{Unsigned A mod B}$ & B'left downto Min(A'right,B'right)\\
+\hline
+$\text{Unsigned Reciprocal(A)}$ & -A'right+1 downto -A'left\\
+\hline
+\end{tabular}
+
+\subsubsection{ufixed/sfixed}
+Das Package definiert zwei neue Datentypen: ufixed und sfixed. Für negative zahlen wird das 2er-Komplement verwendet. Die Position des Dezimalpunkts ist zwischen Index ''0'' und ''-1''.
+\lstinputlisting[language=VHDL]{code/ufixed_sfixed.vhd}
+
+\subsubsection{Limitierte Unterstützung}
+Das Package ist Teil von VHDL 2008, weshalb es von gewissen Tools noch nicht vollständig unterstützt wird. XILINX bietet eine modifizierte Version von 'fixed\_pkg' an.
+% \lstinputlisting[language=VHDL]{code/fixed_pkg.vhd}
+
+\subsubsection{Unsigned/Signed}
+\begin{tabular}{| l | l | l |}
+\hline
+&  uQn.m & uQn.m\\
+\hline
+Formel & $z=\sum_{k=-m}^{n-1}a_k \cdot 2^k$ & $z=-(2^{n-1}) \cdot a_{n-1} + \sum_{k=-}^{n-2}a_k \cdot 2^k$\\
+\hline
+Bereich & $0 \ldots 2^n-2^{-m}$ & $-2^{n-1} \ldots 2^{n-1}-2^{-m}$\\
+\hline
+\end{tabular}\\
+\textbf{Bsp.: uQ2.6}
+\lstinputlisting[language=VHDL]{code/uQ2_6.vhd}
+\textbf{Bsp.: sQ2.6}
+\lstinputlisting[language=VHDL]{code/sQ2_6.vhd}
+
+\subsection{Arithmetic Functions}
+\subsubsection{Addition/Subtraction}
+\paragraph{Unsigned and Unsigned}$~$ \\
+\begin{minipage}{0.3\linewidth}
+Praktisch identisch mit Add./Sub. mit normalen Integer-Zahlen, einzig muss nun der Programmierer den Dezimalpunkt tracken.
+\end{minipage}
+\begin{minipage}{0.7\linewidth}
+\begin{tabular}{l l l l l l l l l | l}
+& \textbf{0} & 1 & 0 & 1 & 1 & 0 & 1 & \textbf{0} & = 101.101 in uQ3.3 = 5.625\\
++ & & & & 1 & 0 & 0 & 1 & 1 & = 1.0011 in uQ1.4 = 1.1875\\
+\hline
+& \textbf{0} & 1 & 1 & 0 & 1 & 1 & 0 & 1 & = 0110.1101 in uQ4.4 = 6.8125\\
+\end{tabular}
+\end{minipage}
+\lstinputlisting[language=VHDL]{code/addition_subtraktion.vhd}
+
+\paragraph{Signed and Signed}$~$ \\
+\begin{minipage}{0.3\linewidth}
+Auch fast identisch, Zahl mit weniger Vorkommabits muss sign-extended werden
+\end{minipage}
+\begin{minipage}{0.7\linewidth}
+  \begin{tabular}{l l l l l l l l l | l}
+  & \textbf{1} & 1 & 0 & 1 & 1 & 0 & 1 & \textbf{0} & = 101.101 in sQ3.3 = -2.375\\
+  + & \textbf{1} & \textbf{1} & \textbf{1} & 1 & 0 & 0 & 1 & 1 & = 1.0011 in sQ1.4 = -0.8125\\
+  \hline
+  & \textbf{1} & 1 & 0 & 0 & 1 & 1 & 0 & 1 & = 1100.1101 in sQ4.4 = -3.1875\\
+  \end{tabular}
+\end{minipage}
+\lstinputlisting[language=VHDL]{code/addition_subtraktion_signed.vhd}
+
+\subsubsection{Multiplication}
+\paragraph{Unsigned by Unsigned}$~$ \\
+Einfachster Fall, partielle Produkte werden ohne sign-extension addiert\\
+\begin{minipage}{0.7\linewidth}
+  \begin{tabular}{ l l l l l l l l | l}
+  & & & & 1 & 1 & 0 & 1 & = 11.01 in uQ2.2 = 3.25 (multiplicand)\\
+   & & & 1 & 0 & 1 & 1 & = 10.11 in uQ2.2 = 2.75 (multiplier)\\
+  \hline
+  & & & & 1 & 1 & 0 & 1 & \\
+  & & & 1 & 1 & 0 & 1 & & \\
+  & & 0 & 0 & 0 & 0 & & & \\
+  & 1 & 1 & 0 & 1 & & & & \\
+  \hline
+  1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & = 1000.1111 in uQ4.4 = 8.9375
+  \end{tabular}
+\end{minipage}
+\lstinputlisting[language=VHDL]{code/multiplikation_unsigned.vhd}
+
+\paragraph{Signed by Unsigned}$~$ \\
+Hier braucht jedes partielle Produkt sign-extension. In VHDL ist $\text{signed} \cdot \text{unsigned}$ nicht erlaubt. Der vorzeichenlose Wert muss zuerst in eine vorzeichenbehaftete Zahl gewandelt werden.\\
+\begin{minipage}{0.7\linewidth}
+  \begin{tabular}{ l l l l l l l l | l}
+  & & & & 1 & 1 & 0 & 1 & = 11.01 in sQ2.2 = -0.75 (multiplicand)\\
+  & & & & 0 & 1 & 0 & 1 & = 01.01 in sQ2.2 = 1.25 (multiplier)\\
+  \hline
+  \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & 1 & 1 & 0 & 1 & \\
+  \textbf{0} & \textbf{0} & \textbf{0} & 0 & 0 & 0 & 0 & & \\
+  \textbf{1} & \textbf{1} & 1 & 1 & 0 & 1 & & & \\
+  \textbf{0} & 0 & 0 & 0 & 0 & & & & \\
+  \hline
+  1 & 1 & 1 & 1 & 0 & 0 & 0 & 1 & = 1111.0001 in sQ4.4 = -0.9375
+  \end{tabular}
+\end{minipage}
+
+\paragraph{Signed by Signed}$~$ \\
+Zwei Möglichkeiten:
+\begin{compactitem}
+  \item Sign-extension aller partiellen Produkte. Wenn der 'multiplier' negativ ist, muss das letzte partielle Produkt mit dem 2er-Komplement transformiert werden.
+  \item Beide Zahlen werden mit dem 2er-Komplement transformiert. Das partielle Produkt wird sign-extended, wenn der neue 'multiplicand' negativ ist.
+\end{compactitem}
+Das MSB des Produkts ist redundant. Wird das Produkt nach links geschoben, kann das redundante Bit entfernt und ein zusätzliches fractional bit hinzugefügt werden (neues Format: Q(n1+n2-1).(m1+m2+1)).\\
+\begin{minipage}{0.7\linewidth}
+  \begin{tabular}{ l l l l l l l l | l}
+  & & & & 0 & 1 & 0 & 1 & = 01.01 in sQ2.2 = 1.25 (multiplicand)\\
+  & & & & 1 & 0 & 1 & 1 & = 10.11 in sQ2.2 = -1.25 (multiplier)\\
+  \hline
+  \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & 0 & 1 & 0 & 1 & \\
+  \textbf{0} & \textbf{0} & \textbf{0} & 0 & 1 & 0 & 1 & & \\
+  \textbf{0} & \textbf{0} & 0 & 0 & 0 & 0 & & & \\
+  \textbf{1} & 1 & 0 & 1 & 1 & & & & 2's complement of multiplicand 0101\\
+  \hline
+  1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 110.01110 in sQ3.5 = -1.5625\\
+  & & & & & & & & (one of the sign bits is removed)\\
+  \end{tabular}
+\end{minipage}\\
+\begin{minipage}{0.7\linewidth}
+  \begin{tabular}{ l l l l l l l l | l}
+  & & & & 1 & 0 & 1 & 1 & = 2's complement of multiplicand 0101\\
+  & & & & 0 & 1 & 0 & 1 & = 2's complement of multiplier 1011\\
+  \hline
+  \textbf{1} & \textbf{1} & \textbf{1} & \textbf{1} & 1 & 0 & 1 & 1 & multiplicand is negative $\rightarrow$ extended sign-bits\\
+  \textbf{0} & \textbf{0} & \textbf{0} & 0 & 0 & 0 & 0 & & \\
+  \textbf{1} & \textbf{1} & 1 & 0 & 1 & 1 & & & \\
+  \textbf{0} & 0 & 0 & 0 & 0 & & & & \\
+  \hline
+  1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 110.01110 in sQ3.5 = -1.5625
+  \end{tabular}
+\end{minipage}\\.
+\lstinputlisting[language=VHDL]{code/multiplikation_signed.vhd}
+\textbf{Corner case:} Wenn die zwei kleinst möglichen Zahlen multipliziert werden (bei sQ2.2: 1000*1000). Dies führt zu einem Overflow und zu einem falschen Ergebnis (-4 anstatt +4). $\rightarrow$ \textbf{Lösung:} Das zweite Vorzeichenbit als Schutz stehen lassen. Dies ist so auch im 'fixed\_pkg'-Package umgesetzt
+
+\subsubsection{Division}
+Divisionen mit Mehrfachen von 2 ($2^n$) sind einfache Schiebeoperationen. Für andere Werte ist es komplizierter. 'fixed\_pkg' bietet eine elegante Lösung an:
+\lstinputlisting[language=VHDL]{code/division.vhd}
+
+\subsection{Overflow and Saturation}$~$ \\
+Bei Verwendung des 'fixed\_pkg'-Packages werden Overflow und Saturation automatisch gelöst. Ansonsten gibt es zwei Lösungen mit einem Over-/Underflow umzugehen: Das Resultat sättigen (Maximum oder Minimum) oder das Resultat erhält ein zusätzliched integer bit.\\
+Erkennung bei vorzeichenbehafteten Zahlen:
+\begin{compactitem}
+  \item Overflow, wenn Summe von zwei positiven Zahlen ein negatives Resultat liefert.
+  \item Underflow, wenn Summe von zwei negativen Zahlen ein positives Resultat liefert.
+  \item Die Summe einer positiven und negativen Zahl ergibt nie einen Underflow.
+\end{compactitem}
+Erkennung bei vorzeichenlosen Zahlen:
+\begin{compactitem}
+  \item Overflow, wenn Summe einer Addition kleiner als der erste Summand ist.
+  \item Underflow, wenn Differenz einer Subtraktion grösser als der Subtrahend ist.
+\end{compactitem}
+\textbf{fixed\_pkg:} Der einzige Fall, dass ein Underflow entstehen kann, ist wenn das Resultat resized wird in eine kleiner Grösse. Die resize-Funktion von 'numeric\_std' wird überladen:
+\lstinputlisting[language=VHDL]{code/resize_fixed_pkg.vhd}
+Mit der nun vorhandenen resize-Funktion ist es möglich, das Overflow-Handling, 'truncation' oder 'rounding' in einem Schritt durchzuführen. Der Default 'overflow\_style' ist 'fixed\_saturate', kann aber auch auf 'fixed\_wrap' zu setzen um einen Overflow zu ermöglichen. Der Default 'round\_style' ist 'fixed\_round' um das Resultat zu runden, kann aber auch auf 'fixed\_truncate' gesetzt werden.
+
+\subsection{Scaling}$~$ \\
+Das Resultat einer Multiplikation hat die Breite des 'multiplicand' plus 'multiplier', mehrere aufeinanderfolgende Multiplikationen führen somit zu Bit Growth.
+
+\subsubsection{Truncation}$~$ \\
+Eine Möglichkeit: Bits mit tiefer Präzision weglassen. Die normale 'truncation' ist eine floor-Funktion. In VHDL kann das mit 'shift\_right' und 'resize' umgesetzt werden:
+\lstinputlisting[language=VHDL]{code/truncation.vhd}

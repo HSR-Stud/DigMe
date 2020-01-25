@@ -1,0 +1,7 @@
+PWD /home/noah/GitHub/DigMe/sections
+INPUT /usr/share/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT 06_Serial_Communication_Interfaces.tex
+OUTPUT 06_Serial_Communication_Interfaces.log
+INPUT /usr/share/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm

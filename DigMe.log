@@ -1,0 +1,2091 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 10:33
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**DigMe.tex
+(./DigMe.tex
+LaTeX2e <2019-10-01> patch level 1
+(/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2019/10/12 v3.27 KOMA-Script document class (article)
+(/usr/share/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2019/10/12 v3.27 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2019/10/12 v3.27 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+) (/usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2019/10/12 v3.27 KOMA-Script package (loading files)
+))) (/usr/share/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2019/10/12 v3.27 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip41
+\scr@dte@tocline@numbox=\box27
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 137.
+Class scrartcl Info: File `scrsize11pt.clo' used instead of
+(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 2208.
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2019/10/12 v3.27 KOMA-Script font size class option (11pt)
+) (/usr/share/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2019/10/12 v3.27 KOMA-Script package (type area)
+\ta@bcor=\skip42
+\ta@div=\count80
+\ta@hblk=\skip43
+\ta@vblk=\skip44
+\ta@temp=\skip45
+\footheight=\skip46
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1716.
+)
+\c@part=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\scr@dte@section@maxnumwidth=\skip47
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\section on input line 4702.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\section on input line 4702.
+\scr@dte@part@maxnumwidth=\skip48
+Class scrartcl Info: using compatibility default `afterindent=false'
+(scrartcl)           for `\part on input line 4710.
+\scr@dte@subsection@maxnumwidth=\skip49
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsection on input line 4720.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsection on input line 4720.
+\scr@dte@subsubsection@maxnumwidth=\skip50
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsubsection on input line 4730.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsubsection on input line 4730.
+\scr@dte@paragraph@maxnumwidth=\skip51
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\paragraph on input line 4740.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\paragraph on input line 4740.
+\scr@dte@subparagraph@maxnumwidth=\skip52
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subparagraph on input line 4750.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subparagraph on input line 4750.
+\abovecaptionskip=\skip53
+\belowcaptionskip=\skip54
+\c@pti@nb@sid@b@x=\box28
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 5969.
+\scr@dte@figure@maxnumwidth=\skip55
+\c@figure=\count87
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 5981.
+\scr@dte@table@maxnumwidth=\skip56
+\c@table=\count88
+Class scrartcl Info: Redefining `\numberline' on input line 6145.
+\bibindent=\dimen102
+) (./header/zusammenfassung.tex (./header/header.tex (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2019/10/15 3.35 The Babel package
+ (/usr/share/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2019/10/15 3.35 Babel switching mechanism
+) (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+ (/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2019/10/15 3.35 Babel common definitions
+\babel@savecnt=\count89
+\U@D=\dimen103
+ (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count90
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+) (/usr/share/texmf-dist/tex/generic/babel-german/ngerman.ldf
+Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthography)
+ (/usr/share/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthography)
+Package babel Info: Making " an active character on input line 121.
+))) (/usr/share/texmf-dist/tex/latex/koma-script/scrpage2.sty
+Package: scrpage2 2019/10/12 v3.27 KOMA-Script package (page head and foot)
+
+
+Package scrpage2 Warning: usage of obsolete package!
+(scrpage2)                Package `scrpage2' is obsolete.
+(scrpage2)                You should not longer use package `scrpage2'.
+(scrpage2)                You should replace usage of package `scrpage2'
+(scrpage2)                by `scrlayer-scrpage' on input line 52.
+
+LaTeX Info: Redefining \pagemark on input line 180.
+) (/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
+ (/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen104
+\ar@mcellbox=\box29
+\extrarowheight=\dimen105
+\NC@list=\toks17
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box30
+)
+\TX@col@width=\dimen106
+\TX@old@table=\dimen107
+\TX@old@col=\dimen108
+\TX@target=\dimen109
+\TX@delta=\dimen110
+\TX@cols=\count91
+\TX@ftn=\toks18
+) (/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2019/09/01 v3.3d Customizing captions (AR)
+ (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2019/09/01 v1.8d caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen111
+\captionmargin@=\dimen112
+\captionwidth=\dimen113
+\caption@tempdima=\dimen114
+\caption@indent=\dimen115
+\caption@parindent=\dimen116
+\caption@hangindent=\dimen117
+)
+Package caption Info: KOMA-Script document class.
+\c@caption@flags=\count92
+\c@ContinuedFloat=\count93
+) (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2019/09/01 v1.3a Sub-captions (AR)
+\c@subfigure=\count94
+\c@subtable=\count95
+) (/usr/share/texmf-dist/tex/latex/listliketab/listliketab.sty
+Package: listliketab 2005/01/09 v1.0a Create list-like tabulars
+ (/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count96
+\calc@Bcount=\count97
+\calc@Adimen=\dimen118
+\calc@Bdimen=\dimen119
+\calc@Askip=\skip59
+\calc@Bskip=\skip60
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count98
+\calc@Cskip=\skip61
+)
+\llt@labelwidth=\skip62
+\llt@labelsep=\skip63
+\llt@topsep=\skip64
+\llt@rightmargin=\skip65
+\llt@tab@indent=\skip66
+\llt@bot@sep=\skip67
+\llt@arraystretch=\skip68
+\llt@list@box=\box31
+)) (/usr/share/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (./header/hsrColors.tex (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+) (/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
+\everycr=\toks19
+\minrowclearance=\skip69
+)
+\rownum=\count99
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)) (./header/mathe.tex (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks20
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2019/07/31 v1.22 mathematical typesetting tools
+ (/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2019/04/01 v2.17c AMS math features
+\@mathmargin=\skip70
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen120
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen121
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count100
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count101
+\leftroot@=\count102
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count103
+\DOTSCASE@=\count104
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box32
+\strutbox@=\box33
+\big@size=\dimen122
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count105
+\c@MaxMatrixCols=\count106
+\dotsspace@=\muskip10
+\c@parentequation=\count107
+\dspbrk@lvl=\count108
+\tag@help=\toks22
+\row@=\count109
+\column@=\count110
+\maxfields@=\count111
+\andhelp@=\toks23
+\eqnshift@=\dimen123
+\alignsep@=\dimen124
+\tagshift@=\dimen125
+\tagwidth@=\dimen126
+\totwidth@=\dimen127
+\lineht@=\dimen128
+\@envbody=\toks24
+\multlinegap=\skip71
+\multlinetaggap=\skip72
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2855.
+LaTeX Info: Redefining \] on input line 2856.
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count112
+\l_MT_multwidth_dim=\dimen129
+\origjot=\skip73
+\l_MT_shortvdotswithinadjustabove_dim=\dimen130
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen131
+\l_MT_above_intertext_sep=\dimen132
+\l_MT_below_intertext_sep=\dimen133
+\l_MT_above_shortintertext_sep=\dimen134
+\l_MT_below_shortintertext_sep=\dimen135
+) (/usr/share/texmf-dist/tex/generic/mathabx/mathabx.sty
+Package: mathabx 2003/07/29 v0.0 Non-standard LaTeX package mathabx
+\symmatha=\mathgroup6
+\symmathb=\mathgroup7
+\symmathx=\mathgroup8
+ (/usr/share/texmf-dist/tex/generic/mathabx/mathabx.dcl
+LaTeX Font Info:    Redeclaring math symbol \cdotp on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \times on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \div on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \cdot on input line 35.
+LaTeX Font Info:    Redeclaring math symbol \circ on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \ast on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \pm on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \mp on input line 42.
+LaTeX Font Info:    Redeclaring math symbol \ltimes on input line 43.
+LaTeX Font Info:    Redeclaring math symbol \rtimes on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \diamond on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \bullet on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \star on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \amalg on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \dotplus on input line 58.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \divideontimes on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \bigstar on input line 75.
+LaTeX Font Info:    Redeclaring math symbol \equiv on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \sim on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \approx on input line 85.
+LaTeX Font Info:    Redeclaring math symbol \simeq on input line 86.
+LaTeX Font Info:    Redeclaring math symbol \asymp on input line 89.
+LaTeX Font Info:    Redeclaring math symbol \nsim on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \ncong on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \risingdotseq on input line 118.
+LaTeX Font Info:    Redeclaring math symbol \fallingdotseq on input line 119.
+LaTeX Font Info:    Redeclaring math symbol \circeq on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \eqcirc on input line 126.
+LaTeX Font Info:    Redeclaring math symbol \triangleq on input line 127.
+LaTeX Font Info:    Redeclaring math symbol \neg on input line 134.
+LaTeX Font Info:    Redeclaring math symbol \ll on input line 136.
+LaTeX Font Info:    Redeclaring math symbol \gg on input line 137.
+LaTeX Font Info:    Redeclaring math symbol \vdash on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \dashv on input line 140.
+LaTeX Font Info:    Redeclaring math symbol \nvdash on input line 141.
+LaTeX Font Info:    Redeclaring math symbol \vDash on input line 143.
+LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 145.
+LaTeX Font Info:    Redeclaring math symbol \Vdash on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \nVdash on input line 149.
+LaTeX Font Info:    Redeclaring math symbol \flat on input line 158.
+LaTeX Font Info:    Redeclaring math symbol \natural on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \sharp on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \infty on input line 161.
+LaTeX Font Info:    Redeclaring math symbol \propto on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \dagger on input line 163.
+LaTeX Font Info:    Redeclaring math symbol \ddagger on input line 164.
+LaTeX Font Info:    Redeclaring math symbol \between on input line 170.
+LaTeX Font Info:    Redeclaring math symbol \smile on input line 171.
+LaTeX Font Info:    Redeclaring math symbol \frown on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \leftthreetimes on input line 174.
+LaTeX Font Info:    Redeclaring math symbol \rightthreetimes on input line 175.
+LaTeX Font Info:    Redeclaring math symbol \pitchfork on input line 176.
+LaTeX Font Info:    Redeclaring math symbol \nVDash on input line 182.
+LaTeX Font Info:    Redeclaring math symbol \Vvdash on input line 184.
+LaTeX Font Info:    Redeclaring math symbol \therefore on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \because on input line 190.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 193.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 195.
+LaTeX Font Info:    Redeclaring math symbol \measuredangle on input line 202.
+LaTeX Font Info:    Redeclaring math symbol \sphericalangle on input line 203.
+LaTeX Font Info:    Redeclaring math symbol \setminus on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \mid on input line 222.
+LaTeX Font Info:    Redeclaring math symbol \forall on input line 279.
+LaTeX Font Info:    Redeclaring math symbol \complement on input line 280.
+LaTeX Font Info:    Redeclaring math symbol \partial on input line 281.
+LaTeX Font Info:    Redeclaring math symbol \exists on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \nexists on input line 285.
+LaTeX Font Info:    Redeclaring math symbol \Finv on input line 286.
+LaTeX Font Info:    Redeclaring math symbol \Game on input line 287.
+LaTeX Font Info:    Redeclaring math symbol \emptyset on input line 288.
+LaTeX Font Info:    Redeclaring math symbol \top on input line 290.
+LaTeX Font Info:    Redeclaring math symbol \bot on input line 291.
+LaTeX Font Info:    Redeclaring math symbol \perp on input line 292.
+LaTeX Font Info:    Redeclaring math symbol \curlywedge on input line 296.
+LaTeX Font Info:    Redeclaring math symbol \curlyvee on input line 297.
+LaTeX Font Info:    Redeclaring math symbol \in on input line 299.
+LaTeX Font Info:    Redeclaring math symbol \owns on input line 300.
+LaTeX Font Info:    Redeclaring math symbol \cap on input line 312.
+LaTeX Font Info:    Redeclaring math symbol \cup on input line 313.
+LaTeX Font Info:    Redeclaring math symbol \uplus on input line 314.
+LaTeX Font Info:    Redeclaring math symbol \sqcap on input line 315.
+LaTeX Font Info:    Redeclaring math symbol \sqcup on input line 316.
+LaTeX Font Info:    Redeclaring math symbol \wedge on input line 318.
+LaTeX Font Info:    Redeclaring math symbol \vee on input line 320.
+LaTeX Font Info:    Redeclaring math symbol \barwedge on input line 327.
+LaTeX Font Info:    Redeclaring math symbol \veebar on input line 328.
+LaTeX Font Info:    Redeclaring math symbol \doublebarwedge on input line 329.
+LaTeX Font Info:    Redeclaring math symbol \doublecap on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \doublecup on input line 333.
+LaTeX Font Info:    Redeclaring math symbol \subset on input line 344.
+LaTeX Font Info:    Redeclaring math symbol \supset on input line 345.
+LaTeX Font Info:    Redeclaring math symbol \subseteq on input line 348.
+LaTeX Font Info:    Redeclaring math symbol \supseteq on input line 349.
+LaTeX Font Info:    Redeclaring math symbol \nsubseteq on input line 350.
+LaTeX Font Info:    Redeclaring math symbol \nsupseteq on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \subsetneq on input line 352.
+LaTeX Font Info:    Redeclaring math symbol \supsetneq on input line 353.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 354.
+LaTeX Font Info:    Redeclaring math symbol \varsupsetneq on input line 355.
+LaTeX Font Info:    Redeclaring math symbol \subseteqq on input line 357.
+LaTeX Font Info:    Redeclaring math symbol \supseteqq on input line 358.
+LaTeX Font Info:    Redeclaring math symbol \nsubseteqq on input line 359.
+LaTeX Font Info:    Redeclaring math symbol \nsupseteqq on input line 360.
+LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 361.
+LaTeX Font Info:    Redeclaring math symbol \supsetneqq on input line 362.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneqq on input line 363.
+LaTeX Font Info:    Redeclaring math symbol \varsupsetneqq on input line 364.
+LaTeX Font Info:    Redeclaring math symbol \Subset on input line 366.
+LaTeX Font Info:    Redeclaring math symbol \Supset on input line 367.
+LaTeX Font Info:    Redeclaring math symbol \sqsubseteq on input line 380.
+LaTeX Font Info:    Redeclaring math symbol \sqsupseteq on input line 381.
+LaTeX Font Info:    Redeclaring math symbol \triangleleft on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \vartriangleleft on input line 408.
+LaTeX Font Info:    Redeclaring math symbol \triangleright on input line 409.
+LaTeX Font Info:    Redeclaring math symbol \vartriangleright on input line 410.
+LaTeX Font Info:    Redeclaring math symbol \ntriangleleft on input line 411.
+LaTeX Font Info:    Redeclaring math symbol \ntriangleright on input line 412.
+LaTeX Font Info:    Redeclaring math symbol \trianglelefteq on input line 413.
+LaTeX Font Info:    Redeclaring math symbol \trianglerighteq on input line 414.
+LaTeX Font Info:    Redeclaring math symbol \ntrianglelefteq on input line 415.
+LaTeX Font Info:    Redeclaring math symbol \ntrianglerighteq on input line 416.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangledown on input line 427.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 428.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 429.
+LaTeX Font Info:    Redeclaring math symbol \nless on input line 437.
+LaTeX Font Info:    Redeclaring math symbol \ngtr on input line 438.
+LaTeX Font Info:    Redeclaring math symbol \leq on input line 439.
+LaTeX Font Info:    Redeclaring math symbol \geq on input line 441.
+LaTeX Font Info:    Redeclaring math symbol \nleq on input line 443.
+LaTeX Font Info:    Redeclaring math symbol \ngeq on input line 445.
+LaTeX Font Info:    Redeclaring math symbol \lneq on input line 451.
+LaTeX Font Info:    Redeclaring math symbol \gneq on input line 452.
+LaTeX Font Info:    Redeclaring math symbol \leqq on input line 453.
+LaTeX Font Info:    Redeclaring math symbol \geqq on input line 454.
+LaTeX Font Info:    Redeclaring math symbol \nleqq on input line 455.
+LaTeX Font Info:    Redeclaring math symbol \ngeqq on input line 456.
+LaTeX Font Info:    Redeclaring math symbol \lneqq on input line 457.
+LaTeX Font Info:    Redeclaring math symbol \gneqq on input line 458.
+LaTeX Font Info:    Redeclaring math symbol \lvertneqq on input line 459.
+LaTeX Font Info:    Redeclaring math symbol \gvertneqq on input line 460.
+LaTeX Font Info:    Redeclaring math symbol \eqslantless on input line 461.
+LaTeX Font Info:    Redeclaring math symbol \eqslantgtr on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \lessgtr on input line 465.
+LaTeX Font Info:    Redeclaring math symbol \gtrless on input line 466.
+LaTeX Font Info:    Redeclaring math symbol \lesseqgtr on input line 467.
+LaTeX Font Info:    Redeclaring math symbol \gtreqless on input line 468.
+LaTeX Font Info:    Redeclaring math symbol \lesseqqgtr on input line 469.
+LaTeX Font Info:    Redeclaring math symbol \gtreqqless on input line 470.
+LaTeX Font Info:    Redeclaring math symbol \lesssim on input line 472.
+LaTeX Font Info:    Redeclaring math symbol \gtrsim on input line 473.
+LaTeX Font Info:    Redeclaring math symbol \lnsim on input line 476.
+LaTeX Font Info:    Redeclaring math symbol \gnsim on input line 477.
+LaTeX Font Info:    Redeclaring math symbol \lessapprox on input line 478.
+LaTeX Font Info:    Redeclaring math symbol \gtrapprox on input line 479.
+LaTeX Font Info:    Redeclaring math symbol \lnapprox on input line 482.
+LaTeX Font Info:    Redeclaring math symbol \gnapprox on input line 483.
+LaTeX Font Info:    Redeclaring math symbol \lessdot on input line 485.
+LaTeX Font Info:    Redeclaring math symbol \gtrdot on input line 486.
+LaTeX Font Info:    Redeclaring math symbol \lll on input line 488.
+LaTeX Font Info:    Redeclaring math symbol \ggg on input line 489.
+LaTeX Font Info:    Redeclaring math symbol \prec on input line 498.
+LaTeX Font Info:    Redeclaring math symbol \succ on input line 499.
+LaTeX Font Info:    Redeclaring math symbol \nprec on input line 500.
+LaTeX Font Info:    Redeclaring math symbol \nsucc on input line 501.
+LaTeX Font Info:    Redeclaring math symbol \preccurlyeq on input line 502.
+LaTeX Font Info:    Redeclaring math symbol \succcurlyeq on input line 503.
+LaTeX Font Info:    Redeclaring math symbol \preceq on input line 506.
+LaTeX Font Info:    Redeclaring math symbol \succeq on input line 507.
+LaTeX Font Info:    Redeclaring math symbol \npreceq on input line 508.
+LaTeX Font Info:    Redeclaring math symbol \nsucceq on input line 509.
+LaTeX Font Info:    Redeclaring math symbol \curlyeqprec on input line 512.
+LaTeX Font Info:    Redeclaring math symbol \curlyeqsucc on input line 513.
+LaTeX Font Info:    Redeclaring math symbol \precsim on input line 517.
+LaTeX Font Info:    Redeclaring math symbol \succsim on input line 518.
+LaTeX Font Info:    Redeclaring math symbol \precnsim on input line 521.
+LaTeX Font Info:    Redeclaring math symbol \succnsim on input line 522.
+LaTeX Font Info:    Redeclaring math symbol \precapprox on input line 523.
+LaTeX Font Info:    Redeclaring math symbol \succapprox on input line 524.
+LaTeX Font Info:    Redeclaring math symbol \precnapprox on input line 527.
+LaTeX Font Info:    Redeclaring math symbol \succnapprox on input line 528.
+LaTeX Font Info:    Redeclaring math symbol \leftarrow on input line 540.
+LaTeX Font Info:    Redeclaring math symbol \rightarrow on input line 542.
+LaTeX Font Info:    Redeclaring math symbol \nwarrow on input line 546.
+LaTeX Font Info:    Redeclaring math symbol \nearrow on input line 547.
+LaTeX Font Info:    Redeclaring math symbol \swarrow on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \searrow on input line 549.
+LaTeX Font Info:    Redeclaring math symbol \leftrightarrow on input line 550.
+LaTeX Font Info:    Redeclaring math symbol \nleftarrow on input line 552.
+LaTeX Font Info:    Redeclaring math symbol \nrightarrow on input line 553.
+LaTeX Font Info:    Redeclaring math symbol \nleftrightarrow on input line 554.
+LaTeX Font Info:    Redeclaring math symbol \mapstochar on input line 557.
+LaTeX Font Info:    Redeclaring math symbol \leftharpoonup on input line 560.
+LaTeX Font Info:    Redeclaring math symbol \rightharpoonup on input line 561.
+LaTeX Font Info:    Redeclaring math symbol \leftharpoondown on input line 562.
+LaTeX Font Info:    Redeclaring math symbol \rightharpoondown on input line 563.
+LaTeX Font Info:    Redeclaring math symbol \upharpoonleft on input line 564.
+LaTeX Font Info:    Redeclaring math symbol \downharpoonleft on input line 565.
+LaTeX Font Info:    Redeclaring math symbol \upharpoonright on input line 566.
+LaTeX Font Info:    Redeclaring math symbol \restriction on input line 567.
+LaTeX Font Info:    Redeclaring math symbol \downharpoonright on input line 568.
+LaTeX Font Info:    Redeclaring math symbol \leftrightharpoons on input line 569.
+LaTeX Font Info:    Redeclaring math symbol \Leftarrow on input line 575.
+LaTeX Font Info:    Redeclaring math symbol \Rightarrow on input line 576.
+LaTeX Font Info:    Redeclaring math symbol \Leftrightarrow on input line 579.
+LaTeX Font Info:    Redeclaring math symbol \nLeftarrow on input line 581.
+LaTeX Font Info:    Redeclaring math symbol \nRightarrow on input line 582.
+LaTeX Font Info:    Redeclaring math symbol \nLeftrightarrow on input line 583.
+LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 593.
+LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 594.
+LaTeX Font Info:    Redeclaring math symbol \upuparrows on input line 595.
+LaTeX Font Info:    Redeclaring math symbol \downdownarrows on input line 596.
+LaTeX Font Info:    Redeclaring math symbol \leftrightarrows on input line 597.
+LaTeX Font Info:    Redeclaring math symbol \rightleftarrows on input line 598.
+LaTeX Font Info:    Redeclaring math symbol \rhook on input line 612.
+LaTeX Font Info:    Redeclaring math symbol \lhook on input line 613.
+LaTeX Font Info:    Redeclaring math symbol \diagup on input line 614.
+LaTeX Font Info:    Redeclaring math symbol \diagdown on input line 615.
+LaTeX Font Info:    Redeclaring math symbol \Lsh on input line 617.
+LaTeX Font Info:    Redeclaring math symbol \Rsh on input line 619.
+LaTeX Font Info:    Redeclaring math symbol \looparrowleft on input line 624.
+LaTeX Font Info:    Redeclaring math symbol \looparrowright on input line 626.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 631.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 633.
+LaTeX Font Info:    Redeclaring math symbol \circlearrowleft on input line 641.
+LaTeX Font Info:    Redeclaring math symbol \circlearrowright on input line 642.
+LaTeX Font Info:    Redeclaring math symbol \rightsquigarrow on input line 645.
+LaTeX Font Info:    Redeclaring math symbol \leftrightsquigarrow on input line 646.
+LaTeX Font Info:    Redeclaring math symbol \oplus on input line 658.
+LaTeX Font Info:    Redeclaring math symbol \ominus on input line 659.
+LaTeX Font Info:    Redeclaring math symbol \otimes on input line 661.
+LaTeX Font Info:    Redeclaring math symbol \odot on input line 663.
+LaTeX Font Info:    Redeclaring math symbol \oslash on input line 675.
+LaTeX Font Info:    Redeclaring math symbol \boxplus on input line 683.
+LaTeX Font Info:    Redeclaring math symbol \boxminus on input line 684.
+LaTeX Font Info:    Redeclaring math symbol \boxtimes on input line 686.
+LaTeX Font Info:    Redeclaring math symbol \boxdot on input line 688.
+\mayacnter=\count113
+\mayacnta=\count114
+\mayacntb=\count115
+\mayacntc=\count116
+\mayawidth=\dimen136
+LaTeX Font Info:    Redeclaring math symbol \intop on input line 753.
+LaTeX Font Info:    Redeclaring math symbol \ointop on input line 760.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 842.
+LaTeX Info: Redefining \{ on input line 846.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 848.
+LaTeX Info: Redefining \} on input line 852.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 858.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 859.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 861.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 863.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 865.
+LaTeX Font Info:    Redeclaring math delimiter \uparrow on input line 868.
+LaTeX Font Info:    Redeclaring math delimiter \downarrow on input line 869.
+LaTeX Font Info:    Redeclaring math delimiter \updownarrow on input line 870.
+LaTeX Font Info:    Redeclaring math delimiter \Uparrow on input line 871.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 872.
+LaTeX Font Info:    Redeclaring math delimiter \Updownarrow on input line 873.
+LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 880.
+LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 881.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 882.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 883.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 884.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 885.
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 903.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 905.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 907.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 909.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 944.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 946.
+))) (./header/enumitem.tex (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip74
+\enit@outerparindent=\dimen137
+\enit@toks=\toks26
+\enit@inbox=\box34
+\enit@count@id=\count117
+\enitdp@description=\count118
+)) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+ (/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+) (/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+) (/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count119
+\Gm@cntv=\count120
+\c@Gm@tempcnt=\count121
+\Gm@bindingoffset=\dimen138
+\Gm@wd@mp=\dimen139
+\Gm@odd@mp=\dimen140
+\Gm@even@mp=\dimen141
+\Gm@layoutwidth=\dimen142
+\Gm@layoutheight=\dimen143
+\Gm@layouthoffset=\dimen144
+\Gm@layoutvoffset=\dimen145
+\Gm@dimlist=\toks27
+) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip75
+\multirow@cntb=\count122
+\multirow@dima=\skip76
+\bigstrutjot=\dimen146
+) (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/03/01 v1.8w multicolumn formatting (FMi)
+\c@tracingmulticols=\count123
+\mult@box=\box35
+\multicol@leftmargin=\dimen147
+\c@unbalance=\count124
+\c@collectmore=\count125
+\doublecol@number=\count126
+\multicoltolerance=\count127
+\multicolpretolerance=\count128
+\full@width=\dimen148
+\page@free=\dimen149
+\premulticols=\dimen150
+\postmulticols=\dimen151
+\multicolsep=\skip77
+\multicolbaselineskip=\skip78
+\partial@page=\box36
+\last@line=\box37
+\maxbalancingoverflow=\dimen152
+\mult@rightbox=\box38
+\mult@grightbox=\box39
+\mult@gfirstbox=\box40
+\mult@firstbox=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\c@minrows=\count129
+\c@columnbadness=\count130
+\c@finalcolumnbadness=\count131
+\last@try=\dimen153
+\multicolovershoot=\dimen154
+\multicolundershoot=\dimen155
+\mult@nat@firstbox=\box59
+\colbreak@box=\box60
+\mc@col@check@num=\count132
+) (/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+ (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/10/08 v1.3c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen156
+\Gin@req@width=\dimen157
+) (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count133
+\rotFPtop=\skip79
+\rotFPbot=\skip80
+\rot@float@box=\box61
+\rot@mess@toks=\toks28
+)) (./header/hyperref.tex (./header/hsrColors.tex) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2019/09/28 v7.00a Hypertext links for LaTeX
+ (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+ (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen158
+\Hy@linkcounter=\count134
+\Hy@pagecounter=\count135
+ (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2019/09/28 v7.00a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count136
+ (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `plainpages' set `false' on input line 4414.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4414.
+Package hyperref Info: Hyper figures OFF on input line 4540.
+Package hyperref Info: Link nesting OFF on input line 4545.
+Package hyperref Info: Hyper index ON on input line 4548.
+Package hyperref Info: Plain pages OFF on input line 4555.
+Package hyperref Info: Backreferencing OFF on input line 4560.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4793.
+\c@Hy@tempcnt=\count137
+ (/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5152.
+\XeTeXLinkMargin=\dimen159
+\Fld@menulength=\count138
+\Field@Width=\dimen160
+\Fld@charsize=\dimen161
+Package hyperref Info: Hyper figures OFF on input line 6423.
+Package hyperref Info: Link nesting OFF on input line 6428.
+Package hyperref Info: Hyper index ON on input line 6431.
+Package hyperref Info: backreferencing OFF on input line 6438.
+Package hyperref Info: Link coloring OFF on input line 6443.
+Package hyperref Info: Link coloring with OCG OFF on input line 6448.
+Package hyperref Info: PDF/A mode OFF on input line 6453.
+LaTeX Info: Redefining \ref on input line 6493.
+LaTeX Info: Redefining \pageref on input line 6497.
+\Hy@abspage=\count139
+\c@Item=\count140
+\c@Hfootnote=\count141
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2019/09/28 v7.00a Hyperref driver for pdfTeX
+\Fld@listcount=\count142
+\c@bookmark@seq@number=\count143
+ (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+)
+\Hy@SectionHShift=\skip81
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 18.
+) (./header/listings.tex (/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count144
+\lst@gtempboxa=\box62
+\lst@token=\toks29
+\lst@length=\count145
+\lst@currlwidth=\dimen162
+\lst@column=\count146
+\lst@pos=\count147
+\lst@lostspace=\dimen163
+\lst@width=\dimen164
+\lst@newlines=\count148
+\lst@lineno=\count149
+\lst@maxwidth=\dimen165
+ (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count150
+\lst@skipnumbers=\count151
+\lst@framebox=\box63
+) (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+) (/usr/share/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip82
+\plpartopsep=\skip83
+\plitemsep=\skip84
+\plparsep=\skip85
+\pl@lab=\toks30
+)
+(/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen166
+\WF@size=\dimen167
+\c@WF@wrappedlines=\count152
+\WF@box=\box64
+\WF@everypar=\toks31
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count153
+\float@exts=\toks32
+\float@box=\box65
+\@float@everytoks=\toks33
+\@floatcapt=\box66
+) (/usr/share/texmf-dist/tex/latex/vwcol/vwcol.sty
+Package: vwcol 2015/02/10 v0.2 Variable-width multicolumn text
+ (/usr/share/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)) (/usr/share/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
+ (/usr/share/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip86
+\RaggedLeftLeftskip=\skip87
+\RaggedRightLeftskip=\skip88
+\CenteringRightskip=\skip89
+\RaggedLeftRightskip=\skip90
+\RaggedRightRightskip=\skip91
+\CenteringParfillskip=\skip92
+\RaggedLeftParfillskip=\skip93
+\RaggedRightParfillskip=\skip94
+\JustifyingParfillskip=\skip95
+\CenteringParindent=\skip96
+\RaggedLeftParindent=\skip97
+\RaggedRightParindent=\skip98
+\JustifyingParindent=\skip99
+)
+\vwcol@sep=\skip100
+\vwcol@rule=\skip101
+\vwcol@totalwidth=\skip102
+\vwcol@averagewidth=\skip103
+\vwcol@parindent=\skip104
+\vwcol@last=\count154
+\vwcol@Ncols=\count155
+\vwcol@Nlines=\count156
+\vwcol@maxrecursion=\count157
+\vwcol@box=\box67
+\vwcol@plainbox=\box68
+\vwcol@outputbox=\box69
+) (./DigMe.aux)
+\openout1 = `DigMe.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count158
+\scratchdimen=\dimen168
+\scratchbox=\box70
+\nofMPsegments=\count159
+\nofMParguments=\count160
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count161
+\MPscratchDim=\dimen169
+\MPnumerator=\count162
+\makeMPintoPDFobject=\count163
+\everyMPtoPDFconversion=\toks35
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(28.45274pt, 540.60245pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 788.14145pt, 28.45274pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=540.60245pt
+* \textheight=750.24057pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-43.81725pt
+* \headheight=17.0pt
+* \headsep=5.69046pt
+* \topskip=11.0pt
+* \footskip=15.21042pt
+* \marginparwidth=59.7508pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box71
+Package hyperref Info: Link coloring ON on input line 59.
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+ (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count164
+)
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
+ (./DigMe.out) (./DigMe.out)
+\@outlinefile=\write3
+\openout3 = `DigMe.out'.
+
+Class scrartcl Info: loading recommended package `bookmark'.
+(scrartcl)           Using `bookmark' together with `hyperref' is recommended,
+(scrartcl)           because of handling of possible bookmark level gaps.
+(scrartcl)           You can avoid loading `bookmark' with KOMA-Script option
+(scrartcl)           `bookmarkpackage=false' before \begin{document} and
+(scrartcl)           you can avoid this message adding:
+(scrartcl)             \usepackage{bookmark}
+(scrartcl)           before \begin{document} on input line 59.
+ (/usr/share/texmf-dist/tex/latex/oberdiek/bookmark.sty
+Package: bookmark 2019/06/04 v1.27 PDF bookmarks (HO)
+ (/usr/share/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
+File: bkm-pdftex.def 2019/06/04 v1.27 bookmark driver for pdfTeX (HO)
+Package auxhook Info: \AddLineBeginMainAux comes a little late,
+(auxhook)             because the main .aux file is already opened on input line 164.
+\BKM@id=\count165
+))
+\c@lstlisting=\count166
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 59.
+ (./sections/01_SoC_Design_Hardware.tex
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 4.
+ (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<images/Aufbau_PL.png, id=4, 578.76225pt x 492.6405pt>
+File: images/Aufbau_PL.png Graphic file (type png)
+<use images/Aufbau_PL.png>
+Package pdftex.def Info: images/Aufbau_PL.png  used on input line 40.
+(pdftex.def)             Requested size: 270.30122pt x 230.08275pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 40--41
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+[]\OT1/cmr/m/n/10.95 Wiederverwendbarkeit: Sys-tem-funk-tio-na-lit[]at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+<images/Design_Flow_traditionell.png, id=5, 888.921pt x 852.786pt>
+File: images/Design_Flow_traditionell.png Graphic file (type png)
+<use images/Design_Flow_traditionell.png>
+Package pdftex.def Info: images/Design_Flow_traditionell.png  used on input line 67.
+(pdftex.def)             Requested size: 286.51863pt x 274.87498pt.
+
+Overfull \hbox (21.2174pt too wide) in paragraph at lines 67--68
+[][] 
+ []
+
+<./header/lizenzen/cc-by-nc-sa/small.png, id=6, 64.3203pt x 12.045pt>
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 69.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+ <./images/Aufbau_PL.png> <./header/lizenzen/cc-by-nc-sa/small.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+<images/Design_Flow_System_Level.png, id=32, 314.97675pt x 408.3255pt>
+File: images/Design_Flow_System_Level.png Graphic file (type png)
+<use images/Design_Flow_System_Level.png>
+Package pdftex.def Info: images/Design_Flow_System_Level.png  used on input line 78.
+(pdftex.def)             Requested size: 189.21414pt x 245.29625pt.
+<images/Design_Database.png, id=33, 325.81725pt x 292.6935pt>
+File: images/Design_Database.png Graphic file (type png)
+<use images/Design_Database.png>
+Package pdftex.def Info: images/Design_Database.png  used on input line 97.
+(pdftex.def)             Requested size: 135.1506pt x 121.41194pt.
+) (./sections/02_Constraints.tex (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2019/09/10 1.8c listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 4.
+ (./code/tcl/xdc_property_used_in.xdc)
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 9.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [2 <./images/Design_Flow_traditionell.png> <./images/Design_Flow_System_Level.png> <./images/Design_Database.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+<images/static_timing_analysis.png, id=53, 432.86719pt x 178.41656pt>
+File: images/static_timing_analysis.png Graphic file (type png)
+<use images/static_timing_analysis.png>
+Package pdftex.def Info: images/static_timing_analysis.png  used on input line 34.
+(pdftex.def)             Requested size: 351.38829pt x 144.83784pt.
+
+Underfull \hbox (badness 2564) in paragraph at lines 39--41
+[]\OT1/cmr/m/n/10.95 Eine sta-ti-sche Ti-ming Ana-ly-se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+<images/clock_skew.png, id=56, 257.46187pt x 143.78719pt>
+File: images/clock_skew.png Graphic file (type png)
+<use images/clock_skew.png>
+Package pdftex.def Info: images/clock_skew.png  used on input line 63.
+(pdftex.def)             Requested size: 189.21414pt x 105.67462pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--64
+
+ []
+
+<images/slack.png, id=57, 209.28188pt x 93.34875pt>
+File: images/slack.png Graphic file (type png)
+<use images/slack.png>
+Package pdftex.def Info: images/slack.png  used on input line 73.
+(pdftex.def)             Requested size: 162.18237pt x 72.34024pt.
+
+Overfull \hbox (85.75363pt too wide) in paragraph at lines 71--81
+[] \OT1/cmss/bx/n/10.95 2.2.4.1 Be-rech-nung[][] $[]$  $[]$ 
+ []
+
+(./code/tcl/primary_clock.xdc)
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 93.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [3 <./images/static_timing_analysis.png> <./images/clock_skew.png> <./images/slack.png>] (./code/tcl/virtual_clock.xdc)
+<images/clock_latency.png, id=93, 244.66406pt x 93.34875pt>
+File: images/clock_latency.png Graphic file (type png)
+<use images/clock_latency.png>
+Package pdftex.def Info: images/clock_latency.png  used on input line 101.
+(pdftex.def)             Requested size: 270.30122pt x 103.1326pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+(./code/tcl/clock_latency.xdc)
+<images/clock_jitter.png, id=94, 161.10187pt x 86.57344pt>
+File: images/clock_jitter.png Graphic file (type png)
+<use images/clock_jitter.png>
+Package pdftex.def Info: images/clock_jitter.png  used on input line 119.
+(pdftex.def)             Requested size: 162.18237pt x 87.15709pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+(./code/tcl/input_jitter.xdc) (./code/tcl/system_jitter.xdc) (./code/tcl/clock_uncertainty.xdc
+Overfull \hbox (10.64165pt too wide) in paragraph at lines 1--2
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+<images/clock_uncertainty.png, id=95, 243.15843pt x 112.92188pt>
+File: images/clock_uncertainty.png Graphic file (type png)
+<use images/clock_uncertainty.png>
+Package pdftex.def Info: images/clock_uncertainty.png  used on input line 140.
+(pdftex.def)             Requested size: 270.30122pt x 125.52739pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 140--141
+[][] 
+ []
+
+(./code/tcl/io_pin_constraints.xdc
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 6.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [4 <./images/clock_latency.png> <./images/clock_jitter.png> <./images/clock_uncertainty.png>])
+<images/input_delay.png, id=133, 229.60782pt x 186.6975pt>
+File: images/input_delay.png Graphic file (type png)
+<use images/input_delay.png>
+Package pdftex.def Info: images/input_delay.png  used on input line 165.
+(pdftex.def)             Requested size: 270.30122pt x 219.79689pt.
+ (./code/tcl/input_delay.xdc)
+<images/output_delay.png, id=134, 222.07968pt x 160.34906pt>
+File: images/output_delay.png Graphic file (type png)
+<use images/output_delay.png>
+Package pdftex.def Info: images/output_delay.png  used on input line 184.
+(pdftex.def)             Requested size: 270.30122pt x 195.18025pt.
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 186.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [5 <./images/input_delay.png>] (./code/tcl/output_delay.xdc)) (./sections/03_System_Level_VHDL.tex (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) (./code/constants.vhd) (./code/aliases.vhd) (./code/generics.vhd
+Overfull \hbox (142.68466pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (720.85068pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (720.85068pt too wide) in paragraph at lines 6--7
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 7.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+[6 <./images/output_delay.png>]
+Overfull \hbox (142.68466pt too wide) in paragraph at lines 9--10
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (142.68466pt too wide) in paragraph at lines 10--11
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./code/functions.vhd
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 2.
+ (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 2.
+
+Overfull \hbox (17.85336pt too wide) in paragraph at lines 2--3
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./code/functions_impure.vhd
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 6.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [7]) (./code/procedures.vhd) (./code/packages.vhd)
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 55.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [8] (./code/packages_use.vhd)) (./sections/Fixed_Point_Arithmetic.tex (./code/ufixed_sfixed.vhd) (./code/uQ2_6.vhd
+LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1.
+
+Overfull \hbox (17.85336pt too wide) in paragraph at lines 5--7
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 7.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+[9]) (./code/sQ2_6.vhd)
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 76--88
+[]$ $[]$ 
+ []
+
+(./code/addition_subtraktion.vhd
+Overfull \hbox (57.27377pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.27377pt too wide) in paragraph at lines 4--5
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (11.2833pt too wide) in paragraph at lines 7--8
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+Underfull \hbox (badness 1028) in paragraph at lines 92--93
+\OT1/cmr/m/n/10.95 ni-ger Vor-kom-ma-bits muss sign-
+ []
+
+
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 90--102
+[]$ $[]$ 
+ []
+
+(./code/addition_subtraktion_signed.vhd)
+Overfull \hbox (133.9442pt too wide) in paragraph at lines 108--119
+[][] 
+ []
+
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 120.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+[10] (./code/multiplikation_unsigned.vhd
+Overfull \hbox (37.56357pt too wide) in paragraph at lines 2--3
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (11.2833pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./code/multiplikation_signed.vhd
+Overfull \hbox (122.97446pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (96.69418pt too wide) in paragraph at lines 4--5
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 7.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+[11]
+Overfull \hbox (37.56357pt too wide) in paragraph at lines 10--11
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (11.2833pt too wide) in paragraph at lines 11--12
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./code/division.vhd
+Overfull \hbox (76.98398pt too wide) in paragraph at lines 7--8
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./code/resize_fixed_pkg.vhd)
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 201.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [12] (./code/truncation.vhd
+Overfull \hbox (214.95541pt too wide) in paragraph at lines 2--3
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)) (./sections/04_Custom_IP_Blocks.tex
+<images/singleportram.png, id=434, 203.25937pt x 119.69719pt>
+File: images/singleportram.png Graphic file (type png)
+<use images/singleportram.png>
+Package pdftex.def Info: images/singleportram.png  used on input line 17.
+(pdftex.def)             Requested size: 162.18237pt x 95.51129pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+<images/dualportram.png, id=435, 194.97844pt x 205.5178pt>
+File: images/dualportram.png Graphic file (type png)
+<use images/dualportram.png>
+Package pdftex.def Info: images/dualportram.png  used on input line 28.
+(pdftex.def)             Requested size: 162.18237pt x 170.95604pt.
+
+Underfull \hbox (badness 1024) in paragraph at lines 34--35
+[] \OT1/cmss/bx/n/10.95 5.1.2.2 Dual-Port RAM[][] \OT1/cmr/m/n/10.95 Dual-Port RAM er-laubt zwei gleich-zei-ti-ge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+(./code/blockram_single.vhd
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 10.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [13 <./images/singleportram.png> <./images/dualportram.png>]) (./code/distributedram_single.vhd) (./code/blockram_dual.vhd
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 12.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [14]) (./code/rom.vhd) (./code/ram_attribute.vhd) (./code/rom_init.vhd
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 14.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [15]) (./code/ram_init2.vhd)
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 137.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [16] (./code/component.vhd)) (./sections/05_Communication_Interfaces.tex
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 6.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [17]
+<images/netzwerkarten.png, id=652, 509.905pt x 249.93375pt>
+File: images/netzwerkarten.png Graphic file (type png)
+<use images/netzwerkarten.png>
+Package pdftex.def Info: images/netzwerkarten.png  used on input line 13.
+(pdftex.def)             Requested size: 270.30122pt x 132.49477pt.
+<images/lvds.png, id=653, 762.85pt x 380.42125pt>
+File: images/lvds.png Graphic file (type png)
+<use images/lvds.png>
+Package pdftex.def Info: images/lvds.png  used on input line 20.
+(pdftex.def)             Requested size: 270.30122pt x 134.79216pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 20--21
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+[]\OT1/cmr/m/n/10.95 Die Si-gna-le wer-den an-stel-le mit ei-ner Span-
+ []
+
+(./code/tcl/lvds.xdc)
+<images/shiftRegister.png, id=654, 996.72375pt x 306.39468pt>
+File: images/shiftRegister.png Graphic file (type png)
+<use images/shiftRegister.png>
+Package pdftex.def Info: images/shiftRegister.png  used on input line 42.
+(pdftex.def)             Requested size: 270.30122pt x 83.08766pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 42--43
+[][] 
+ []
+
+) (./sections/06_Serial_Communication_Interfaces.tex
+<images/spi_taktphase.png, id=655, 330.48468pt x 217.5628pt>
+File: images/spi_taktphase.png Graphic file (type png)
+<use images/spi_taktphase.png>
+Package pdftex.def Info: images/spi_taktphase.png  used on input line 14.
+(pdftex.def)             Requested size: 270.30122pt x 177.95116pt.
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 16.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [18 <./images/netzwerkarten.png> <./images/lvds.png> <./images/shiftRegister.png (PNG copy)>]
+<images/spi_timing.png, id=677, 1159.33125pt x 173.14688pt>
+File: images/spi_timing.png Graphic file (type png)
+<use images/spi_timing.png>
+Package pdftex.def Info: images/spi_timing.png  used on input line 20.
+(pdftex.def)             Requested size: 540.60245pt x 80.73967pt.
+<images/spi_shift1.png, id=678, 340.27126pt x 108.405pt>
+File: images/spi_shift1.png Graphic file (type png)
+<use images/spi_shift1.png>
+Package pdftex.def Info: images/spi_shift1.png  used on input line 27.
+(pdftex.def)             Requested size: 270.30122pt x 86.1187pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 27--28
+[][] 
+ []
+
+<images/spi_shift2.png, id=679, 331.99031pt x 108.405pt>
+File: images/spi_shift2.png Graphic file (type png)
+<use images/spi_shift2.png>
+Package pdftex.def Info: images/spi_shift2.png  used on input line 30.
+(pdftex.def)             Requested size: 270.30122pt x 88.26575pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 30--31
+[][] 
+ []
+
+(./code/spiMaster.vhd
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 27.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [19 <./images/spi_taktphase.png> <./images/spi_timing.png (PNG copy)> <./images/spi_shift1.png> <./images/spi_shift2.png>]
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 88.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [20])
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathsurround' on input line 38.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 38.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 38.
+
+<images/i2c_bitstates.png, id=784, 414.79968pt x 31.61812pt>
+File: images/i2c_bitstates.png Graphic file (type png)
+<use images/i2c_bitstates.png>
+Package pdftex.def Info: images/i2c_bitstates.png  used on input line 56.
+(pdftex.def)             Requested size: 540.60245pt x 41.21208pt.
+<images/i2c_timing.png, id=785, 1129.21875pt x 130.98938pt>
+File: images/i2c_timing.png Graphic file (type png)
+<use images/i2c_timing.png>
+Package pdftex.def Info: images/i2c_timing.png  used on input line 60.
+(pdftex.def)             Requested size: 540.60245pt x 62.71028pt.
+<images/i2c_arbitration.png, id=786, 1130.72438pt x 234.8775pt>
+File: images/i2c_arbitration.png Graphic file (type png)
+<use images/i2c_arbitration.png>
+Package pdftex.def Info: images/i2c_arbitration.png  used on input line 68.
+(pdftex.def)             Requested size: 405.45183pt x 84.21893pt.
+<images/i2c_protocolWrite.png, id=787, 729.47531pt x 311.66437pt>
+File: images/i2c_protocolWrite.png Graphic file (type png)
+<use images/i2c_protocolWrite.png>
+Package pdftex.def Info: images/i2c_protocolWrite.png  used on input line 76.
+(pdftex.def)             Requested size: 270.30122pt x 115.4852pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 76--77
+[][] 
+ []
+
+<images/i2c_protocolRead.png, id=788, 752.8125pt x 178.41656pt>
+File: images/i2c_protocolRead.png Graphic file (type png)
+<use images/i2c_protocolRead.png>
+Package pdftex.def Info: images/i2c_protocolRead.png  used on input line 81.
+(pdftex.def)             Requested size: 270.30122pt x 64.06383pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 81--82
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+<images/i2c_hardware.png, id=789, 298.11375pt x 158.09062pt>
+File: images/i2c_hardware.png Graphic file (type png)
+<use images/i2c_hardware.png>
+Package pdftex.def Info: images/i2c_hardware.png  used on input line 89.
+(pdftex.def)             Requested size: 270.30122pt x 143.34886pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 89--90
+[][] 
+ []
+
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 91.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+[21 <./images/i2c_bitstates.png> <./images/i2c_timing.png (PNG copy)> <./images/i2c_arbitration.png (PNG copy)> <./images/i2c_protocolWrite.png (PNG copy)> <./images/i2c_protocolRead.png (PNG copy)>] (./code/i2cMaster.vhd)
+<images/uart_timing.png, id=818, 938.00438pt x 96.36pt>
+File: images/uart_timing.png Graphic file (type png)
+<use images/uart_timing.png>
+Package pdftex.def Info: images/uart_timing.png  used on input line 103.
+(pdftex.def)             Requested size: 405.45183pt x 41.65158pt.
+<images/uart_hardware.png, id=819, 880.79062pt x 472.01344pt>
+File: images/uart_hardware.png Graphic file (type png)
+<use images/uart_hardware.png>
+Package pdftex.def Info: images/uart_hardware.png  used on input line 108.
+(pdftex.def)             Requested size: 405.45183pt x 217.28006pt.
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 110.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [22 <./images/i2c_hardware.png> <./images/uart_timing.png (PNG copy)>] (./code/uart.vhd
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 42.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [23 <./images/uart_hardware.png (PNG copy)>]
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 103.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [24])) (./sections/07_Parallel_Communication_Interfaces.tex
+<images/AXI_Write_Data_Channels.png, id=963, 534.19576pt x 324.61275pt>
+File: images/AXI_Write_Data_Channels.png Graphic file (type png)
+<use images/AXI_Write_Data_Channels.png>
+Package pdftex.def Info: images/AXI_Write_Data_Channels.png  used on input line 29.
+(pdftex.def)             Requested size: 216.23767pt x 131.39809pt.
+<images/AXI_Read_Data_Channels.png, id=964, 598.03426pt x 244.5135pt>
+File: images/AXI_Read_Data_Channels.png Graphic file (type png)
+<use images/AXI_Read_Data_Channels.png>
+Package pdftex.def Info: images/AXI_Read_Data_Channels.png  used on input line 32.
+(pdftex.def)             Requested size: 270.30122pt x 110.51508pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 32--33
+[][] 
+ []
+
+<images/AXI_Handshaking.png, id=965, 575.14874pt x 133.09724pt>
+File: images/AXI_Handshaking.png Graphic file (type png)
+<use images/AXI_Handshaking.png>
+Package pdftex.def Info: images/AXI_Handshaking.png  used on input line 49.
+(pdftex.def)             Requested size: 270.30122pt x 62.55367pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 49--50
+[][] 
+ []
+
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 59.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+[25 <./images/AXI_Write_Data_Channels.png> <./images/AXI_Read_Data_Channels.png> <./images/AXI_Handshaking.png>]
+<images/AXI_Burst_Transfer.png, id=988, 494.44725pt x 311.9655pt>
+File: images/AXI_Burst_Transfer.png Graphic file (type png)
+<use images/AXI_Burst_Transfer.png>
+Package pdftex.def Info: images/AXI_Burst_Transfer.png  used on input line 60.
+(pdftex.def)             Requested size: 270.30122pt x 170.54382pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 60--61
+[][] 
+ []
+
+<images/AXI_Interconnect.png, id=989, 317.988pt x 181.27725pt>
+File: images/AXI_Interconnect.png Graphic file (type png)
+<use images/AXI_Interconnect.png>
+Package pdftex.def Info: images/AXI_Interconnect.png  used on input line 84.
+(pdftex.def)             Requested size: 270.30122pt x 154.10022pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 84--85
+[][] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 93.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\leftrightarrow' on input line 93.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 93.
+
+<images/AXI_PL_PS.png, id=990, 405.9165pt x 353.52075pt>
+File: images/AXI_PL_PS.png Graphic file (type png)
+<use images/AXI_PL_PS.png>
+Package pdftex.def Info: images/AXI_PL_PS.png  used on input line 97.
+(pdftex.def)             Requested size: 270.30122pt x 235.412pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 97--98
+[][] 
+ []
+
+) (./sections/08_Combining_FPGA_and_Processor.tex
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 7.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [26 <./images/AXI_Burst_Transfer.png> <./images/AXI_Interconnect.png> <./images/AXI_PL_PS.png>] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+) (./code/c/sdk_axi.c)
+<images/sdk_dmaip.png, id=1004, 347.79938pt x 169.38281pt>
+File: images/sdk_dmaip.png Graphic file (type png)
+<use images/sdk_dmaip.png>
+Package pdftex.def Info: images/sdk_dmaip.png  used on input line 18.
+(pdftex.def)             Requested size: 270.30122pt x 131.64507pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 18--19
+[][] 
+ []
+
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 27.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+[27 <./images/sdk_dmaip.png>] (./code/c/sdk_dmawrite.c
+Overfull \hbox (4.71323pt too wide) in paragraph at lines 24--25
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./code/c/sdk_dmaread.c
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 17.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [28])) (./sections/09_Verification.tex (./code/assert.vhd) (./code/assert2008.vhd)
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 33.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [29] (./code/Automated_test_procedure.vhd
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 34.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [30]
+Overfull \hbox (4.71323pt too wide) in paragraph at lines 47--48
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (4.71323pt too wide) in paragraph at lines 49--50
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (11.2833pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (24.42343pt too wide) in paragraph at lines 53--54
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (122.97446pt too wide) in paragraph at lines 57--58
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+Underfull \hbox (badness 7888) in paragraph at lines 58--59
+[]\OT1/cmr/m/n/10.95 Wird auf Stu-fe HDL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+[]\OT1/cmr/m/n/10.95 Es wer-den kei-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+\OT1/cmr/m/n/10.95 Timing-Informationen
+ []
+
+
+Underfull \hbox (badness 6510) in paragraph at lines 66--67
+\OT1/cmr/m/n/10.95 un-gew[]ohnlich (da kein
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 92.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+[31]) (./sections/10_Verification_Design_For_Test.tex
+Overfull \hbox (3.78224pt too wide) in paragraph at lines 12--13
+[]\OT1/cmr/m/n/10.95 Anteil an Feh-lern die mit ei-nem Set von Test-vek-to-ren er-kannt wer-den k[]onnen: $\OML/cmm/m/it/10.95 F[] \U/matha/m/n/10.95 ^^P []$ 
+ []
+
+<images/stuckat_detektion_1.png, id=1230, 352.31625pt x 150.5625pt>
+File: images/stuckat_detektion_1.png Graphic file (type png)
+<use images/stuckat_detektion_1.png>
+Package pdftex.def Info: images/stuckat_detektion_1.png  used on input line 31.
+(pdftex.def)             Requested size: 324.36476pt x 138.61795pt.
+<images/stuckat_detektion_schaltung.png, id=1231, 262.73157pt x 128.73094pt>
+File: images/stuckat_detektion_schaltung.png Graphic file (type png)
+<use images/stuckat_detektion_schaltung.png>
+Package pdftex.def Info: images/stuckat_detektion_schaltung.png  used on input line 37.
+(pdftex.def)             Requested size: 189.21414pt x 92.71368pt.
+<images/stuckat_detektion_2.png, id=1232, 347.79938pt x 143.78719pt>
+File: images/stuckat_detektion_2.png Graphic file (type png)
+<use images/stuckat_detektion_2.png>
+Package pdftex.def Info: images/stuckat_detektion_2.png  used on input line 42.
+(pdftex.def)             Requested size: 324.36476pt x 134.10464pt.
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 44.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+[32 <./images/stuckat_detektion_1.png> <./images/stuckat_detektion_schaltung.png>]
+<images/stuckat_redundant_1.png, id=1249, 383.93437pt x 151.3153pt>
+File: images/stuckat_redundant_1.png Graphic file (type png)
+<use images/stuckat_redundant_1.png>
+Package pdftex.def Info: images/stuckat_redundant_1.png  used on input line 54.
+(pdftex.def)             Requested size: 324.36476pt x 127.84512pt.
+<images/stuckat_redundant_schaltung.png, id=1250, 188.20313pt x 140.02313pt>
+File: images/stuckat_redundant_schaltung.png Graphic file (type png)
+<use images/stuckat_redundant_schaltung.png>
+Package pdftex.def Info: images/stuckat_redundant_schaltung.png  used on input line 60.
+(pdftex.def)             Requested size: 189.21414pt x 140.78554pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathsurround' on input line 65.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 65.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 65.
+
+<images/iddq.png, id=1251, 328.97906pt x 155.07938pt>
+File: images/iddq.png Graphic file (type png)
+<use images/iddq.png>
+Package pdftex.def Info: images/iddq.png  used on input line 67.
+(pdftex.def)             Requested size: 270.30122pt x 127.42145pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 67--68
+[][] 
+ []
+
+<images/scanflipflop.png, id=1252, 174.6525pt x 94.85437pt>
+File: images/scanflipflop.png Graphic file (type png)
+<use images/scanflipflop.png>
+Package pdftex.def Info: images/scanflipflop.png  used on input line 75.
+(pdftex.def)             Requested size: 135.1506pt x 73.40425pt.
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 94.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+[33 <./images/stuckat_detektion_2.png> <./images/stuckat_redundant_1.png> <./images/stuckat_redundant_schaltung.png> <./images/iddq.png> <./images/scanflipflop.png>]
+<images/scanpath_lookuplatch.png, id=1268, 329.73187pt x 175.40532pt>
+File: images/scanpath_lookuplatch.png Graphic file (type png)
+<use images/scanpath_lookuplatch.png>
+Package pdftex.def Info: images/scanpath_lookuplatch.png  used on input line 100.
+(pdftex.def)             Requested size: 270.30122pt x 143.79314pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 100--101
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--101
+
+ []
+
+<images/prinzip_bist.png, id=1269, 353.06906pt x 188.20313pt>
+File: images/prinzip_bist.png Graphic file (type png)
+<use images/prinzip_bist.png>
+Package pdftex.def Info: images/prinzip_bist.png  used on input line 107.
+(pdftex.def)             Requested size: 270.30122pt x 144.08403pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 107--108
+[][] 
+ []
+
+<images/bst_aufbau.png, id=1270, 237.88875pt x 292.84406pt>
+File: images/bst_aufbau.png Graphic file (type png)
+<use images/bst_aufbau.png>
+Package pdftex.def Info: images/bst_aufbau.png  used on input line 137.
+(pdftex.def)             Requested size: 270.30122pt x 332.75986pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 137--138
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+
+Overfull \vbox (5.28224pt too high) has occurred while \output is active []
+
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 139.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [34 <./images/scanpath_lookuplatch.png> <./images/prinzip_bist.png> <./images/bst_aufbau.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
+[] \OT1/cmss/bx/n/10.95 11.8.4.1 Instruktions-Register[][] \OT1/cmr/m/n/10.95 Das Instruktions-
+ []
+
+<images/bst_tapkontroller.png, id=1285, 335.75438pt x 294.34969pt>
+File: images/bst_tapkontroller.png Graphic file (type png)
+<use images/bst_tapkontroller.png>
+Package pdftex.def Info: images/bst_tapkontroller.png  used on input line 151.
+(pdftex.def)             Requested size: 270.30122pt x 236.9667pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 151--152
+[][] 
+ []
+
+<images/bst_tapkontroller_verschaltung.png, id=1286, 335.75438pt x 267.24844pt>
+File: images/bst_tapkontroller_verschaltung.png Graphic file (type png)
+<use images/bst_tapkontroller_verschaltung.png>
+Package pdftex.def Info: images/bst_tapkontroller_verschaltung.png  used on input line 166.
+(pdftex.def)             Requested size: 405.45183pt x 322.72731pt.
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 172.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+[35 <./images/bst_tapkontroller.png> <./images/bst_tapkontroller_verschaltung.png>]
+Overfull \hbox (1.49095pt too wide) in paragraph at lines 172--173
+[]\OT1/cmr/bx/n/10.95 INTEST\OT1/cmr/m/n/10.95 : Tes-tet die Kern-lo-gik ei-nes Chips. Die Kern-lo-gik wird zu die-sem Zweck von den Ein- und Ausg[]angen
+ []
+
+<images/bst_bypassregister.png, id=1298, 322.95656pt x 144.54pt>
+File: images/bst_bypassregister.png Graphic file (type png)
+<use images/bst_bypassregister.png>
+Package pdftex.def Info: images/bst_bypassregister.png  used on input line 179.
+(pdftex.def)             Requested size: 270.30122pt x 120.98047pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 179--180
+[][] 
+ []
+
+<images/bst_bsc.png, id=1299, 290.58563pt x 155.07938pt>
+File: images/bst_bsc.png Graphic file (type png)
+<use images/bst_bsc.png>
+Package pdftex.def Info: images/bst_bsc.png  used on input line 194.
+(pdftex.def)             Requested size: 270.30122pt x 144.26491pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 194--195
+[][] 
+ []
+
+) (./sections/11_HDL_Attributes.tex (./code/ASYNC_REG.vhd) (./code/KEEP.vhd)
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 19.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [36 <./images/bst_bypassregister.png> <./images/bst_bsc.png>] (./code/KEEP_HIERARCHY.vhd) (./code/FSM_ENCODING.vhd) (./code/FSM_SAVE_STATE.vhd)) (./sections/11_Digital_Design_For_ASICS.tex
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 8.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [37]
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+<images/ASIC_FPGA.png, id=1350, 676.32675pt x 387.849pt>
+File: images/ASIC_FPGA.png Graphic file (type png)
+<use images/ASIC_FPGA.png>
+Package pdftex.def Info: images/ASIC_FPGA.png  used on input line 30.
+(pdftex.def)             Requested size: 540.60245pt x 310.01921pt.
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 53.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+[38 <./images/ASIC_FPGA.png>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
+File: ./header/lizenzen/cc-by-nc-sa/small.png Graphic file (type png)
+<use ./header/lizenzen/cc-by-nc-sa/small.png>
+Package pdftex.def Info: ./header/lizenzen/cc-by-nc-sa/small.png  used on input line 80.
+(pdftex.def)             Requested size: 45.52458pt x 8.52553pt.
+ [39]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
+ (./DigMe.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
+Package rerunfilecheck Info: File `DigMe.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
+ ) 
+Here is how much of TeX's memory you used:
+ 18979 strings out of 492167
+ 301559 string characters out of 6131558
+ 714083 words of memory out of 5000000
+ 21667 multiletter control sequences out of 15000+600000
+ 16984 words of font info for 60 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 47i,11n,58p,10064b,1872s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/mathabx-type1/matha10.pfb></usr/share/texmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb></usr/share/texmf-dist/f
+onts/type1/public/mathabx-type1/mathx10.pfb>
+Output written on DigMe.pdf (39 pages, 3033368 bytes).
+PDF statistics:
+ 2149 PDF objects out of 2487 (max. 8388607)
+ 2016 compressed objects within 21 object streams
+ 1159 named destinations out of 1200 (max. 500000)
+ 1541 words of extra memory for PDF output out of 10000 (max. 10000000)
+

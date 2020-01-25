@@ -21,12 +21,12 @@ Um die beste  Performanz zu erreichen, sollte der IP Block wie nachfolgend darge
 \paragraph{Modi}
 Die folgenden Modi stellt der DMA IP Block zur Verfügung:
 \begin{compactitem}
-    \item \textbf{Register Direct Mode}: Dieser Modus wird benutzt, wenn eine hohe Geschwindigkeit zu einem Block im PL gefordert ist. Alle DMA Transfers werden gestartet, indem eine Ziel- oder Startadresse sowie eine Länge dem DMA Block mitgeteilt wird. Sobald der Transfer abgeschlossen wurde, wird ein Interrupt generiert.
+    \item \textbf{Register Direct Mode}: Dieser Modus wird benutzt, wenn eine hohe Geschwindigkeit zu einem Block im PL gefordert ist. Alle DMA Transfers werden gestartet, indem dem DMA-Blcok eine Ziel- oder Startadresse sowie eine Länge mitgeteilt wird. Sobald der Transfer abgeschlossen wurde, wird ein Interrupt generiert.
     \item \textbf{Scatter/Gatter Mode}: In diesem Mode werden Daten direkt in einen Speicher geschrieben, ohne dass vorher spezifisch eine Anforderung getätigt werden muss (benötigt mehr FPGA Ressourcen).
 \end{compactitem}
 \end{multicols}
 \subsubsection{PL330 DMA}
-Der Zynq stellt im PS einen eingenen DMA Controller zur Verfügung. Bis zu acht Streams können von diesem Block gemanaged werden. Das SDK stellt in der Datei \textit{xdmaps.h} verschiedene Funktionen zur Anstuerung des DMA Controllers zur Verfügung.
+Der Zynq stellt im PS einen eigenen DMA-Controller zur Verfügung. Bis zu acht Streams können von diesem Block gemanaged werden. Das SDK stellt in der Datei \textit{xdmaps.h} verschiedene Funktionen zur Ansteuerung des DMA-Controllers zur Verfügung.
 
 \paragraph{DMA Schreibtransfer}
 \lstinputlisting[language=C]{code/c/sdk_dmawrite.c}

@@ -7,27 +7,28 @@ entity RAM_Test is
     ADDR_WIDTH : integer := 8;
     DATA_WIDTH : integer := 8);
   port (
-    clk : in std_logic;
-    addr : in std_logic_vector (ADDR_WIDTH - 1 downto 0);
-    din : in std_logic_vector (DATA_WIDTH - 1 downto 0);
-    dout : out std_logic_vector (DATA_WIDTH - 1 downto 0);
-    we, en : in std_logic); 
+    clk :    in std_logic;
+    addr :   in std_logic_vector(ADDR_WIDTH - 1 downto 0);
+    din :    in std_logic_vector(DATA_WIDTH - 1 downto 0);
+    dout :   out std_logic_vector(DATA_WIDTH - 1 downto 0);
+    we, en : in std_logic);
 end entity RAM_Test;
 
 architecture RTL of RAM_Test is
   constant MEM_DEPTH : integer := 2 ** ADDR_WIDTH;
-  type ram_type is array (0 to MEM_DEPTH - 1) of std_logic_vector (DATA_WIDTH - 1 
+  type ram_type is array (0 to MEM_DEPTH - 1) of std_logic_vector (DATA_WIDTH - 1
     downto 0);
   signal blockram : ram_type;
-begin 
+begin
   ram_write : process (clk)
   begin
     if rising_edge (clk) then
       if en = '1' then -- if RAM is enabled
         if we = '1' then -- if write is enabled
           blockram (to_integer(unsigned(addr))) <= din;
-		else
-		  dout <= blockram (to_integer(unsigned(addr)));
+          dout <= din;
+        else
+          dout <= blockram (to_integer(unsigned(addr)));
         end if;
       end if;
     end if;

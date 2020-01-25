@@ -1,6 +1,6 @@
 \section{Constraints}
 \subsection{``.xdc''-Dateien}
-Physikalische Eigenschaften eines Designs können dem Synthese- und Implementierungstool mit Constraints mitgeteilt werden. Diese Constraints werden bei Vivado in ``.xdc''-Dateien definiert. Sind mehrere Dateien vorhanden, so werden diese sequentiell angewendet. Wird ein Constraints mehrfach gesetzt, so wird der zuletzt gesetzte Constraint verwendet. Für jede ``.xdc''-Datei kann desweiteren definiert werden, ob sie nur in der Synthese oder nur der Implementation angewendet werden soll (oder bei beidem).
+Physikalische Eigenschaften eines Designs können dem Synthese- und Implementierungstool mit Constraints mitgeteilt werden. Diese Constraints werden bei Vivado in ``.xdc''-Dateien definiert. Sind mehrere Dateien vorhanden, so werden diese sequentiell angewendet. Wird ein Constraint mehrfach gesetzt, so wird der zuletzt gesetzte Constraint verwendet. Für jede ``.xdc''-Datei kann desweiteren definiert werden, ob sie nur in der Synthese oder nur der Implementation angewendet werden soll (oder bei beidem).
 \lstinputlisting[language=tcl]{code/tcl/xdc_property_used_in.xdc}
 
 \subsubsection{Reihenfolge}
@@ -49,11 +49,11 @@ Um Constraints bestimmen zu können, muss als erstes eine Timing Analyse durchge
     \subsubsection{Input Delay}
     Das Input Delay kann mit der nachfolgenden Formel bestimmt werden, weiterführende Informationen sind in Kapitel \ref{chapter:input_delay} zu finden. \\
     $t_{\text{input\_delay}}=t_{\text{clk\_ext}}+t_{\text{pcq\_FF1}}+t_{\text{db}}-t_{\text{cb}}$
-    
+
     \subsubsection{Output Delay}
     Das Output Delay kann mit der nachfolgenden Formel bestimmt werden, weiterführende Informationen sind in Kapitel \ref{chapter:output_delay} zu finden. \\
     $t_{\text{output\_delay}}=t_{\text{pcq\_FF3}}+t_{\text{p\_comb}}+t_{\text{clk\_latency(FF3-master)}}$
-\end{multicols} 
+\end{multicols}
 
 \begin{multicols}{2}
     \subsubsection{Clock Skew}
@@ -85,13 +85,13 @@ Clocks müssen definiert werden, damit die Timing Paths berechnet werden können
 \subsubsection{Primary Clocks}
 Ein Primary Clock ist ein Clock, welcher in der Regel durch einen Eingangspin zugeführt wird. Ein solcher Clock muss immer einem Netzlistenobjekt zugewiesen werden. \\
 Der nachfolgende Befehl definiert einen neuen Clock mit dem Namen \textit{devclk}, einer Periode von 10ns sowie einem Dutycycle von 25\%. Der Clock wird über den Port \textit{clkin} zugeführt.
-\lstinputlisting[language=tcl]{code/tcl/primary_clock.xdc} 
+\lstinputlisting[language=tcl]{code/tcl/primary_clock.xdc}
 
 \subsubsection{Generated Clocks}
 Generated Clock werden von speziellen Blöcken in einem FPGA generiert (z.B. MMCM). Sie können auch von Userlogik erzeugt werden. Diese Generated Clocks sind jedoch an einen anderen Clock gebunden und teilen diesen z.B. herunter, oder bewirken eine Phasenverschiebung.
 
 \subsubsection{Virtual Clocks}
-Ein Virtual Clock ist ein Clock welcher physikalisch nicht existiert und somit nicht an ein Netzlisten Objekt gebunden ist. Sie werden benutzt um Input und Output Delays zu spezifizieren, wenn das externe Gerät mit einem anderen Clock läuft als der FPGA. \\
+Ein Virtual Clock ist ein Clock welcher physikalisch nicht existiert und somit nicht an ein Netzlisten-Objekt gebunden ist. Sie werden benutzt um Input- und Output-Delays zu spezifizieren, wenn das externe Gerät mit einem anderen Clock läuft als der FPGA. \\
 Der nachfolgende Befehl definiert einen neuen Virtual Clock mit dem Namen \textit{virtclk}, einer Periode von 10ns sowie einem Dutycycle von 25\%.
 \lstinputlisting[language=tcl]{code/tcl/virtual_clock.xdc}
 
@@ -121,7 +121,7 @@ Mit den nachfolgenden Befehlen können die Latenzen definiert werden. Wird nicht
 \end{minipage}
 \hfill
 \begin{minipage}{0.65\textwidth}
-    Aufgrund der physikalischen Eigenschaften ist kein Clock ideal. Kleinere Schwankungen in der Übertragung können auftreten. Diese Schwankungen (bis das Signal kosntant ist) werden Jitter genannt und in Nanosekunden gemessen. \ \\ \ \\ \ \\
+    Aufgrund der physikalischen Eigenschaften ist kein Clock ideal. Kleinere Schwankungen in der Übertragung können auftreten. Diese Schwankungen werden Jitter genannt und in Nanosekunden gemessen. \ \\ \ \\ \ \\
 \end{minipage}
 
 \paragraph{Input Jitter}
@@ -145,19 +145,19 @@ Der System Jitter spezifiert den Jitter für alle Clocks im System (auch für di
 \lstinputlisting[language=tcl]{code/tcl/io_pin_constraints.xdc}
 
 \subsection{I/O Delay}
-Damit externe Timing Anforderungen korrekt in die Synthese und Implementation einbezogen werden können, ist es notwendig diese anzugeben.
+Damit externe Timing-Anforderungen korrekt in die Synthese und Implementation einbezogen werden können, ist es notwendig diese anzugeben.
 
 \subsubsection{Input Delay} \label{chapter:input_delay}
 Input Delays geben an, mit welcher Verzögerung Daten an einem Eingangsport anliegen. Diese Verzögerung muss relativ zu einem Clock angegeben werden.
 
 \paragraph{Tcl Befehl}
-Mit dem Befehl \texttt{set\_input\_delay} kann das Input Delay angegeben werden. Die folgenden Parameter werden dabei unterstützt:
+Mit dem Befehl \texttt{set\_input\_delay} kann das Input-Delay angegeben werden. Die folgenden Parameter werden dabei unterstützt:
 \begin{compactitem}
     \item \texttt{-clock}: Gibt den Clock an, zu welchem die Verzögerung gilt.
-    \item \texttt{-min}, \texttt{-max}: Definiert die min Zeit (hold/removal) oder die max Zeit (setup/recovery). Wird dieser Parameter nicht spezifisch angegeben, so wird die Zeit für min und max verwendet.
-    \item \texttt{-clock\_fall}: Gibt an dass das Input Delay relativ zur fallenden Clockflanke gilt.
-    \item \texttt{-rise}, \texttt{-fall}: Gibt an für welche Flanke des Einganssignales die Angaben gelten.
-    \item \texttt{-add\_delay}: Diese Option wird benutzt wenn ein zweites Delay angegeben werden muss (z.B. bei DDR).
+    \item \texttt{-min}, \texttt{-max}: Definiert die min Zeit (hold/removal) oder die max Zeit (setup/recovery). Wird dieser Parameter nicht spezifisch angegeben, so wird die Input-Delay-Zeit für min und max verwendet.
+    \item \texttt{-clock\_fall}: Gibt an, dass der Input-Delay relativ zur fallenden Clockflanke gilt.
+    \item \texttt{-rise}, \texttt{-fall}: Gibt an, für welche Flanke des Eingangssignales die Angaben gelten.
+    \item \texttt{-add\_delay}: Diese Option wird benutzt, wenn ein zweites Delay angegeben werden muss (z.B. bei DDR).
 \end{compactitem}
 
 \paragraph{Beispiel}
@@ -170,13 +170,13 @@ Mit dem Befehl \texttt{set\_input\_delay} kann das Input Delay angegeben werden.
 Output Delays geben an, in welchem Zeitbereich die Daten am Ausgangsport stabil sein müssen. Dieser Zeitbereich wird wiederum relativ zu einem Clock angegeben.
 
 \paragraph{Tcl Befehl}
-Mit dem Befehl \texttt{set\_ourput\_delay} kann das Output Delay angegeben werden. Die folgenden Parameter werden dabei unterstützt:
+Mit dem Befehl \texttt{set\_output\_delay} kann das Output-Delay angegeben werden. Die folgenden Parameter werden dabei unterstützt:
 \begin{compactitem}
     \item \texttt{-clock}: Gibt den Clock an, zu welchem die Zeit gilt.
-    \item \texttt{-min}, \texttt{-max}: Definiert die min Zeit (hold/removal) oder die max Zeit (setup/recovery). Wird dieser Parameter nicht spezifisch angegeben, so wird die Zeit für min und max verwendet.
-    \item \texttt{-clock\_fall}: Gibt an dass das Output Delay relativ zur fallenden Clockflanke gilt.
-    \item \texttt{-rise}, \texttt{-fall}: Gibt an für welche Flanke des Ausgangssignales die Angaben gelten.
-    \item \texttt{-add\_delay}: Diese Option wird benutzt wenn ein zweites Delay angegeben werden muss (z.B. bei DDR).
+    \item \texttt{-min}, \texttt{-max}: Definiert die min Zeit (hold/removal) oder die max Zeit (setup/recovery). Wird dieser Parameter nicht spezifisch angegeben, so wird die Input-Delay-Zeit für min und max verwendet.
+    \item \texttt{-clock\_fall}: Gibt an, dass der Output-Delay relativ zur fallenden Clockflanke gilt.
+    \item \texttt{-rise}, \texttt{-fall}: Gibt an, für welche Flanke des Ausgangssignales die Angaben gelten.
+    \item \texttt{-add\_delay}: Diese Option wird benutzt, wenn ein zweites Delay angegeben werden muss (z.B. bei DDR).
 \end{compactitem}
 
 \paragraph{Beispiel}

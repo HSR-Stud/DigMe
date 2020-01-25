@@ -13,11 +13,6 @@
 \let\olditemize\itemize
 \renewcommand{\itemize}{\olditemize\setlength{\itemsep}{0pt}}
 \setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
-\usepackage[compact]{titlesec}
-\titlespacing{\section}{0pt}{0.5ex}{0ex}
-\titlespacing{\subsection}{0pt}{0.5ex}{0ex}
-\titlespacing{\subsubsection}{0pt}{0.5ex}{0ex}
-\titlespacing{\paragraph}{0pt}{0.5ex}{0ex}
 \setlength{\parskip}{0cm}
 \setlength{\parindent}{0em}
 \setlength{\intextsep}{0ex}
@@ -28,13 +23,8 @@
 \setlength{\multicolsep}{0ex}
 \linespread{0.9}
 \setlist[enumerate]{itemsep=0mm}
-%\usepackage{titlesec}
-
-\titleformat{\paragraph}
-    {\normalfont\bfseries}
-    {}
-    {0pt}
-    {}
+\RedeclareSectionCommands[beforeskip=0.5ex,afterskip=0ex]{section,subsection}
+\RedeclareSectionCommands[beforeskip=0.1ex,afterskip=0.1ex]{subsubsection}
 
 \usepackage{paralist}
 \usepackage{wrapfig}
@@ -63,8 +53,8 @@
 \author{L. Leuenberger, M. Ehrler}
 
 % Four pages on one
-\usepackage{pgfpages}
-\pgfpagesuselayout{4 on 1}[a4paper]
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper]
 
 \begin{document}
 %\begin{titlepage}
@@ -73,17 +63,18 @@
 %\end{titlepage}
 
 %\tableofcontents \newpage
-
 \input{sections/01_SoC_Design_Hardware}
 \input{sections/02_Constraints}
 \input{sections/03_System_Level_VHDL}
+\input{sections/Fixed_Point_Arithmetic}
 \input{sections/04_Custom_IP_Blocks}
-\input{sections/05_HDL_Attributes}
+\input{sections/05_Communication_Interfaces}
 \input{sections/06_Serial_Communication_Interfaces}
 \input{sections/07_Parallel_Communication_Interfaces}
 \input{sections/08_Combining_FPGA_and_Processor}
 \input{sections/09_Verification}
 \input{sections/10_Verification_Design_For_Test}
+\input{sections/11_HDL_Attributes}
 \input{sections/11_Digital_Design_For_ASICS}
 
 \end{document}

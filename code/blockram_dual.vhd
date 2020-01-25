@@ -7,24 +7,24 @@ entity RAM_Test is
     ADDR_WIDTH : integer := 8;
     DATA_WIDTH : integer := 8);
   port (
-    a_clk : in std_logic;
+    a_clk :  in std_logic;
     a_addr : in std_logic_vector (ADDR_WIDTH - 1 downto 0);
-    a_din : in std_logic_vector (DATA_WIDTH - 1 downto 0);
+    a_din :  in std_logic_vector (DATA_WIDTH - 1 downto 0);
     a_dout : out std_logic_vector (DATA_WIDTH - 1 downto 0);
-    a_wr : in std_logic;
-    b_clk : in std_logic;
+    a_wr :   in std_logic;
+    b_clk :  in std_logic;
     b_addr : in std_logic_vector (ADDR_WIDTH - 1 downto 0);
-    b_din : in std_logic_vector (DATA_WIDTH - 1 downto 0);
+    b_din :  in std_logic_vector (DATA_WIDTH - 1 downto 0);
     b_dout : out std_logic_vector (DATA_WIDTH - 1 downto 0);
-    b_wr : in std_logic); 
+    b_wr :   in std_logic);
 end entity RAM_Test;
 
 architecture RTL of RAM_Test is
   constant MEM_DEPTH : integer := 2 ** ADDR_WIDTH;
-  type ram_type is array (0 to MEM_DEPTH - 1) of std_logic_vector (DATA_WIDTH - 1 
+  type ram_type is array (0 to MEM_DEPTH - 1) of std_logic_vector (DATA_WIDTH - 1
     downto 0);
   shared variable blockram : ram_type;
-begin 
+begin
   ramA_write : process (a_clk)
   begin
     if rising_edge (a_clk) then
