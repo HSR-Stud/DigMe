@@ -6,5 +6,3 @@ OUTPUT 10_Verification_Design_For_Test.log
 INPUT /usr/share/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-OUTPUT 10_Verification_Design_For_Test.pdf
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
