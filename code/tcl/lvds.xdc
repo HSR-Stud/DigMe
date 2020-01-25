@@ -1,2 +1,1 @@
-set_property IOSTANDARD LVDS [get_ports 
-    portname]
+set_property IOSTANDARD LVDS [get_ports portname]

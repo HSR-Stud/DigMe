@@ -1,5 +1,5 @@
 \section{Communication Interfaces}
-\subsection{Begriffe}
+\subsection{Begriffe}$~$ \\
 Verschiedene Begriffe existieren im Zusammenhang mit Schnittstellen:
 \begin{compactitem}
     \item \textbf{Synchron / Asynchron}: Synchrone Schnittstellen haben ein Taktsignal, welches signalisiert, wann Daten gültig sind. Asynchrone Schnittstellen brauchen dagegen kein Taktsignal. Synchronisation geschieht über einen Handshakingprozess.
@@ -7,13 +7,13 @@ Verschiedene Begriffe existieren im Zusammenhang mit Schnittstellen:
     \item \textbf{On-Chip / Off-Chip Communication}: Kommunikation im Chip selbst wird oftmals parallel gelöst. Eine Kommunikation zwischen zwei verschiedenen Chips wird oft seriell implementiert.
 \end{compactitem}
 
-\subsection{Netzwerk Arten}
+\subsection{Netzwerk Arten}$~$ \\
 Verschiedene Netzwerk Arten existieren in der Praxis:
 \begin{figure}[H]
     \includegraphics[width=0.5\textwidth]{images/netzwerkarten.png}
 \end{figure}
 
-\subsection{LVDS}
+\subsection{LVDS}$~$ \\
 LVDS definiert kein Übertragungsprotokoll sondern eine Übertragungsart.
 \begin{multicols}{2}
      \begin{figure}[H]
@@ -25,10 +25,10 @@ LVDS definiert kein Übertragungsprotokoll sondern eine Übertragungsart.
 
     \subsubsection{Implementierung in VHDL}
     In VHDL kann LVDS nicht direkt synthetisiert werden. Der FPGA hat jedoch dennoch Pads, welche LVDS unterstützen. Diese müssen jedoch mithilfe von Constraints zugewiesen werden.
-    \lstinputlisting[language=tcl]{code/tcl/lvds.xdc}
+    \lstinputlisting[language=tcl,style=tcl]{code/tcl/lvds.xdc}
 \end{multicols}
 
-\subsection{VHDL Components}
+\subsection{VHDL Components}$~$ \\
 \begin{multicols}{2}
 Es gibt generische VHDL-Komponenten die für Kommunikationsinterfaces verwendet werden können. Sie alle beschreiben Teile des data link layers.
 % \begin{itemize}

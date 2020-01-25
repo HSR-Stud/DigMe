@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  16 JAN 2020 13:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 11:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -4325,7 +4325,7 @@ or  <return>  to continue without it.
 Missing character: There is no 2 in font nullfont!
 ./01_SoC_Design_Hardware.tex:92: Undefined control sequence.
 l.92      \paragraph
-                    {Design Database}
+                    {Design Database}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4579,7 +4579,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 ./01_SoC_Design_Hardware.tex:94: Undefined control sequence.
 l.94      \subsubsection
-                        {Xilinx Software Development Kit (XSDK)}
+                        {Xilinx Software Development Kit (XSDK)}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4899,5 +4899,5 @@ Here is how much of TeX's memory you used:
  4484 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,1n,16p,814b,109s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,2n,16p,814b,109s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 10:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 11:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -52,7 +52,7 @@ Missing character: There is no k in font nullfont!
 Missing character: There is no s in font nullfont!
 ./04_Custom_IP_Blocks.tex:2: Undefined control sequence.
 l.2 \subsection
-               {Typen von Speicher in FPGA}
+               {Typen von Speicher in FPGA}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -81,6 +81,10 @@ Missing character: There is no F in font nullfont!
 Missing character: There is no P in font nullfont!
 Missing character: There is no G in font nullfont!
 Missing character: There is no A in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -1228,13 +1232,9 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 19.
 ./04_Custom_IP_Blocks.tex:22: Undefined control sequence.
 l.22     \paragraph
-                   {Single-Port RAM}
+                   {Single-Port RAM}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1578,7 +1578,7 @@ or  <return>  to continue without it.
 
 ./04_Custom_IP_Blocks.tex:33: Undefined control sequence.
 l.33     \paragraph
-                   {Dual-Port RAM}
+                   {Dual-Port RAM}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1856,7 +1856,7 @@ Overfull \hbox (5324.74998pt too wide) in paragraph at lines 26--36
 
 ./04_Custom_IP_Blocks.tex:38: Undefined control sequence.
 l.38 \subsection
-                {Beschreibung von Speicher in VHDL}
+                {Beschreibung von Speicher in VHDL}$~$\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1871,7 +1871,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.38 \subsection{B
-                  eschreibung von Speicher in VHDL}
+                  eschreibung von Speicher in VHDL}$~$\\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2447,7 +2447,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no t in font nullfont!
 ./04_Custom_IP_Blocks.tex:48: Undefined control sequence.
 l.48 \lstinputlisting
-                     [language=VHDL]{code/blockram_single.vhd}
+                     [language=VHDL,style=VHDL]{code/blockram_single.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2462,6 +2462,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -2485,13 +2496,13 @@ Missing character: There is no m in font nullfont!
 ./04_Custom_IP_Blocks.tex:48: Missing $ inserted.
 <inserted text> 
                 $
-l.48 ...inputlisting[language=VHDL]{code/blockram_
+l.48 ...g[language=VHDL,style=VHDL]{code/blockram_
                                                   single.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./04_Custom_IP_Blocks.tex:48: Extra }, or forgotten $.
-l.48 ...g[language=VHDL]{code/blockram_single.vhd}
+l.48 ...VHDL,style=VHDL]{code/blockram_single.vhd}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2566,7 +2577,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no t in font nullfont!
 ./04_Custom_IP_Blocks.tex:51: Undefined control sequence.
 l.51 \lstinputlisting
-                     [language=VHDL]{code/distributedram_single.vhd}
+                     [language=VHDL,style=VHDL]{code/distributedram_single.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2581,6 +2592,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -2610,13 +2632,13 @@ Missing character: There is no m in font nullfont!
 ./04_Custom_IP_Blocks.tex:51: Missing $ inserted.
 <inserted text> 
                 $
-l.51 ...isting[language=VHDL]{code/distributedram_
+l.51 ...uage=VHDL,style=VHDL]{code/distributedram_
                                                   single.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./04_Custom_IP_Blocks.tex:51: Extra }, or forgotten $.
-l.51 ...uage=VHDL]{code/distributedram_single.vhd}
+l.51 ...tyle=VHDL]{code/distributedram_single.vhd}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2683,7 +2705,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no t in font nullfont!
 ./04_Custom_IP_Blocks.tex:54: Undefined control sequence.
 l.54 \lstinputlisting
-                     [language=VHDL]{code/blockram_dual.vhd}
+                     [language=VHDL,style=VHDL]{code/blockram_dual.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2698,6 +2720,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -2721,13 +2754,13 @@ Missing character: There is no m in font nullfont!
 ./04_Custom_IP_Blocks.tex:54: Missing $ inserted.
 <inserted text> 
                 $
-l.54 ...inputlisting[language=VHDL]{code/blockram_
+l.54 ...g[language=VHDL,style=VHDL]{code/blockram_
                                                   dual.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./04_Custom_IP_Blocks.tex:54: Extra }, or forgotten $.
-l.54 ...ing[language=VHDL]{code/blockram_dual.vhd}
+l.54 ...e=VHDL,style=VHDL]{code/blockram_dual.vhd}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2861,7 +2894,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ./04_Custom_IP_Blocks.tex:58: Undefined control sequence.
 l.58 \lstinputlisting
-                     [language=VHDL]{code/rom.vhd}
+                     [language=VHDL,style=VHDL]{code/rom.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2876,6 +2909,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -3050,7 +3094,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no . in font nullfont!
 ./04_Custom_IP_Blocks.tex:62: Undefined control sequence.
 l.62 \lstinputlisting
-                     [language=VHDL]{code/ram_attribute.vhd}
+                     [language=VHDL,style=VHDL]{code/ram_attribute.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3071,6 +3115,17 @@ Missing character: There is no V in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -3083,13 +3138,13 @@ Missing character: There is no m in font nullfont!
 ./04_Custom_IP_Blocks.tex:62: Missing $ inserted.
 <inserted text> 
                 $
-l.62 \lstinputlisting[language=VHDL]{code/ram_
-                                              attribute.vhd}
+l.62 ...isting[language=VHDL,style=VHDL]{code/ram_
+                                                  attribute.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./04_Custom_IP_Blocks.tex:62: Extra }, or forgotten $.
-l.62 ...ing[language=VHDL]{code/ram_attribute.vhd}
+l.62 ...e=VHDL,style=VHDL]{code/ram_attribute.vhd}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3263,7 +3318,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ./04_Custom_IP_Blocks.tex:66: Undefined control sequence.
 l.66 \lstinputlisting
-                     [language=VHDL]{code/rom_init.vhd}
+                     [language=VHDL,style=VHDL]{code/rom_init.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3284,6 +3339,17 @@ Missing character: There is no V in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -3296,13 +3362,13 @@ Missing character: There is no m in font nullfont!
 ./04_Custom_IP_Blocks.tex:66: Missing $ inserted.
 <inserted text> 
                 $
-l.66 \lstinputlisting[language=VHDL]{code/rom_
-                                              init.vhd}
+l.66 ...isting[language=VHDL,style=VHDL]{code/rom_
+                                                  init.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./04_Custom_IP_Blocks.tex:66: Extra }, or forgotten $.
-l.66 ...tlisting[language=VHDL]{code/rom_init.vhd}
+l.66 ...nguage=VHDL,style=VHDL]{code/rom_init.vhd}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3428,7 +3494,7 @@ Missing character: There is no ) in font nullfont!
 Missing character: There is no : in font nullfont!
 ./04_Custom_IP_Blocks.tex:69: Undefined control sequence.
 l.69 \lstinputlisting
-                     [language=VHDL]{code/ram_init2.vhd}
+                     [language=VHDL,style=VHDL]{code/ram_init2.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3449,6 +3515,17 @@ Missing character: There is no V in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -3461,13 +3538,13 @@ Missing character: There is no m in font nullfont!
 ./04_Custom_IP_Blocks.tex:69: Missing $ inserted.
 <inserted text> 
                 $
-l.69 \lstinputlisting[language=VHDL]{code/ram_
-                                              init2.vhd}
+l.69 ...isting[language=VHDL,style=VHDL]{code/ram_
+                                                  init2.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./04_Custom_IP_Blocks.tex:69: Extra }, or forgotten $.
-l.69 ...listing[language=VHDL]{code/ram_init2.vhd}
+l.69 ...guage=VHDL,style=VHDL]{code/ram_init2.vhd}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3505,7 +3582,7 @@ Overfull \hbox (40.33813pt too wide) in paragraph at lines 68--70
 
 ./04_Custom_IP_Blocks.tex:71: Undefined control sequence.
 l.71 \subsection
-                {Memory IP Generators}
+                {Memory IP Generators}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3520,7 +3597,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.71 \subsection{M
-                  emory IP Generators}
+                  emory IP Generators}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3882,7 +3959,7 @@ or  <return>  to continue without it.
 Missing character: There is no 2 in font nullfont!
 ./04_Custom_IP_Blocks.tex:76: Undefined control sequence.
 l.76 \subsection
-                {Definition IP Core}
+                {Definition IP Core}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7795,7 +7872,7 @@ or  <return>  to continue without it.
 
 ./04_Custom_IP_Blocks.tex:143: Undefined control sequence.
 l.143 \lstinputlisting
-                      [language=VHDL]{code/component.vhd}
+                      [language=VHDL,style=VHDL]{code/component.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7810,6 +7887,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -9034,5 +9122,5 @@ Here is how much of TeX's memory you used:
  4486 multiletter control sequences out of 15000+600000
  4116 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 20i,7n,18p,514b,151s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,7n,16p,514b,157s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

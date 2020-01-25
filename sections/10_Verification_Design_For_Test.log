@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  24 JAN 2020 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -54,7 +54,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
 ./10_Verification_Design_For_Test.tex:2: Undefined control sequence.
 l.2 \subsection
-               {Warum testen?}
+               {Warum testen?}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -73,6 +73,10 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no ? in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
@@ -827,10 +831,6 @@ Missing character: There is no f in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no : in font nullfont!
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 10.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 10.
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 10--11
 \/cmr/m/n/10 ^^?a
@@ -1039,7 +1039,7 @@ Overfull \hbox (69.13216pt too wide) in paragraph at lines 12--14
 
 ./10_Verification_Design_For_Test.tex:16: Undefined control sequence.
 l.16 \subsection
-                {Fehlermodelle}
+                {Fehlermodelle}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1054,7 +1054,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.16 \subsection{F
-                  ehlermodelle}
+                  ehlermodelle}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1122,7 +1122,7 @@ or  <return>  to continue without it.
 
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 16--19
-[]
+[]$ []$ 
  []
 
 
@@ -2107,7 +2107,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ./10_Verification_Design_For_Test.tex:27: Undefined control sequence.
 l.27 \paragraph
-               {Beispiel}
+               {Beispiel}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3371,7 +3371,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ./10_Verification_Design_For_Test.tex:50: Undefined control sequence.
 l.50 \paragraph
-               {Beispiel}
+               {Beispiel}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3889,7 +3889,7 @@ my insertion and my current dilemma will both disappear.
 
 ./10_Verification_Design_For_Test.tex:63: Undefined control sequence.
 l.63 \subsection
-                {I\textsubscript{DDQ}-Test}
+                {I\textsubscript{DDQ}-Test}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4401,7 +4401,7 @@ Overfull \hbox (2867.24998pt too wide) in paragraph at lines 48--70
 
 
 Overfull \hbox (18.68063pt too wide) in paragraph at lines 48--70
-[]$
+[]$$ []$ 
  []
 
 
@@ -4426,7 +4426,7 @@ Overfull \hbox (5.55557pt too wide) in paragraph at lines 48--70
 
 ./10_Verification_Design_For_Test.tex:71: Undefined control sequence.
 l.71 \subsection
-                {Scan Path}
+                {Scan Path}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4441,7 +4441,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.71 \subsection{S
-                  can Path}
+                  can Path}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -6015,7 +6015,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 93--96
 
 ./10_Verification_Design_For_Test.tex:97: Undefined control sequence.
 l.97     \subsection
-                    {BIST (Built In Self Test)}
+                    {BIST (Built In Self Test)}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6030,7 +6030,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.97     \subsection{B
-                      IST (Built In Self Test)}
+                      IST (Built In Self Test)}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -7274,7 +7274,7 @@ Overfull \hbox (5.55557pt too wide) in paragraph at lines 104--111
 
 ./10_Verification_Design_For_Test.tex:112: Undefined control sequence.
 l.112 \subsection
-                 {BST (Boundary Scan Test)}
+                 {BST (Boundary Scan Test)}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7289,7 +7289,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.112 \subsection{B
-                   ST (Boundary Scan Test)}
+                   ST (Boundary Scan Test)}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -7713,7 +7713,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 115--118
 
 ./10_Verification_Design_For_Test.tex:119: Undefined control sequence.
 l.119     \paragraph
-                    {Signale}
+                    {Signale}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7728,7 +7728,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.119     \paragraph{S
-                      ignale}
+                      ignale}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -7842,7 +7842,7 @@ or  <return>  to continue without it.
 
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 119--122
-[]
+[]$ []$ 
  []
 
 
@@ -9680,7 +9680,7 @@ Overfull \hbox (77.64719pt too wide) in paragraph at lines 150--154
 
 ./10_Verification_Design_For_Test.tex:155: Undefined control sequence.
 l.155 \paragraph
-                {Verbindliche Befehle}
+                {Verbindliche Befehle}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -9695,7 +9695,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.155 \paragraph{V
-                  erbindliche Befehle}
+                  erbindliche Befehle}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -10511,7 +10511,7 @@ Overfull \hbox (42.5136pt too wide) in paragraph at lines 160--162
 
 ./10_Verification_Design_For_Test.tex:163: Undefined control sequence.
 l.163 \paragraph
-                {Interner Aufbau}
+                {Interner Aufbau}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -10526,7 +10526,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.163 \paragraph{I
-                  nterner Aufbau}
+                  nterner Aufbau}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -10769,7 +10769,7 @@ Overfull \hbox (135.83139pt too wide) in paragraph at lines 163--168
 
 ./10_Verification_Design_For_Test.tex:169: Undefined control sequence.
 l.169 \paragraph
-                {Optionale Befehle}
+                {Optionale Befehle}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -10784,7 +10784,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.169 \paragraph{O
-                  ptionale Befehle}
+                  ptionale Befehle}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -12256,7 +12256,7 @@ or  <return>  to continue without it.
 Here is how much of TeX's memory you used:
  30 strings out of 492167
  503 string characters out of 6131558
- 68449 words of memory out of 5000000
+ 69380 words of memory out of 5000000
  4488 multiletter control sequences out of 15000+600000
  4294 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

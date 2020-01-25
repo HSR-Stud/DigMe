@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  21 JAN 2020 07:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 11:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,7 +8,7 @@ entering extended mode
 LaTeX2e <2019-10-01> patch level 1
 ./08_Combining_FPGA_and_Processor.tex:1: Undefined control sequence.
 l.1 \section
-            {Combining FPGA and Processor}
+            {Combining FPGA and Processor}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -23,7 +23,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.1 \section{C
-              ombining FPGA and Processor}
+              ombining FPGA and Processor}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -52,6 +52,10 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
 Missing character: There is no O in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -211,7 +215,7 @@ Overfull \hbox (10.55559pt too wide) in paragraph at lines 1--3
 
 ./08_Combining_FPGA_and_Processor.tex:4: Undefined control sequence.
 l.4 \subsection
-               {SDK}
+               {SDK}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -226,7 +230,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.4 \subsection{S
-                 DK}
+                 DK}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -378,7 +382,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 4--6
-[]
+[]$ []$ 
  []
 
 
@@ -826,7 +830,7 @@ Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
 ./08_Combining_FPGA_and_Processor.tex:9: Undefined control sequence.
 l.9 \lstinputlisting
-                    [language=C]{code/c/sdk_axi.c}
+                    [language=C,style=VHDL]{code/c/sdk_axi.c}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -844,6 +848,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no C in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -858,17 +873,13 @@ Missing character: There is no k in font nullfont!
 ./08_Combining_FPGA_and_Processor.tex:9: Missing $ inserted.
 <inserted text> 
                 $
-l.9 \lstinputlisting[language=C]{code/c/sdk_
-                                            axi.c}
+l.9 ...tlisting[language=C,style=VHDL]{code/c/sdk_
+                                                  axi.c}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 9.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 9.
 ./08_Combining_FPGA_and_Processor.tex:9: Extra }, or forgotten $.
-l.9 \lstinputlisting[language=C]{code/c/sdk_axi.c}
+l.9 ...ng[language=C,style=VHDL]{code/c/sdk_axi.c}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1266,7 +1277,7 @@ If that doesn't work, type  X <return>  to quit.
 Missing character: There is no 2 in font nullfont!
 ./08_Combining_FPGA_and_Processor.tex:15: Undefined control sequence.
 l.15 \paragraph
-               {Verbindung mit ARM}
+               {Verbindung mit ARM}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1518,7 +1529,7 @@ Overfull \hbox (46.14513pt too wide) in paragraph at lines 14--20
 
 ./08_Combining_FPGA_and_Processor.tex:21: Undefined control sequence.
 l.21 \paragraph
-               {Modi}
+               {Modi}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1533,7 +1544,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.21 \paragraph{M
-                 odi}
+                 odi}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1603,7 +1614,7 @@ or  <return>  to continue without it.
 
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 21--24
-[]
+[]$ []$ 
  []
 
 
@@ -2363,7 +2374,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 ./08_Combining_FPGA_and_Processor.tex:32: Undefined control sequence.
 l.32 \lstinputlisting
-                     [language=C]{code/c/sdk_dmawrite.c}
+                     [language=C,style=C]{code/c/sdk_dmawrite.c}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2381,6 +2392,14 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no C in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no C in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -2395,13 +2414,13 @@ Missing character: There is no k in font nullfont!
 ./08_Combining_FPGA_and_Processor.tex:32: Missing $ inserted.
 <inserted text> 
                 $
-l.32 \lstinputlisting[language=C]{code/c/sdk_
-                                             dmawrite.c}
+l.32 ...putlisting[language=C,style=C]{code/c/sdk_
+                                                  dmawrite.c}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./08_Combining_FPGA_and_Processor.tex:32: Extra }, or forgotten $.
-l.32 ...listing[language=C]{code/c/sdk_dmawrite.c}
+l.32 ...language=C,style=C]{code/c/sdk_dmawrite.c}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2465,7 +2484,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 ./08_Combining_FPGA_and_Processor.tex:35: Undefined control sequence.
 l.35 \lstinputlisting
-                     [language=C]{code/c/sdk_dmaread.c}
+                     [language=C,style=VHDL]{code/c/sdk_dmaread.c}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2483,6 +2502,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no C in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -2497,13 +2527,13 @@ Missing character: There is no k in font nullfont!
 ./08_Combining_FPGA_and_Processor.tex:35: Missing $ inserted.
 <inserted text> 
                 $
-l.35 \lstinputlisting[language=C]{code/c/sdk_
-                                             dmaread.c}
+l.35 ...listing[language=C,style=VHDL]{code/c/sdk_
+                                                  dmaread.c}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./08_Combining_FPGA_and_Processor.tex:35: Extra }, or forgotten $.
-l.35 ...tlisting[language=C]{code/c/sdk_dmaread.c}
+l.35 ...nguage=C,style=VHDL]{code/c/sdk_dmaread.c}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2521,9 +2551,9 @@ deleted material, e.g., by typing `I$}'.
 Here is how much of TeX's memory you used:
  25 strings out of 492167
  425 string characters out of 6131558
- 60449 words of memory out of 5000000
+ 61380 words of memory out of 5000000
  4485 multiletter control sequences out of 15000+600000
  4294 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,1n,16p,602b,90s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,2n,16p,602b,90s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

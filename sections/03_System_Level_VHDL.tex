@@ -1,5 +1,5 @@
 \section{System Level VHDL}
-\subsection{Wiederverwendbarkeit}
+\subsection{Wiederverwendbarkeit}$~$ \\
 Bereits auf der untersten Abstraktionsebene soll wiederverwendbarer Code geschrieben werden. Um einen Code wiederverwenden zu können, muss dieser gut lesbar sein. Nachfolgend ein paar Hilfsmittel um den Code gut lesbar zu gestalten.
 \subsubsection{Kommentare}
 Zeilenkommentare $\rightarrow$ beginnen mit -{}-\\
@@ -21,16 +21,16 @@ Spezielle Namenskonventionen ermöglichen es dem Vivado IP-Packager, automatisch
 \end{compactitem}
 \subsubsection{Einsatz von Konstanten}
 Wenn möglich nie Parameter gebrauchen! Konstanten sind in Bezug auf die Änderbarkeit unverzichtbar. Konstanten in VHDL-Packages können in mehreren Designeinheiten verwendet werden. Konstanten, die in Designentitäten (Deklarationsteil der Architektur) deklariert sind, können in der gesamten Architektur einschliesslich der Prozesse innerhalb dieser Architektur gesehen werden. Der Scope einer Konstante, welche in einem Prozess deklariert wurde, ist auf diesen Prozess beschränkt.
-\lstinputlisting[language=VHDL]{code/constants.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/constants.vhd}
 \subsubsection{Einsatz von Aliases}
-\lstinputlisting[language=VHDL]{code/aliases.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/aliases.vhd}
 \subsubsection{Einsatz von Generics}
 Generics werden zu Beginn der Entity deklariert.
-\lstinputlisting[language=VHDL]{code/generics.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/generics.vhd}
 
-\subsection{Funktionen}
+\subsection{Funktionen}$~$ \\
 Funktionen sind Subprogramme mit einer Argumentenliste von nur Eingängen. Sie geben einen einzigen Wert eines spezifizierten Types zurück. Funktionen können entweder im Deklarationsteil einer Architektur oder in einem Package (flexibler) definiert werden.
-\lstinputlisting[language=VHDL]{code/functions.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/functions.vhd}
 \textbf{Wichtig:}
 \begin{compactitem}
     \item Im Funktionsblock dürfen keine wait-Anweisungen oder Signalzuweisungen enthalten sein!
@@ -38,18 +38,18 @@ Funktionen sind Subprogramme mit einer Argumentenliste von nur Eingängen. Sie g
     \item \textless= wird verwendet, wenn ein Signal einem Signal zugewiesen wird. Wird am Ende eines Prozesses zugewiesen.
 \end{compactitem}
 \textbf{Unterschied pure und impure Funktionen:} Bei Funktionen, welche pure sind, bekommt man bei jedem Aufruf für jeden Input den gleichen Output (z.B. sin(x)). Bei impuren Funktionen erhält man bei gleichem Input unterschiedliche Outputs. Impure Funktionen haben Seiteneffekte, wie z.B. das Updaten von Objekten ausserhalb ihres Scopes, was bei puren Funktionen nicht erlaubt ist.
-\lstinputlisting[language=VHDL]{code/functions_impure.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/functions_impure.vhd}
 
-\subsection{Prozeduren}
+\subsection{Prozeduren}$~$ \\
 Prozeduren sind sehr ähnlich wie Funktionen. Der Hauptunterschied ist, dass bei Prozeduren mehrere Ein- und Ausgangsvariablen definiert werden können.
-\lstinputlisting[language=VHDL]{code/procedures.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/procedures.vhd}
 \textbf{Wichtig: }
 \begin{compactitem}
     \item Prozeduren können In-, Out- oder Inout-Parameter besitzen. Diese können ein Signal, eine Variable oder eine Konstante sein. Die Voreinstellung für in-Parameter ist konstant, für out und inout variabel.
 \end{compactitem}
 
-\subsection{Packages}
+\subsection{Packages}$~$ \\
 Konstanten, Typen, Komponenten, Funktionen und Prozeduren, die an verschiedenen Stellen in einem oder mehreren Projekten verwendet werden, können in Packages gruppiert werden.
-\lstinputlisting[language=VHDL]{code/packages.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/packages.vhd}
 Packages werden in Bibliotheken kompiliert abgelegt (Standard = work library). Sie können im VHDL-Modul mit der use-Anweisung verwendet werden:
-\lstinputlisting[language=VHDL]{code/packages_use.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/packages_use.vhd}

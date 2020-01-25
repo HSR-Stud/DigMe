@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  16 JAN 2020 14:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 11:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -44,7 +44,7 @@ Missing character: There is no D in font nullfont!
 Missing character: There is no L in font nullfont!
 ./03_System_Level_VHDL.tex:2: Undefined control sequence.
 l.2 \subsection
-               {Wiederverwendbarkeit}
+               {Wiederverwendbarkeit}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -71,6 +71,10 @@ Missing character: There is no k in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
 Missing character: There is no B in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -326,10 +330,6 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 5.
 Missing character: There is no b in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no g in font nullfont!
@@ -1854,7 +1854,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 ./03_System_Level_VHDL.tex:24: Undefined control sequence.
 l.24 \lstinputlisting
-                     [language=VHDL]{code/constants.vhd}
+                     [language=VHDL,style=VHDL]{code/constants.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1869,6 +1869,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -1922,7 +1933,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ./03_System_Level_VHDL.tex:26: Undefined control sequence.
 l.26 \lstinputlisting
-                     [language=VHDL]{code/aliases.vhd}
+                     [language=VHDL,style=VHDL]{code/aliases.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1937,6 +1948,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -2031,7 +2053,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 ./03_System_Level_VHDL.tex:29: Undefined control sequence.
 l.29 \lstinputlisting
-                     [language=VHDL]{code/generics.vhd}
+                     [language=VHDL,style=VHDL]{code/generics.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2046,6 +2068,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -2102,7 +2135,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 20--30
 
 ./03_System_Level_VHDL.tex:31: Undefined control sequence.
 l.31 \subsection
-                {Funktionen}
+                {Funktionen}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2117,7 +2150,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.31 \subsection{F
-                  unktionen}
+                  unktionen}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2354,7 +2387,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ./03_System_Level_VHDL.tex:33: Undefined control sequence.
 l.33 \lstinputlisting
-                     [language=VHDL]{code/functions.vhd}
+                     [language=VHDL,style=VHDL]{code/functions.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2369,6 +2402,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -2409,7 +2453,7 @@ or  <return>  to continue without it.
 
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 31--36
-[]
+[]$ []$ 
  []
 
 
@@ -3038,7 +3082,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 ./03_System_Level_VHDL.tex:41: Undefined control sequence.
 l.41 \lstinputlisting
-                     [language=VHDL]{code/functions_impure.vhd}
+                     [language=VHDL,style=VHDL]{code/functions_impure.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3053,6 +3097,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -3077,13 +3132,13 @@ Missing character: There is no s in font nullfont!
 ./03_System_Level_VHDL.tex:41: Missing $ inserted.
 <inserted text> 
                 $
-l.41 ...nputlisting[language=VHDL]{code/functions_
+l.41 ...[language=VHDL,style=VHDL]{code/functions_
                                                   impure.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./03_System_Level_VHDL.tex:41: Extra }, or forgotten $.
-l.41 ...[language=VHDL]{code/functions_impure.vhd}
+l.41 ...HDL,style=VHDL]{code/functions_impure.vhd}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3171,7 +3226,7 @@ Overfull \hbox (51.26112pt too wide) in paragraph at lines 38--42
 
 ./03_System_Level_VHDL.tex:43: Undefined control sequence.
 l.43 \subsection
-                {Prozeduren}
+                {Prozeduren}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3186,7 +3241,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.43 \subsection{P
-                  rozeduren}
+                  rozeduren}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3332,7 +3387,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ./03_System_Level_VHDL.tex:45: Undefined control sequence.
 l.45 \lstinputlisting
-                     [language=VHDL]{code/procedures.vhd}
+                     [language=VHDL,style=VHDL]{code/procedures.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3347,6 +3402,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -3388,7 +3454,7 @@ or  <return>  to continue without it.
 
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 43--48
-[]
+[]$ []$ 
  []
 
 
@@ -3623,7 +3689,7 @@ Overfull \hbox (5.55557pt too wide) in paragraph at lines 48--50
 
 ./03_System_Level_VHDL.tex:51: Undefined control sequence.
 l.51 \subsection
-                {Packages}
+                {Packages}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3638,7 +3704,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.51 \subsection{P
-                  ackages}
+                  ackages}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3805,7 +3871,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ./03_System_Level_VHDL.tex:53: Undefined control sequence.
 l.53 \lstinputlisting
-                     [language=VHDL]{code/packages.vhd}
+                     [language=VHDL,style=VHDL]{code/packages.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3820,6 +3886,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -3970,7 +4047,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no : in font nullfont!
 ./03_System_Level_VHDL.tex:55: Undefined control sequence.
 l.55 \lstinputlisting
-                     [language=VHDL]{code/packages_use.vhd}
+                     [language=VHDL,style=VHDL]{code/packages_use.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3985,6 +4062,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -4008,13 +4096,13 @@ Missing character: There is no s in font nullfont!
 ./03_System_Level_VHDL.tex:55: Missing $ inserted.
 <inserted text> 
                 $
-l.55 ...inputlisting[language=VHDL]{code/packages_
+l.55 ...g[language=VHDL,style=VHDL]{code/packages_
                                                   use.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./03_System_Level_VHDL.tex:55: Extra }, or forgotten $.
-l.55 ...ting[language=VHDL]{code/packages_use.vhd}
+l.55 ...ge=VHDL,style=VHDL]{code/packages_use.vhd}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4032,9 +4120,9 @@ deleted material, e.g., by typing `I$}'.
 Here is how much of TeX's memory you used:
  41 strings out of 492167
  639 string characters out of 6131558
- 62401 words of memory out of 5000000
+ 62380 words of memory out of 5000000
  4498 multiletter control sequences out of 15000+600000
  4294 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,1n,16p,540b,99s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,2n,16p,540b,99s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

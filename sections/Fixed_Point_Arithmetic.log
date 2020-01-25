@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 09:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 11:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1567,7 +1567,7 @@ Missing character: There is no ' in font nullfont!
 Missing character: There is no . in font nullfont!
 ./Fixed_Point_Arithmetic.tex:53: Undefined control sequence.
 l.53 \lstinputlisting
-                     [language=VHDL]{code/ufixed_sfixed.vhd}
+                     [language=VHDL,style=VHDL]{code/ufixed_sfixed.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1582,6 +1582,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -1603,13 +1614,13 @@ Missing character: There is no d in font nullfont!
 ./Fixed_Point_Arithmetic.tex:53: Missing $ inserted.
 <inserted text> 
                 $
-l.53 \lstinputlisting[language=VHDL]{code/ufixed_
-                                                 sfixed.vhd}
+l.53 ...ing[language=VHDL,style=VHDL]{code/ufixed_
+                                                  sfixed.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./Fixed_Point_Arithmetic.tex:53: Extra }, or forgotten $.
-l.53 ...ing[language=VHDL]{code/ufixed_sfixed.vhd}
+l.53 ...e=VHDL,style=VHDL]{code/ufixed_sfixed.vhd}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1822,6 +1833,76 @@ Missing character: There is no ' in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
+./Fixed_Point_Arithmetic.tex:57: Undefined control sequence.
+l.57 \lstinputlisting
+                     [language=VHDL,style=VHDL]{code/fixed_pkg.vhd}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+./Fixed_Point_Arithmetic.tex:57: Missing $ inserted.
+<inserted text> 
+                $
+l.57 ...ting[language=VHDL,style=VHDL]{code/fixed_
+                                                  pkg.vhd}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Fixed_Point_Arithmetic.tex:57: Extra }, or forgotten $.
+l.57 ...guage=VHDL,style=VHDL]{code/fixed_pkg.vhd}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Fixed_Point_Arithmetic.tex:58: Missing $ inserted.
+<inserted text> 
+                $
+l.58 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 55--58
 []
@@ -1840,6 +1921,11 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 55--58
 
 Overfull \hbox (5.55557pt too wide) in paragraph at lines 55--58
 \/cmr/m/n/10 ^^?u
+ []
+
+
+Overfull \hbox (34.2219pt too wide) in paragraph at lines 55--58
+[]\OML/cmm/m/it/10 kg:vhd$ 
  []
 
 ./Fixed_Point_Arithmetic.tex:59: Undefined control sequence.
@@ -1903,7 +1989,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no h in font nullfont!
 ./Fixed_Point_Arithmetic.tex:70: Undefined control sequence.
 l.70 \lstinputlisting
-                     [language=VHDL]{code/uQ2_6.vhd}
+                     [language=VHDL,style=VHDL]{code/uQ2_6.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1924,6 +2010,17 @@ Missing character: There is no V in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -1936,13 +2033,13 @@ Missing character: There is no 2 in font nullfont!
 ./Fixed_Point_Arithmetic.tex:70: Missing $ inserted.
 <inserted text> 
                 $
-l.70 \lstinputlisting[language=VHDL]{code/uQ2_
-                                              6.vhd}
+l.70 ...isting[language=VHDL,style=VHDL]{code/uQ2_
+                                                  6.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./Fixed_Point_Arithmetic.tex:70: Extra }, or forgotten $.
-l.70 ...nputlisting[language=VHDL]{code/uQ2_6.vhd}
+l.70 ...[language=VHDL,style=VHDL]{code/uQ2_6.vhd}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1952,7 +2049,7 @@ deleted material, e.g., by typing `I$}'.
 
 ./Fixed_Point_Arithmetic.tex:72: Undefined control sequence.
 l.72 \lstinputlisting
-                     [language=VHDL]{code/sQ2_6.vhd}
+                     [language=VHDL,style=VHDL]{code/sQ2_6.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1990,6 +2087,11 @@ Overfull \hbox (29.72206pt too wide) in paragraph at lines 59--73
 
 Overfull \hbox (135.6368pt too wide) in paragraph at lines 59--73
 []\OML/cmm/m/it/10 :vhd[]\/cmr/m/n/10 [\OML/cmm/m/it/10 language \/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (68.94002pt too wide) in paragraph at lines 59--73
+\OML/cmm/m/it/10 VHDL; style \/cmr/m/n/10 =
  []
 
 
@@ -2294,7 +2396,7 @@ Overfull \hbox (11.50009pt too wide) in paragraph at lines 81--87
 
 ./Fixed_Point_Arithmetic.tex:88: Undefined control sequence.
 l.88 \lstinputlisting
-                     [language=VHDL]{code/addition_subtraktion.vhd}
+                     [language=VHDL,style=VHDL]{code/addition_subtraktion.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2309,6 +2411,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -2332,13 +2445,13 @@ Missing character: There is no n in font nullfont!
 ./Fixed_Point_Arithmetic.tex:88: Missing $ inserted.
 <inserted text> 
                 $
-l.88 ...inputlisting[language=VHDL]{code/addition_
+l.88 ...g[language=VHDL,style=VHDL]{code/addition_
                                                   subtraktion.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./Fixed_Point_Arithmetic.tex:88: Extra }, or forgotten $.
-l.88 ...guage=VHDL]{code/addition_subtraktion.vhd}
+l.88 ...style=VHDL]{code/addition_subtraktion.vhd}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2562,7 +2675,7 @@ Overfull \hbox (23.00003pt too wide) in paragraph at lines 95--101
 
 ./Fixed_Point_Arithmetic.tex:102: Undefined control sequence.
 l.102 \lstinputlisting
-                      [language=VHDL]{code/addition_subtraktion_signed.vhd}
+                      [language=VHDL,style=VHDL]{code/addition_subtraktion_s...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2577,6 +2690,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -2600,7 +2724,7 @@ Missing character: There is no n in font nullfont!
 ./Fixed_Point_Arithmetic.tex:102: Missing $ inserted.
 <inserted text> 
                 $
-l.102 ...nputlisting[language=VHDL]{code/addition_
+l.102 ...[language=VHDL,style=VHDL]{code/addition_
                                                   subtraktion_signed.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2878,7 +3002,7 @@ Missing character: There is no 7 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 ./Fixed_Point_Arithmetic.tex:120: Undefined control sequence.
 l.120 \lstinputlisting
-                      [language=VHDL]{code/multiplikation_unsigned.vhd}
+                      [language=VHDL,style=VHDL]{code/multiplikation_unsigne...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2893,6 +3017,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -2922,7 +3057,7 @@ Missing character: There is no n in font nullfont!
 ./Fixed_Point_Arithmetic.tex:120: Missing $ inserted.
 <inserted text> 
                 $
-l.120 ...sting[language=VHDL]{code/multiplikation_
+l.120 ...age=VHDL,style=VHDL]{code/multiplikation_
                                                   unsigned.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4188,7 +4323,7 @@ Overfull \hbox (33.00003pt too wide) in paragraph at lines 160--171
 Missing character: There is no . in font nullfont!
 ./Fixed_Point_Arithmetic.tex:172: Undefined control sequence.
 l.172 \lstinputlisting
-                      [language=VHDL]{code/multiplikation_signed.vhd}
+                      [language=VHDL,style=VHDL]{code/multiplikation_signed....
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4203,6 +4338,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -4232,13 +4378,13 @@ Missing character: There is no n in font nullfont!
 ./Fixed_Point_Arithmetic.tex:172: Missing $ inserted.
 <inserted text> 
                 $
-l.172 ...sting[language=VHDL]{code/multiplikation_
+l.172 ...age=VHDL,style=VHDL]{code/multiplikation_
                                                   signed.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./Fixed_Point_Arithmetic.tex:172: Extra }, or forgotten $.
-l.172 ...age=VHDL]{code/multiplikation_signed.vhd}
+l.172 ...yle=VHDL]{code/multiplikation_signed.vhd}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4587,7 +4733,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no : in font nullfont!
 ./Fixed_Point_Arithmetic.tex:177: Undefined control sequence.
 l.177 \lstinputlisting
-                      [language=VHDL]{code/division.vhd}
+                      [language=VHDL,style=VHDL]{code/division.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4602,6 +4748,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -5589,7 +5746,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no : in font nullfont!
 ./Fixed_Point_Arithmetic.tex:193: Undefined control sequence.
 l.193 \lstinputlisting
-                      [language=VHDL]{code/resize_fixed_pkg.vhd}
+                      [language=VHDL,style=VHDL]{code/resize_fixed_pkg.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5604,6 +5761,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -5625,13 +5793,13 @@ Missing character: There is no e in font nullfont!
 ./Fixed_Point_Arithmetic.tex:193: Missing $ inserted.
 <inserted text> 
                 $
-l.193 \lstinputlisting[language=VHDL]{code/resize_
+l.193 ...ng[language=VHDL,style=VHDL]{code/resize_
                                                   fixed_pkg.vhd}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./Fixed_Point_Arithmetic.tex:193: Extra }, or forgotten $.
-l.193 ...language=VHDL]{code/resize_fixed_pkg.vhd}
+l.193 ...DL,style=VHDL]{code/resize_fixed_pkg.vhd}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -6123,7 +6291,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no : in font nullfont!
 ./Fixed_Point_Arithmetic.tex:201: Undefined control sequence.
 l.201 \lstinputlisting
-                      [language=VHDL]{code/truncation.vhd}
+                      [language=VHDL,style=VHDL]{code/truncation.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6138,6 +6306,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -6174,9 +6353,9 @@ Missing character: There is no d in font nullfont!
 Here is how much of TeX's memory you used:
  25 strings out of 492167
  382 string characters out of 6131558
- 86434 words of memory out of 5000000
+ 86452 words of memory out of 5000000
  4486 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,9n,16p,454b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,9n,16p,454b,251s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

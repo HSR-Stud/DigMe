@@ -50,11 +50,11 @@ $\text{Unsigned Reciprocal(A)}$ & -A'right+1 downto -A'left\\
 
 \subsubsection{ufixed/sfixed}
 Das Package definiert zwei neue Datentypen: ufixed und sfixed. Für negative zahlen wird das 2er-Komplement verwendet. Die Position des Dezimalpunkts ist zwischen Index ''0'' und ''-1''.
-\lstinputlisting[language=VHDL]{code/ufixed_sfixed.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/ufixed_sfixed.vhd}
 
 \subsubsection{Limitierte Unterstützung}
 Das Package ist Teil von VHDL 2008, weshalb es von gewissen Tools noch nicht vollständig unterstützt wird. XILINX bietet eine modifizierte Version von 'fixed\_pkg' an.
-% \lstinputlisting[language=VHDL]{code/fixed_pkg.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/fixed_pkg.vhd}
 
 \subsubsection{Unsigned/Signed}
 \begin{tabular}{| l | l | l |}
@@ -67,9 +67,9 @@ Bereich & $0 \ldots 2^n-2^{-m}$ & $-2^{n-1} \ldots 2^{n-1}-2^{-m}$\\
 \hline
 \end{tabular}\\
 \textbf{Bsp.: uQ2.6}
-\lstinputlisting[language=VHDL]{code/uQ2_6.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/uQ2_6.vhd}
 \textbf{Bsp.: sQ2.6}
-\lstinputlisting[language=VHDL]{code/sQ2_6.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/sQ2_6.vhd}
 
 \subsection{Arithmetic Functions}
 \subsubsection{Addition/Subtraction}
@@ -85,7 +85,7 @@ Praktisch identisch mit Add./Sub. mit normalen Integer-Zahlen, einzig muss nun d
 & \textbf{0} & 1 & 1 & 0 & 1 & 1 & 0 & 1 & = 0110.1101 in uQ4.4 = 6.8125\\
 \end{tabular}
 \end{minipage}
-\lstinputlisting[language=VHDL]{code/addition_subtraktion.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/addition_subtraktion.vhd}
 
 \paragraph{Signed and Signed}$~$ \\
 \begin{minipage}{0.3\linewidth}
@@ -99,7 +99,7 @@ Auch fast identisch, Zahl mit weniger Vorkommabits muss sign-extended werden
   & \textbf{1} & 1 & 0 & 0 & 1 & 1 & 0 & 1 & = 1100.1101 in sQ4.4 = -3.1875\\
   \end{tabular}
 \end{minipage}
-\lstinputlisting[language=VHDL]{code/addition_subtraktion_signed.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/addition_subtraktion_signed.vhd}
 
 \subsubsection{Multiplication}
 \paragraph{Unsigned by Unsigned}$~$ \\
@@ -117,7 +117,7 @@ Einfachster Fall, partielle Produkte werden ohne sign-extension addiert\\
   1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & = 1000.1111 in uQ4.4 = 8.9375
   \end{tabular}
 \end{minipage}
-\lstinputlisting[language=VHDL]{code/multiplikation_unsigned.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/multiplikation_unsigned.vhd}
 
 \paragraph{Signed by Unsigned}$~$ \\
 Hier braucht jedes partielle Produkt sign-extension. In VHDL ist $\text{signed} \cdot \text{unsigned}$ nicht erlaubt. Der vorzeichenlose Wert muss zuerst in eine vorzeichenbehaftete Zahl gewandelt werden.\\
@@ -169,12 +169,12 @@ Das MSB des Produkts ist redundant. Wird das Produkt nach links geschoben, kann 
   1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 110.01110 in sQ3.5 = -1.5625
   \end{tabular}
 \end{minipage}\\.
-\lstinputlisting[language=VHDL]{code/multiplikation_signed.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/multiplikation_signed.vhd}
 \textbf{Corner case:} Wenn die zwei kleinst möglichen Zahlen multipliziert werden (bei sQ2.2: 1000*1000). Dies führt zu einem Overflow und zu einem falschen Ergebnis (-4 anstatt +4). $\rightarrow$ \textbf{Lösung:} Das zweite Vorzeichenbit als Schutz stehen lassen. Dies ist so auch im 'fixed\_pkg'-Package umgesetzt
 
 \subsubsection{Division}
 Divisionen mit Mehrfachen von 2 ($2^n$) sind einfache Schiebeoperationen. Für andere Werte ist es komplizierter. 'fixed\_pkg' bietet eine elegante Lösung an:
-\lstinputlisting[language=VHDL]{code/division.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/division.vhd}
 
 \subsection{Overflow and Saturation}$~$ \\
 Bei Verwendung des 'fixed\_pkg'-Packages werden Overflow und Saturation automatisch gelöst. Ansonsten gibt es zwei Lösungen mit einem Over-/Underflow umzugehen: Das Resultat sättigen (Maximum oder Minimum) oder das Resultat erhält ein zusätzliched integer bit.\\
@@ -190,7 +190,7 @@ Erkennung bei vorzeichenlosen Zahlen:
   \item Underflow, wenn Differenz einer Subtraktion grösser als der Subtrahend ist.
 \end{compactitem}
 \textbf{fixed\_pkg:} Der einzige Fall, dass ein Underflow entstehen kann, ist wenn das Resultat resized wird in eine kleiner Grösse. Die resize-Funktion von 'numeric\_std' wird überladen:
-\lstinputlisting[language=VHDL]{code/resize_fixed_pkg.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/resize_fixed_pkg.vhd}
 Mit der nun vorhandenen resize-Funktion ist es möglich, das Overflow-Handling, 'truncation' oder 'rounding' in einem Schritt durchzuführen. Der Default 'overflow\_style' ist 'fixed\_saturate', kann aber auch auf 'fixed\_wrap' zu setzen um einen Overflow zu ermöglichen. Der Default 'round\_style' ist 'fixed\_round' um das Resultat zu runden, kann aber auch auf 'fixed\_truncate' gesetzt werden.
 
 \subsection{Scaling}$~$ \\
@@ -198,4 +198,4 @@ Das Resultat einer Multiplikation hat die Breite des 'multiplicand' plus 'multip
 
 \subsubsection{Truncation}$~$ \\
 Eine Möglichkeit: Bits mit tiefer Präzision weglassen. Die normale 'truncation' ist eine floor-Funktion. In VHDL kann das mit 'shift\_right' und 'resize' umgesetzt werden:
-\lstinputlisting[language=VHDL]{code/truncation.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/truncation.vhd}

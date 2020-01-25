@@ -1,5 +1,5 @@
 \section{Serial Communication Interfaces}
-\subsection{SPI (Serial Peripheral Interface)}
+\subsection{SPI (Serial Peripheral Interface)}$~$ \\
 In einem SPI Netzwerk kann jeweils nur ein Master vorhanden sein. Jedoch ist es möglich, dass mehrere Slaves am selben Bus angeschlossen sind. Die folgenden Signale werden für die SPI Schnittstelle benötigt:
 \begin{compactitem}
     \item \textbf{SCLK}: Taktsignal
@@ -32,9 +32,9 @@ Die Hardware für eine SPI Schnittstelle kann mittels zwei Schieberegistern (ein
 \end{multicols}
 
 \subsubsection{Implementierung in VHDL}
-\lstinputlisting[language=VHDL]{code/spiMaster.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/spiMaster.vhd}
 
-\subsection{I\textsuperscript{2}C (Inter-Integrated Circuit)}
+\subsection{I\textsuperscript{2}C (Inter-Integrated Circuit)}$~$ \\
 Das I\textsuperscript{2}C Interface ist ein bidirektionales Bussystem. Es können beliebig viele Master und Slaves angehängt werden. Die folgenden Signale werden für die I\textsuperscript{2}C Schnittstelle benötigt:
 \begin{compactitem}
     \item \textbf{SCL}: Taktsignal
@@ -92,9 +92,9 @@ Der letzte Teilnehmer, welcher die SDA Leitung auf Low ziehen kann, gewinnt die 
 
 \subsubsection{Implementierung in VHDL}
 Da die beiden I\textsuperscript{2}C-Signale bidirektional sind, muss in VHDL ein IO-Buffer für die beiden Signale instantiiert werden. Der nachfolgende Code instantiiert zwei solche Buffer.
-\lstinputlisting[language=VHDL]{code/i2cMaster.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/i2cMaster.vhd}
 
-\subsection{UART (Universal Asynchronous Receiver Transmitter)}
+\subsection{UART (Universal Asynchronous Receiver Transmitter)}$~$ \\
 UART ist eine Punkt-zu-Punkt Schnittstelle. Es wird pro Richtung ein Datensignal benötigt.
 
 \subsubsection{Timing}
@@ -109,4 +109,4 @@ Eine UART Transaktion startet immer mit einem Startbit. Anschliessend wird ein D
 \end{figure}
 
 \subsubsection{VHDL Implementation}
-\lstinputlisting[language=VHDL]{code/uart.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/uart.vhd}

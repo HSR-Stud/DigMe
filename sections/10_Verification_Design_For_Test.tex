@@ -1,5 +1,5 @@
 \section{Verification Design For Test}
-\subsection{Warum testen?}
+\subsection{Warum testen?}$~$ \\
 In der Fabrikation von elektronischen Systemen gibt es unzählige Fehlerquellen. Je früher ein Fehler erkennt werden kann, desto weniger teuer kommt er zu stehen. Eine Regel besagt, dass die Kosten mit jedem Produktionsschritt, bei welchem der Fehler nicht erkannt wurde, um den Faktor 10 ansteigen. Bei der Herstellung von digitalen Chips kann in der Regel mit einer Ausbeute von 95 bis 98\% gerechnet werden.
 
 \subsection{Begriffe}
@@ -13,7 +13,7 @@ In der Fabrikation von elektronischen Systemen gibt es unzählige Fehlerquellen.
 \end{description}
 
 
-\subsection{Fehlermodelle}
+\subsection{Fehlermodelle}$~$ \\
 Die nachfolgenden Fehlermodelle gibt es:
 \begin{compactitem}
     \item \textbf{Stuck-At-0-Fault / Stuck-At-1-Fault}: Das entsprechende Signal wird auf einem Low-Pegel (Stuck-At-0-Fault) oder auf einem High-Pegel (Stuck-At-1-Fault) festgehalten und kann sich nicht ändern.
@@ -24,7 +24,7 @@ Die nachfolgenden Fehlermodelle gibt es:
 \subsection{Fehlererkennung}
 \subsubsection{Detektion von Stuck-At-X-Fault}
 Um einen solchen Fehler zu detektieren, muss der entsprechende Knoten kontrollier- und beobachtbar sein. Kontrollierbar ist er dann, wenn er über ein externes Signal auf Low oder High gesetzt werden kann. Beobachtbar ist er dann, wenn sein Zustand von aussen überprüft werden kann.
-\paragraph{Beispiel}
+\paragraph{Beispiel}$~$ \\
 Anhand untenstehender Schaltung, wird nun eine Tabelle mit allen Testvektoren erstellt. In der Y-Spalte steht der Ausgangswert, wenn kein Fehler vorhanden ist. In den nachfolgenden Spalten, steht der Ausgangswert wenn der entsprechende Stuck-At-Fehler vorhanden ist.\ \\
 \begin{minipage}{0.6\textwidth}
 \begin{figure}[H]
@@ -47,7 +47,7 @@ Die Fehlerabdeckung kann folgendermassen berechnet werden: $\text{Fehlerabdeckun
 
 \subsubsection{Redundante Logik}
 Sollte redundante Logik eingebaut sein (zur Verhinderung von Hazards), so kann die Funktion nicht ohne Zusatzaufwand getestet werden.
-\paragraph{Beispiel}
+\paragraph{Beispiel}$~$ \\
 Anhand von untenstehender Schaltung, wird die nachfolgende Tabelle erstellt. Dabei stellt sich heraus, dass ein Stuck-At-0-Fault am Knoten K4 nicht detektiert werden kann. Wenn aber die am Ausgang angeschlossene Logik darauf baut dass kein Hazard auftritt, kann dies zu einem Fehlverhalten führen.\\
 \begin{minipage}{0.6\textwidth}
 \begin{figure}[H]
@@ -60,7 +60,7 @@ Anhand von untenstehender Schaltung, wird die nachfolgende Tabelle erstellt. Dab
     \includegraphics[width=1.0\textwidth]{images/stuckat_redundant_schaltung.png}
 \end{figure}
 \end{minipage}
-\subsection{I\textsubscript{DDQ}-Test}
+\subsection{I\textsubscript{DDQ}-Test}$~$ \\
 \begin{multicols}{2}
 Beim I\textsubscript{DDQ}-Test wird die Ruhestromaufnahme der Schaltung gemessen. Dieser Ruhestrom ist im Normalfall vernachlässigbar klein. Entsteht jedoch bei einem Signalwert ein Kurzschluss, so ist dies über den Ruhestrom feststellbar. Wird bei einer Schaltung festgestellt, dass direkt nach dem Anlegen der Versorgungsspannung ein hoher Strom fliesst, kann auf nachfolgende Tests direkt verzichtet werden, was die Testzeit stark verkürzt.
 \begin{figure}[H]
@@ -68,7 +68,7 @@ Beim I\textsubscript{DDQ}-Test wird die Ruhestromaufnahme der Schaltung gemessen
 \end{figure}
 \end{multicols}
 
-\subsection{Scan Path}
+\subsection{Scan Path}$~$ \\
 Die Scan Path Methode adressiert das Problem, dass interne Knoten von aussen schlecht kontrollierbar und beobachtbar sind. Dazu wird vor jedes Flipflop ein 2:1 Multiplexer geschalten (Scan Flipflop), mit dessen Hilfe alle Flipflops zu einem riesigen Schieberegister zusammengeschaltet werden. \\
 \begin{minipage}{0.25\textwidth}
 \begin{figure}[H]
@@ -94,7 +94,7 @@ Je mehr Flipflops sich in einem Design befinden, umso länger wird der Scan Pfad
     \subsubsection{Scan Path bei mehreren Taktdomänen}
     Sind in einem System unterschiedliche Taktdomänen vorhanden, so kommen Lock-Up Latches, an den Übergängen von einer Domäne zur anderen, zum Einsatz. Diese stellen sicher, dass keine laufzeitbedingten Fehler auftreten.
 
-    \subsection{BIST (Built In Self Test)}
+    \subsection{BIST (Built In Self Test)}$~$ \\
     Der Test von grossen programmierbaren Blöcken (z.B. RAM, ROM, PLA, ...) ist mit Scan Paths nur schwer möglich, da die Anzahl Testvektoren nicht wirklich reduziert werden kann, da auch wirklich jede Zelle überprüft werden muss. Aus diesem Grund wird jeder Makrozelle eine zusätzliche Logik zugeordnet, mit welcher diese einen Selbsttest durchführen kann. \ \\ \ \\
     \begin{figure}[H]
         \includegraphics[width=0.5\textwidth]{images/scanpath_lookuplatch.png}
@@ -109,14 +109,14 @@ Je mehr Flipflops sich in einem Design befinden, umso länger wird der Scan Pfad
 Nebenstehend ist der prinzipielle Aufbau einer BIST-Zusatzlogik zu sehen. In den Eingangspfad der zu testenden Makrozelle ist ein 2:1-Multiplexer geschaltet. Über den Block BIST State Machine, der die Steuerlogik und einen Testmustergenerator enthält, wird dieser Multiplexer so geschaltet, dass entweder von aussen kommende Daten an die Makrozelle geführt werden (Normalbetrieb), oder solche vom Testmustergenerator (Testbetrieb). Die Ausgänge der Makrozelle werden neben der normalen Verdrahtung dem Block BIST-Signature-Verschlüsselung zugeführt. Dieser wertet die Testergebnisse aus und meldet sie nach aussen.
 \end{multicols}
 
-\subsection{BST (Boundary Scan Test)}
+\subsection{BST (Boundary Scan Test)}$~$ \\
 Die zunehmende Packungsdichte erschwert den Test von fertigen Baugruppen erheblich. Um die Anzahl erforderliche Prüfanschlüsse zu minimieren, wurde der BST entwickelt.
 
 \begin{multicols}{2}
     \subsubsection{Konzept}
     Jeder Ein- und Ausgang eines Chips wird mittels einer BSC (Boundary Scan Cell) vom Kern der Schaltung abgetrennt. Alle diese BSCs sind wiederum zu einem grossen Schieberegister zusammengeschalten (BSR - Boundary Scan Register).
 
-    \paragraph{Signale}
+    \paragraph{Signale}$~$ \\
     Jeder Chip stellt nach Aussen die folgenden Signale zur Verfügung, resp. benötigt die folgenden Signale:
     \begin{compactitem}
         \item \textit{TDI}, \textit{TDO}: Test Data In / Test Data Out, werden auf der Leiterplatte zu einem Schieberegister verknüpft. Sprich jeder TDO führt auf den TDI des nächsten Chips.
@@ -152,7 +152,7 @@ Die zunehmende Packungsdichte erschwert den Test von fertigen Baugruppen erhebli
     \end{figure}
 \end{multicols}
 
-\paragraph{Verbindliche Befehle}
+\paragraph{Verbindliche Befehle}$~$ \\
 Die folgenden Befehle müssen in jedem Fall implementiert sein:
 \begin{compactitem}
     \item \textbf{BYPASS}: Der Befehlscode besteht aus lauter Einsen (11...1). Ist dieser Befehl aktiv, muss im Zustand \textit{Shift\_DR} das Bypass-Register in den \textit{TDI}/\textit{TDO} Pfad geschaltet sein. Ebenfalls dürfen die Testregister die Kernlogik nicht beeinflussen.
@@ -160,13 +160,13 @@ Die folgenden Befehle müssen in jedem Fall implementiert sein:
     \item \textbf{EXTEST}: Der Befehlscode besteht aus lauter Nullen (00...0). Die Chiplogik wird bei diesem Befehl von der Leiterplatte isoliert (Die Kernlogik muss so abgeschottet sein, dass sie nicht beschädigt werden kann). Das BSR wird im Zustand \textit{Shift\_DR} bei diesem Befehl in den \textit{TDI}/\textit{TDO} Pfad geschalten.
 \end{compactitem}
 
-\paragraph{Interner Aufbau}
+\paragraph{Interner Aufbau}$~$ \\
 Nachfolgend ist dargestellt, wie der TAP-Kontroller intern mit den vorhandenen Registern verschaltet ist.
 \begin{figure}[H]
     \includegraphics[width=0.75\textwidth]{images/bst_tapkontroller_verschaltung.png}
 \end{figure}
 
-\paragraph{Optionale Befehle}
+\paragraph{Optionale Befehle}$~$ \\
 Die nachfolgenden Befehle sind optional, werden jedoch auch häufig implementiert:
 \begin{compactitem}
     \item \textbf{INTEST}: Testet die Kernlogik eines Chips. Die Kernlogik wird zu diesem Zweck von den Ein- und Ausgängen isoliert.

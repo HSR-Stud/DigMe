@@ -12,7 +12,7 @@
     \item Mit zunehmender Systemgröße von SoC-Komponenten hat die Anzahl der IOs ein Niveau erreicht, in dem die parallele Kommunikation mit der grossen Anzahl von benötigten IOs für die Off-Chip-Kommunikation mehr und mehr unwirtschaftlich wird $\rightarrow$ IOs verbrauchen Chipfläche und erzeugen somit Kosten.
 \end{compactitem}
 
-\subsection{AXI - Advanced eXtensible Interface}
+\subsection{AXI - Advanced eXtensible Interface}$~$ \\
 Das AXI-Protokoll ist für eine hohe Bandbreite sowie eine kleine Latenzzeit ausgelegt. Es werden getrennte Lese- und Schreibbusse unterstützt. Weiter sind getrennte Busse für die Adressen sowie die Steuersignale vorhanden. Zusätzlich können auch sogenannte Burst-Transaktionen durchgeführt werden.
 
 \subsubsection{Bustopologie und Modes}
@@ -59,7 +59,7 @@ Der Lese- und Schreibkanal des Adressbusses kann geteilt werden, um Platz zu spa
     \begin{figure}[H]
      	\includegraphics[width=0.5\textwidth]{images/AXI_Burst_Transfer.png}
      \end{figure}
-    \paragraph{Burst Mode}
+    \paragraph{Burst Mode}$~$ \\
     Anstatt ein einziges Wort oder Byte in einer Transaktion zu senden, wird  im Burst-Modus ein gesamter Block von Daten gesendet. Dies ist sehr nützlich bei der Übertragung grosser Datenmengen.
 \end{multicols}
 

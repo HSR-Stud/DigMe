@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  24 JAN 2020 14:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 11:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -52,7 +52,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ./05_Communication_Interfaces.tex:2: Undefined control sequence.
 l.2 \subsection
-               {Begriffe}
+               {Begriffe}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -67,6 +67,10 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no e in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
 Missing character: There is no V in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -727,7 +731,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 7--9
 
 ./05_Communication_Interfaces.tex:10: Undefined control sequence.
 l.10 \subsection
-                {Netzwerk Arten}
+                {Netzwerk Arten}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -742,7 +746,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.10 \subsection{N
-                  etzwerk Arten}
+                  etzwerk Arten}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -907,7 +911,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 10--15
 
 ./05_Communication_Interfaces.tex:16: Undefined control sequence.
 l.16 \subsection
-                {LVDS}
+                {LVDS}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -922,7 +926,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.16 \subsection{L
-                  VDS}
+                  VDS}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1094,7 +1098,7 @@ or  <return>  to continue without it.
 
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 16--22
-[]
+[]$ []$ 
  []
 
 
@@ -1255,10 +1259,6 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 24.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 24.
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no 0 in font nullfont!
@@ -1484,7 +1484,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ./05_Communication_Interfaces.tex:28: Undefined control sequence.
 l.28     \lstinputlisting
-                         [language=tcl]{code/tcl/lvds.xdc}
+                         [language=tcl,style=tcl]{code/tcl/lvds.xdc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1499,6 +1499,16 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -1552,7 +1562,7 @@ Overfull \hbox (5.55557pt too wide) in paragraph at lines 26--30
 
 ./05_Communication_Interfaces.tex:31: Undefined control sequence.
 l.31 \subsection
-                {VHDL Components}
+                {VHDL Components}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1567,7 +1577,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.31 \subsection{V
-                  HDL Components}
+                  HDL Components}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1879,5 +1889,5 @@ Here is how much of TeX's memory you used:
  4483 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,1n,16p,313b,113s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,2n,16p,313b,111s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

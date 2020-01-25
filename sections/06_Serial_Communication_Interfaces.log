@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  17 JAN 2020 09:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 11:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -58,7 +58,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ./06_Serial_Communication_Interfaces.tex:2: Undefined control sequence.
 l.2 \subsection
-               {SPI (Serial Peripheral Interface)}
+               {SPI (Serial Peripheral Interface)}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -95,6 +95,10 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ) in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -831,10 +835,6 @@ l.14 ...egraphics[width=0.5\textwidth]{images/spi_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 14.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 14.
 ./06_Serial_Communication_Interfaces.tex:14: Extra }, or forgotten $.
 l.14 ...h=0.5\textwidth]{images/spi_taktphase.png}
                                                   
@@ -1614,7 +1614,7 @@ Missing character: There is no D in font nullfont!
 Missing character: There is no L in font nullfont!
 ./06_Serial_Communication_Interfaces.tex:35: Undefined control sequence.
 l.35 \lstinputlisting
-                     [language=VHDL]{code/spiMaster.vhd}
+                     [language=VHDL,style=VHDL]{code/spiMaster.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1629,6 +1629,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -1661,7 +1672,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 34--36
 
 ./06_Serial_Communication_Interfaces.tex:37: Undefined control sequence.
 l.37 \subsection
-                {I\textsuperscript{2}C (Inter-Integrated Circuit)}
+                {I\textsuperscript{2}C (Inter-Integrated Circuit)}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1676,7 +1687,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.37 \subsection{I
-                  \textsuperscript{2}C (Inter-Integrated Circuit)}
+                  \textsuperscript{2}C (Inter-Integrated Circuit)}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -4190,7 +4201,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no . in font nullfont!
 ./06_Serial_Communication_Interfaces.tex:95: Undefined control sequence.
 l.95 \lstinputlisting
-                     [language=VHDL]{code/i2cMaster.vhd}
+                     [language=VHDL,style=VHDL]{code/i2cMaster.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4205,6 +4216,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!
@@ -4247,7 +4269,7 @@ Overfull \hbox (5.55557pt too wide) in paragraph at lines 93--96
 
 ./06_Serial_Communication_Interfaces.tex:97: Undefined control sequence.
 l.97 \subsection
-                {UART (Universal Asynchronous Receiver Transmitter)}
+                {UART (Universal Asynchronous Receiver Transmitter)}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4262,7 +4284,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.97 \subsection{U
-                  ART (Universal Asynchronous Receiver Transmitter)}
+                  ART (Universal Asynchronous Receiver Transmitter)}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -5004,7 +5026,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ./06_Serial_Communication_Interfaces.tex:112: Undefined control sequence.
 l.112 \lstinputlisting
-                      [language=VHDL]{code/uart.vhd}
+                      [language=VHDL,style=VHDL]{code/uart.vhd}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5019,6 +5041,17 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no V in font nullfont!

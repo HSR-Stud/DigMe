@@ -1,4 +1,4 @@
-\section{Verifikation}
+\section{Verifikation}$~$ \\
 Oft wird die Verifikation als letzter Schritt nach dem Design bezeichnet. Doch die Verifikation beginnt viel früher und sie ist mehr als nur der Beweis der funktionalen Korrektheit. Sie beginnt auf Anforderungsebene und ist ein konstanter Prozess, der parallel zum Designprozess läuft.
 \begin{compactitem}
     \item Verifikation bei Spezifikation: Ist das was ich möchte wirklich das was ich benötige?
@@ -7,7 +7,7 @@ Oft wird die Verifikation als letzter Schritt nach dem Design bezeichnet. Doch d
 \end{compactitem}
 Verschiedener Quellen zufolge wird deutlich, dass der Gesamtaufwand für die Verifikation mehr als 50\% des gesamten Entwicklungsaufwands beträgt - Tendenz wachsend!
 
-\subsection{Dynamische Verifikationsmethoden}
+\subsection{Dynamische Verifikationsmethoden}$~$ \\
 Überprüft das Eingangs-/Ausgangsverhalten einer Schaltung. Eine Schaltung mit k Zuständen s und n Eingängen x wird durch ihre Zustandstabelle repräsentiert. Der Ausgang ist definiert durch: $y=f(x,s)$. Eine Möglichkeit dieser Verifikation wäre, bei jeder möglichen Kombination von x und s den Ausgang zu prüfen (Exhaustive Verification). In der Praxis ist dies nur für kleine Schaltkreise möglich, da die Anzahl der Testfälle schnell gegen Unendlich anwachst. Ein realistischer Kompromiss ist erforderlich, um viele potenzielle Fehler mit vernünftigem Aufwand zu finden. Eine Kombination folgender Methoden ist von Vorteil:
 \begin{compactitem}
     \item Anwenden der assertion-basierten Verifikation
@@ -25,9 +25,9 @@ Assertions müssen unerwartete Bedingungen bereits vor dem Debuggen überprüfen
     \item Unvorhergesehene Eingabewerte
     \item Numerischer Über-/Unterlauf
 \end{compactitem}
-\lstinputlisting[language=VHDL]{code/assert.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/assert.vhd}
 In VHDL 2008:
-\lstinputlisting[language=VHDL]{code/assert2008.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/assert2008.vhd}
 Die assert-Anweisung testet eine Condition (boolesche Bedingung). Wenn diese falsch ist, wird der Report ausgegeben. Mit Severity gibt man den Typ der Meldung an (note, warning, error, failure).
 
 \subsubsection{Auswahl von Testfällen}
@@ -41,7 +41,7 @@ Die Stimuli sollten mit Vorsicht angewendet werden. Nachfolgend eine Auflistung 
 \end{compactitem}
 Real-World-Daten und zufällige Testfälle können nur angewendet werden, wenn die erwartete Antwort auf zufällige Eingabedaten bekannt ist. Diese Methode fragt nach einem goldenen Referenzmodell, das die erwartete Antwort für Zufallsdaten erzeugt. Solche goldenen Referenzmodelle können bereits bestehende Schaltungen bei einer Schaltungsrekonstruktion sein, sie kann ein High-Level-Modell sein (z.B. Matlab oder Simulink-Darstellung einer Schaltung) oder eine als Rapid Prototype implementierte Hardware-Darstellung (z.B. als SoC Direkt mit HLS oder System Generator synthetisiert).
 
-\subsection{Simulation}
+\subsection{Simulation}$~$ \\
 Für kleine Block Level Verifikationen genügt eine kleine Testbench in VHDL. Für grössere Schaltungen ist jedoch ein allgemeiner Ansatz erforderlich. Stimuli und erwartete Response werden als Eingabe- und Ausgabevektoren in einer Datei angegeben. Mittels read-Funktion (im TEXTIO Package) wird Zeile für Zeile eingelesen, mit den tatsächlichen Signalen verglichen und überprüft. Bei einer Nicht-Übereinstimmung erscheint während der Simulation eine dementsprechende Konsolenmeldung. In einem synchronen Design muss ein fester Zeitplan für Stimuli und Response eingehalten werden. Dieser regelmässige Zeitplan muss daher den folgenden Regeln entsprechen:
 \begin{compactitem}
     \item Für jeden Testfall ein periodisches Taktsignal angeben
@@ -49,7 +49,7 @@ Für kleine Block Level Verifikationen genügt eine kleine Testbench in VHDL. F�
     \item Ein streng regelmässiges Muster für Stimuli/Response anwenden
 \end{compactitem}
 Automatisierte Test-Prozedur:
-\lstinputlisting[language=VHDL]{code/Automated_test_procedure.vhd}
+\lstinputlisting[language=VHDL,style=VHDL]{code/Automated_test_procedure.vhd}
 Die Simulation kann in verschiedenen Designebenen durchgeführt werden:
 \begin{multicols}{3}
     \begin{compactitem}
@@ -73,7 +73,7 @@ Die Simulation kann in verschiedenen Designebenen durchgeführt werden:
     \end{compactitem}
 \end{multicols}
 
-\subsection{Debugging}
+\subsection{Debugging}$~$ \\
 Die Simulation weist zwar auf ein Fehlverhalten der Schaltung hin, zeigt jedoch nicht die genaue Ursache. Das Lokalisieren eines Fehlers nennt man Debugging.\\
 Es gibt zwei (bzw. drei) Bedingungen für das Finden von Fehlern:
 \begin{compactitem}
@@ -87,8 +87,8 @@ Mit purer Input/Output Simulation kann man die obigen Bedingungen nicht erfülle
 \subsubsection{Emulation}
 Während bei der Simulation beinahe das ganze Spektrum der Debuggingtools verwendet werden kann, sind Fehler bei der Emulation viel schwieriger zu finden. Es gibt fast keine Möglichkeit, interne Knoten von integrierten Schaltungen beobachten zu können. Aufgrund der umprogrammierbaren Struktur eines FPGA ist jeder Schaltungsknoten inhärent zu beobachten und kann inhärent stimuliert werden. Dies geschieht über die eingebaute JTAG-Schnittstelle. XILINX stellt zwei spezielle Blöcke zur Verfügung:
 
-\paragraph{Virtual input and output (VIO)}
+\paragraph{Virtual input and output (VIO)}$~$ \\
 Interne Knoten können als Ein- oder Ausgänge definiert werden. Der Mechanismus funktioniert über die JTAG-Schnittstelle. VIO Blöcke sind Hardwarekomponenten. Sie müssen in den Code integriert werden. Anschliessend werden sie instanziiert, synthetisiert und schliesslich implementiert. Die neu generierten Ein- und Ausgänge des VIO können während der Debug-Session getrieben und analysiert werden.
 
-\paragraph{Integrated Logic Analyzer (ILA)}
+\paragraph{Integrated Logic Analyzer (ILA)}$~$ \\
 ILA dient zur Überwachung interner programmierbarer Logiksignale für die Nachanalyse. ILA Blöcke bieten mehrere konfigurierbare Triggereinheiten und bis zu 64 konfigurierbare Sonden für die Analyse in einer GUI-Darstellung. ILA bietet auch Cross-Trigger-Funktionalität zwischen dem ARM-Prozessor und dem logic fabric part.

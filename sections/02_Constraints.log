@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.1)  9 JAN 2020 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 11:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -40,7 +40,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
 ./02_Constraints.tex:2: Undefined control sequence.
 l.2 \subsection
-               {``.xdc''-Dateien}
+               {``.xdc''-Dateien}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -63,6 +63,10 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
 Missing character: There is no P in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no y in font nullfont!
@@ -525,7 +529,7 @@ Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
 ./02_Constraints.tex:4: Undefined control sequence.
 l.4 \lstinputlisting
-                    [language=tcl]{code/tcl/xdc_property_used_in.xdc}
+                    [language=tcl,style=tcl]{code/tcl/xdc_property_used_in.xdc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -540,6 +544,16 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -561,17 +575,13 @@ Missing character: There is no c in font nullfont!
 ./02_Constraints.tex:4: Missing $ inserted.
 <inserted text> 
                 $
-l.4 \lstinputlisting[language=tcl]{code/tcl/xdc_
-                                                property_used_in.xdc}
+l.4 ...sting[language=tcl,style=tcl]{code/tcl/xdc_
+                                                  property_used_in.xdc}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 4.
 ./02_Constraints.tex:4: Extra }, or forgotten $.
-l.4 ...age=tcl]{code/tcl/xdc_property_used_in.xdc}
+l.4 ...yle=tcl]{code/tcl/xdc_property_used_in.xdc}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1197,7 +1207,7 @@ or  <return>  to continue without it.
 
 ./02_Constraints.tex:30: Undefined control sequence.
 l.30 \subsection
-                {Timing Analysis}
+                {Timing Analysis}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1212,7 +1222,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.30 \subsection{T
-                  iming Analysis}
+                  iming Analysis}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2999,7 +3009,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 67--69
 
 ./02_Constraints.tex:70: Undefined control sequence.
 l.70 \paragraph
-               {Berechnung}
+               {Berechnung}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3014,7 +3024,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.70 \paragraph{B
-                 erechnung}
+                 erechnung}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3151,7 +3161,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no t in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 70--81
-[]
+[]$ []$ 
  []
 
 
@@ -3166,7 +3176,7 @@ Overfull \hbox (5324.74998pt too wide) in paragraph at lines 70--81
 
 ./02_Constraints.tex:82: Undefined control sequence.
 l.82 \subsection
-                {Clocks}
+                {Clocks}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3181,7 +3191,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.82 \subsection{C
-                  locks}
+                  locks}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3477,7 +3487,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 82--84
-[]
+[]$ []$ 
  []
 
 
@@ -3799,7 +3809,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 ./02_Constraints.tex:88: Undefined control sequence.
 l.88 \lstinputlisting
-                     [language=tcl]{code/tcl/primary_clock.xdc}
+                     [language=tcl,style=tcl]{code/tcl/primary_clock.xdc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3814,6 +3824,16 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -3839,13 +3859,13 @@ Missing character: There is no y in font nullfont!
 ./02_Constraints.tex:88: Missing $ inserted.
 <inserted text> 
                 $
-l.88 ...putlisting[language=tcl]{code/tcl/primary_
+l.88 ...[language=tcl,style=tcl]{code/tcl/primary_
                                                   clock.xdc}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./02_Constraints.tex:88: Extra }, or forgotten $.
-l.88 ...[language=tcl]{code/tcl/primary_clock.xdc}
+l.88 ...tcl,style=tcl]{code/tcl/primary_clock.xdc}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4545,7 +4565,7 @@ Missing character: There is no % in font nullfont!
 Missing character: There is no . in font nullfont!
 ./02_Constraints.tex:96: Undefined control sequence.
 l.96 \lstinputlisting
-                     [language=tcl]{code/tcl/virtual_clock.xdc}
+                     [language=tcl,style=tcl]{code/tcl/virtual_clock.xdc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4560,6 +4580,16 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -4585,13 +4615,13 @@ Missing character: There is no l in font nullfont!
 ./02_Constraints.tex:96: Missing $ inserted.
 <inserted text> 
                 $
-l.96 ...putlisting[language=tcl]{code/tcl/virtual_
+l.96 ...[language=tcl,style=tcl]{code/tcl/virtual_
                                                   clock.xdc}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./02_Constraints.tex:96: Extra }, or forgotten $.
-l.96 ...[language=tcl]{code/tcl/virtual_clock.xdc}
+l.96 ...tcl,style=tcl]{code/tcl/virtual_clock.xdc}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -5154,7 +5184,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 ./02_Constraints.tex:114: Undefined control sequence.
 l.114 \lstinputlisting
-                      [language=tcl]{code/tcl/clock_latency.xdc}
+                      [language=tcl,style=tcl]{code/tcl/clock_latency.xdc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5169,6 +5199,16 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -5192,13 +5232,13 @@ Missing character: There is no k in font nullfont!
 ./02_Constraints.tex:114: Missing $ inserted.
 <inserted text> 
                 $
-l.114 ...nputlisting[language=tcl]{code/tcl/clock_
+l.114 ...g[language=tcl,style=tcl]{code/tcl/clock_
                                                   latency.xdc}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./02_Constraints.tex:114: Extra }, or forgotten $.
-l.114 ...language=tcl]{code/tcl/clock_latency.xdc}
+l.114 ...cl,style=tcl]{code/tcl/clock_latency.xdc}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -5600,7 +5640,7 @@ Overfull \hbox (5324.74998pt too wide) in paragraph at lines 116--126
 
 ./02_Constraints.tex:127: Undefined control sequence.
 l.127 \paragraph
-                {Input Jitter}
+                {Input Jitter}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5615,7 +5655,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.127 \paragraph{I
-                  nput Jitter}
+                  nput Jitter}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -5729,7 +5769,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no : in font nullfont!
 ./02_Constraints.tex:129: Undefined control sequence.
 l.129 \lstinputlisting
-                      [language=tcl]{code/tcl/input_jitter.xdc}
+                      [language=tcl,style=tcl]{code/tcl/input_jitter.xdc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5744,6 +5784,16 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -5767,13 +5817,13 @@ Missing character: There is no t in font nullfont!
 ./02_Constraints.tex:129: Missing $ inserted.
 <inserted text> 
                 $
-l.129 ...nputlisting[language=tcl]{code/tcl/input_
+l.129 ...g[language=tcl,style=tcl]{code/tcl/input_
                                                   jitter.xdc}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./02_Constraints.tex:129: Extra }, or forgotten $.
-l.129 ...[language=tcl]{code/tcl/input_jitter.xdc}
+l.129 ...tcl,style=tcl]{code/tcl/input_jitter.xdc}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -5801,7 +5851,7 @@ Overfull \hbox (41.79648pt too wide) in paragraph at lines 127--130
 
 ./02_Constraints.tex:131: Undefined control sequence.
 l.131 \paragraph
-                {System Jitter}
+                {System Jitter}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5816,7 +5866,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.131 \paragraph{S
-                  ystem Jitter}
+                  ystem Jitter}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -6011,7 +6061,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no : in font nullfont!
 ./02_Constraints.tex:133: Undefined control sequence.
 l.133 \lstinputlisting
-                      [language=tcl]{code/tcl/system_jitter.xdc}
+                      [language=tcl,style=tcl]{code/tcl/system_jitter.xdc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6026,6 +6076,16 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -6050,13 +6110,13 @@ Missing character: There is no m in font nullfont!
 ./02_Constraints.tex:133: Missing $ inserted.
 <inserted text> 
                 $
-l.133 ...putlisting[language=tcl]{code/tcl/system_
+l.133 ...[language=tcl,style=tcl]{code/tcl/system_
                                                   jitter.xdc}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./02_Constraints.tex:133: Extra }, or forgotten $.
-l.133 ...language=tcl]{code/tcl/system_jitter.xdc}
+l.133 ...cl,style=tcl]{code/tcl/system_jitter.xdc}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -6310,7 +6370,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ./02_Constraints.tex:138: Undefined control sequence.
 l.138     \lstinputlisting
-                          [language=tcl]{code/tcl/clock_uncertainty.xdc}
+                          [language=tcl,style=tcl]{code/tcl/clock_uncertaint...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6325,6 +6385,16 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -6348,13 +6418,13 @@ Missing character: There is no k in font nullfont!
 ./02_Constraints.tex:138: Missing $ inserted.
 <inserted text> 
                 $
-l.138 ...nputlisting[language=tcl]{code/tcl/clock_
+l.138 ...g[language=tcl,style=tcl]{code/tcl/clock_
                                                   uncertainty.xdc}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./02_Constraints.tex:138: Extra }, or forgotten $.
-l.138 ...uage=tcl]{code/tcl/clock_uncertainty.xdc}
+l.138 ...tyle=tcl]{code/tcl/clock_uncertainty.xdc}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -6513,7 +6583,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
 ./02_Constraints.tex:145: Undefined control sequence.
 l.145 \lstinputlisting
-                      [language=tcl]{code/tcl/io_pin_constraints.xdc}
+                      [language=tcl,style=tcl]{code/tcl/io_pin_constraints.xdc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6528,6 +6598,16 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -6548,13 +6628,13 @@ Missing character: There is no o in font nullfont!
 ./02_Constraints.tex:145: Missing $ inserted.
 <inserted text> 
                 $
-l.145 \lstinputlisting[language=tcl]{code/tcl/io_
-                                                 pin_constraints.xdc}
+l.145 ...ting[language=tcl,style=tcl]{code/tcl/io_
+                                                  pin_constraints.xdc}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./02_Constraints.tex:145: Extra }, or forgotten $.
-l.145 ...age=tcl]{code/tcl/io_pin_constraints.xdc}
+l.145 ...yle=tcl]{code/tcl/io_pin_constraints.xdc}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -6582,7 +6662,7 @@ Overfull \hbox (83.1386pt too wide) in paragraph at lines 144--146
 
 ./02_Constraints.tex:147: Undefined control sequence.
 l.147 \subsection
-                 {I/O Delay}
+                 {I/O Delay}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6597,7 +6677,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.147 \subsection{I
-                   /O Delay}
+                   /O Delay}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -6913,7 +6993,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 150--152
 
 ./02_Constraints.tex:153: Undefined control sequence.
 l.153 \paragraph
-                {Tcl Befehl}
+                {Tcl Befehl}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6928,7 +7008,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.153 \paragraph{T
-                  cl Befehl}
+                  cl Befehl}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -7577,7 +7657,7 @@ Overfull \hbox (51.02954pt too wide) in paragraph at lines 160--162
 
 ./02_Constraints.tex:163: Undefined control sequence.
 l.163 \paragraph
-                {Beispiel}
+                {Beispiel}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7592,7 +7672,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.163 \paragraph{B
-                  eispiel}
+                  eispiel}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -7727,7 +7807,7 @@ my insertion and my current dilemma will both disappear.
 
 ./02_Constraints.tex:167: Undefined control sequence.
 l.167 \lstinputlisting
-                      [language=tcl]{code/tcl/input_delay.xdc}
+                      [language=tcl,style=tcl]{code/tcl/input_delay.xdc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7742,6 +7822,16 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -7765,13 +7855,13 @@ Missing character: There is no t in font nullfont!
 ./02_Constraints.tex:167: Missing $ inserted.
 <inserted text> 
                 $
-l.167 ...nputlisting[language=tcl]{code/tcl/input_
+l.167 ...g[language=tcl,style=tcl]{code/tcl/input_
                                                   delay.xdc}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./02_Constraints.tex:167: Extra }, or forgotten $.
-l.167 ...g[language=tcl]{code/tcl/input_delay.xdc}
+l.167 ...=tcl,style=tcl]{code/tcl/input_delay.xdc}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -7789,7 +7879,7 @@ you left one out. Proceed, with fingers crossed.
 
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 163--168
-[]
+[]$ []$ 
  []
 
 
@@ -7982,7 +8072,7 @@ Overfull \hbox (5.55557pt too wide) in paragraph at lines 169--171
 
 ./02_Constraints.tex:172: Undefined control sequence.
 l.172 \paragraph
-                {Tcl Befehl}
+                {Tcl Befehl}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7997,7 +8087,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.172 \paragraph{T
-                  cl Befehl}
+                  cl Befehl}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -8637,7 +8727,7 @@ Overfull \hbox (51.02954pt too wide) in paragraph at lines 179--181
 
 ./02_Constraints.tex:182: Undefined control sequence.
 l.182 \paragraph
-                {Beispiel}
+                {Beispiel}$~$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -8652,7 +8742,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.182 \paragraph{B
-                  eispiel}
+                  eispiel}$~$ \\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -8788,7 +8878,7 @@ my insertion and my current dilemma will both disappear.
 
 ./02_Constraints.tex:186: Undefined control sequence.
 l.186 \lstinputlisting
-                      [language=tcl]{code/tcl/output_delay.xdc}
+                      [language=tcl,style=tcl]{code/tcl/output_delay.xdc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -8803,6 +8893,16 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -8827,13 +8927,13 @@ Missing character: There is no t in font nullfont!
 ./02_Constraints.tex:186: Missing $ inserted.
 <inserted text> 
                 $
-l.186 ...putlisting[language=tcl]{code/tcl/output_
+l.186 ...[language=tcl,style=tcl]{code/tcl/output_
                                                   delay.xdc}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./02_Constraints.tex:186: Extra }, or forgotten $.
-l.186 ...[language=tcl]{code/tcl/output_delay.xdc}
+l.186 ...tcl,style=tcl]{code/tcl/output_delay.xdc}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -8850,10 +8950,10 @@ deleted material, e.g., by typing `I$}'.
  
 Here is how much of TeX's memory you used:
  31 strings out of 492167
- 450 string characters out of 6131559
- 69507 words of memory out of 5000000
+ 450 string characters out of 6131558
+ 69380 words of memory out of 5000000
  4490 multiletter control sequences out of 15000+600000
  4462 words of font info for 17 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,6n,16p,556b,154s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,6n,16p,556b,172s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
