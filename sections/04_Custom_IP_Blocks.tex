@@ -2,7 +2,7 @@
 \subsection{Typen von Speicher in FPGA}$~$ \\
 In einem FPGA sind normalerweise zwei Arten von Speicher vorhanden:
 \begin{compactitem}
-    \item \textbf{Distributed Memory}: Distributed Memory besteht aus vielen LUT Tabellen. Der Vorteil dieser Variante ist, dass jede beliebige Grösse von Speicher realisiert werden kann. Desweitern kann dieser Speicher an jedem Ort in einem FPGA erstellt werden. Ideal für kleine Speichergrössen.
+    \item \textbf{Distributed Memory}: Distributed Memory besteht aus vielen LUTs. Der Vorteil dieser Variante ist, dass jede beliebige Grösse von Speicher realisiert werden kann. Desweitern kann dieser Speicher an jedem Ort in einem FPGA erstellt werden. Ideal für kleine Speichergrössen.
     \item \textbf{Block Memory}: Block Memory sind fest implementierte Speicherzellen (Hard IP Block). Diese bestehen aus SRAM Zellen (zwei kreuzgekoppelte Inverter) und sind über das ganze FPGA hinweg verteilt. Oftmals haben sie auch gerade eine Fehlerkorrektur implementiert (bei Xilinx: Hamming Error Correction Code). Ideal für grössere Speichergrössen. Die Speichergrösse bei den Xilinx Series 7 Block Rams beträgt 32kb (36kb physikalisch vorhanden).
 \end{compactitem}
 
@@ -150,6 +150,7 @@ IP Blöcke können verschieden eingebunden werden:
         \item Ersetzt (superseded): IP Core wurde durch eine neuere Version ersetzt.
         \item Entfernt (removed): IP Core wird nicht mehr länger vertrieben.
 \end{compactitem}
+Versionskennzeichnung: $<\text{major}\#.\text{minor}\#.\text{Rev}\#>$\\
 \begin{tabular}{| l | l | l |}
 \hline
 \textbf{Change level} & \textbf{User action} & Examples of Changes\\

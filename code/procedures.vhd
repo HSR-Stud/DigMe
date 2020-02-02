@@ -1,5 +1,5 @@
 -- Syntax
-procedure <procedure_name> [( < argument list with type declaration>)] is
+procedure <procedure_name> [(<argument list with type declaration>)] is
   [<declarations>];
 begin
   (sequential statements>};

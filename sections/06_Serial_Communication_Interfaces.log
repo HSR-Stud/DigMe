@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 11:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  2 FEB 2020 09:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3317,7 +3317,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no l in font nullfont!
 ./06_Serial_Communication_Interfaces.tex:74: Undefined control sequence.
 l.74     \paragraph
-                   {Schreiben vom Master zum Slave}
+                   {Schreiben vom Master zum Slave}$~$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3481,7 +3481,7 @@ Overfull \hbox (81.34772pt too wide) in paragraph at lines 72--78
 
 ./06_Serial_Communication_Interfaces.tex:79: Undefined control sequence.
 l.79     \paragraph
-                   {Lesen vom Slave}
+                   {Lesen vom Slave}$~$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3496,7 +3496,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.79     \paragraph{L
-                     esen vom Slave}
+                     esen vom Slave}$~$
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
