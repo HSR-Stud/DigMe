@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  25 JAN 2020 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.15)  27 JAN 2020 10:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -508,7 +508,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.18   \item M
-              ithilfe des 'fixed\_pkg-Packages' (basiert auf 'numeric\_std')...
+              ithilfe des 'fixed\_pkg'-Packages (basiert auf 'numeric\_std')...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -532,6 +532,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no g in font nullfont!
+Missing character: There is no ' in font nullfont!
 Missing character: There is no - in font nullfont!
 Missing character: There is no P in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -541,7 +542,6 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no ' in font nullfont!
 Missing character: There is no ( in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -5054,7 +5054,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!

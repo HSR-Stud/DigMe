@@ -42,7 +42,7 @@ begin
       shiftRegReceivePresent <= shiftRegReceiveNext;
     end if;
   end process regLogic;
-  nextStateLogic : process (counterPresent, start, statePresent)
+  nextStateLogic : process(counterPresent, start, statePresent)
   begin
     stateNext <= idle;
     counterNext <= 0;
@@ -65,7 +65,7 @@ begin
         end if;
     end case;
   end process nextStateLogic;
-  transmitShiftRegister : process (dataTransmit, shiftRegTransmitPresent,
+  transmitShiftRegister : process(dataTransmit, shiftRegTransmitPresent,
     shiftRegTransmitPresent(7 downto 1), statePresent)
   begin
     case statePresent is
@@ -78,7 +78,7 @@ begin
     end case;
   end process;
   SDO <= shiftRegTransmitNext(0);
-  receiveShiftRegister : process (SDI, shiftRegReceivePresent,
+  receiveShiftRegister : process(SDI, shiftRegReceivePresent,
     shiftRegReceivePresent(6 downto 0), statePresent)
   begin
     case statePresent is

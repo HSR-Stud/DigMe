@@ -108,90 +108,90 @@ Je mehr Flipflops sich in einem Design befinden, umso länger wird der Scan Pfad
 \end{figure}
 Nebenstehend ist der prinzipielle Aufbau einer BIST-Zusatzlogik zu sehen. In den Eingangspfad der zu testenden Makrozelle ist ein 2:1-Multiplexer geschaltet. Über den Block BIST State Machine, der die Steuerlogik und einen Testmustergenerator enthält, wird dieser Multiplexer so geschaltet, dass entweder von aussen kommende Daten an die Makrozelle geführt werden (Normalbetrieb), oder solche vom Testmustergenerator (Testbetrieb). Die Ausgänge der Makrozelle werden neben der normalen Verdrahtung dem Block BIST-Signature-Verschlüsselung zugeführt. Dieser wertet die Testergebnisse aus und meldet sie nach aussen.
 \end{multicols}
-
-\subsection{BST (Boundary Scan Test)}$~$ \\
-Die zunehmende Packungsdichte erschwert den Test von fertigen Baugruppen erheblich. Um die Anzahl erforderliche Prüfanschlüsse zu minimieren, wurde der BST entwickelt.
-
-\begin{multicols}{2}
-    \subsubsection{Konzept}
-    Jeder Ein- und Ausgang eines Chips wird mittels einer BSC (Boundary Scan Cell) vom Kern der Schaltung abgetrennt. Alle diese BSCs sind wiederum zu einem grossen Schieberegister zusammengeschalten (BSR - Boundary Scan Register).
-
-    \paragraph{Signale}$~$ \\
-    Jeder Chip stellt nach Aussen die folgenden Signale zur Verfügung, resp. benötigt die folgenden Signale:
-    \begin{compactitem}
-        \item \textit{TDI}, \textit{TDO}: Test Data In / Test Data Out, werden auf der Leiterplatte zu einem Schieberegister verknüpft. Sprich jeder TDO führt auf den TDI des nächsten Chips.
-        \item \textit{TCK}: Test Clock
-        \item \textit{TMS}: Test Mode Select
-        \item \textit{TRST*}: Optional, bringt den Chip in einen definierten Zustand
-    \end{compactitem}
-
-    \subsubsection{Realisierung auf dem Chip}
-    Jeder Chip muss für BST die folgenden Elemente beinhalten:
-    \begin{compactitem}
-        \item \textbf{Bypass-Register}: Überbrückt dass BSR. So kann der entsprechende IC bei gewissen Test übersprungen werden. Dies verkürzt wiederum die Testdauer.
-        \item \textbf{Device-ID-Register}: Enthält eine ID des Chips. Dieses Register kann während dem Test ausgelesen wertden um z.B. auf korrekte Bestückung zu prüfen.
-        \item \textbf{TAP (Test Access Port)}: Schnittstelle nach Aussen
-        \item \textbf{Instruction-Register}: Steuert die internen notwendigen Multiplexer Einstellungen.
-    \end{compactitem}
-    \begin{figure}[H]
-        \includegraphics[width=0.5\textwidth]{images/bst_aufbau.png}
-    \end{figure} \ \\ \ \\
-\end{multicols}
-
-\begin{multicols}{2}
-    \subsubsection{TAP-Kontroller}
-    Die Funktion des TAP-Kontrollers ist in nebenstehender Grafik dargestellt. In den Zustand \textit{Test-Logic-Reset} wird gewechselt wenn das \textit{TRST*}-Signal gesetzt wird oder indem das Signal \textit{TMS} während fünf Taktzyklen auf einem High-Pegel gehalten wird.
-
-    \subsubsection{Instruktionen}
-    \paragraph{Instruktions-Register}
-    Das Instruktions-Register muss mindestens eine Länge von zwei Bit aufweisen um die verbindlichen Befehle dekodieren zu können. Das Register kann aber durchaus grösser sein, da viele Hersteller noch eigene Befehle implementieren. \\
-    Wenn der TAP-Kontroller sich im Zustand \textit{Shift\_IR} befindet, wird die Instruktion seriell vom Eingang \textit{TDI} in das Instruktions-Register geladen.
-
-    \begin{figure}[H]
-        \includegraphics[width=0.5\textwidth]{images/bst_tapkontroller.png}
-    \end{figure}
-\end{multicols}
-
-\paragraph{Verbindliche Befehle}$~$ \\
-Die folgenden Befehle müssen in jedem Fall implementiert sein:
-\begin{compactitem}
-    \item \textbf{BYPASS}: Der Befehlscode besteht aus lauter Einsen (11...1). Ist dieser Befehl aktiv, muss im Zustand \textit{Shift\_DR} das Bypass-Register in den \textit{TDI}/\textit{TDO} Pfad geschaltet sein. Ebenfalls dürfen die Testregister die Kernlogik nicht beeinflussen.
-    \item \textbf{SAMPLE} / \textbf{RELOAD}: Nimmt eine Momentanaufnahme des aktuellen Zustandes der IC-Anschlüsse auf oder setzt die IC-Anschlüsse auf einen definierten Zustand. Das BSR wird im Zustand \textit{Shift\_DR} bei diesem Befehl in den \textit{TDI}/\textit{TDO} Pfad geschalten.
-    \item \textbf{EXTEST}: Der Befehlscode besteht aus lauter Nullen (00...0). Die Chiplogik wird bei diesem Befehl von der Leiterplatte isoliert (Die Kernlogik muss so abgeschottet sein, dass sie nicht beschädigt werden kann). Das BSR wird im Zustand \textit{Shift\_DR} bei diesem Befehl in den \textit{TDI}/\textit{TDO} Pfad geschalten.
-\end{compactitem}
-
-\paragraph{Interner Aufbau}$~$ \\
-Nachfolgend ist dargestellt, wie der TAP-Kontroller intern mit den vorhandenen Registern verschaltet ist.
-\begin{figure}[H]
-    \includegraphics[width=0.75\textwidth]{images/bst_tapkontroller_verschaltung.png}
-\end{figure}
-
-\paragraph{Optionale Befehle}$~$ \\
-Die nachfolgenden Befehle sind optional, werden jedoch auch häufig implementiert:
-\begin{compactitem}
-    \item \textbf{INTEST}: Testet die Kernlogik eines Chips. Die Kernlogik wird zu diesem Zweck von den Ein- und Ausgängen isoliert.
-    \item \textbf{RUNBIST}: Startet einen eingebauten BIST-Selbsttest. Der Vorteil dieser Variante ist (im Gegensatz zum \textit{INTEST}) dass die Konfiguration des Chips nicht selber vorgenommen werden muss und am Schluss nur das Ergebnis überprüft werden muss.
-    \item \textbf{IDCODE}: Liefert den Inhalt aus dem Identifikations-Register zurück.
-\end{compactitem}
-\begin{multicols}{2}
-\subsubsection{Aufbau BYPASS-Register}
-\begin{figure}[H]
-    \includegraphics[width=0.5\textwidth]{images/bst_bypassregister.png}
-\end{figure}
-
-\subsubsection{Aufbau ID-Register}
-Das Identifikations-Register ist immer 32bit breit.
-\begin{compactitem}
-    \item \textbf{Bit 31-28}: Chip-Version
-    \item \textbf{Bit 27-12}: Frei verwendbar vom Hersteller
-    \item \textbf{Bit 11-1}: Standardisierter Hersteller Code
-    \item \textbf{Bit 0}: Immer 1
-\end{compactitem}
-\end{multicols}
-\subsubsection{Aufbau BSC}
-\begin{multicols}{2}
-\begin{figure}[H]
-    \includegraphics[width=0.5\textwidth]{images/bst_bsc.png}
-\end{figure}
-Für jeden Ein- und Ausgang eines Chips wird eine Zelle benötigt. Falls aber Three State-Ausgänge oder bidirektionale Anschlüsse vorkommen, dann muss auch deren Enable-Signal mit einer BSC versehen werden. Falls mehrere solcher Signale zu einem Bus zusammengefasst werden, dann werden alle entsprechenden Enable-Signale von derselben BSC geschaltet.
-\end{multicols}
+%NOTE: nicht Prüfungsinhalt für HS19
+% \subsection{BST (Boundary Scan Test)}$~$ \\
+% Die zunehmende Packungsdichte erschwert den Test von fertigen Baugruppen erheblich. Um die Anzahl erforderliche Prüfanschlüsse zu minimieren, wurde der BST entwickelt.
+%
+% \begin{multicols}{2}
+%     \subsubsection{Konzept}
+%     Jeder Ein- und Ausgang eines Chips wird mittels einer BSC (Boundary Scan Cell) vom Kern der Schaltung abgetrennt. Alle diese BSCs sind wiederum zu einem grossen Schieberegister zusammengeschalten (BSR - Boundary Scan Register).
+%
+%     \paragraph{Signale}$~$ \\
+%     Jeder Chip stellt nach Aussen die folgenden Signale zur Verfügung, resp. benötigt die folgenden Signale:
+%     \begin{compactitem}
+%         \item \textit{TDI}, \textit{TDO}: Test Data In / Test Data Out, werden auf der Leiterplatte zu einem Schieberegister verknüpft. Sprich jeder TDO führt auf den TDI des nächsten Chips.
+%         \item \textit{TCK}: Test Clock
+%         \item \textit{TMS}: Test Mode Select
+%         \item \textit{TRST*}: Optional, bringt den Chip in einen definierten Zustand
+%     \end{compactitem}
+%
+%     \subsubsection{Realisierung auf dem Chip}
+%     Jeder Chip muss für BST die folgenden Elemente beinhalten:
+%     \begin{compactitem}
+%         \item \textbf{Bypass-Register}: Überbrückt dass BSR. So kann der entsprechende IC bei gewissen Test übersprungen werden. Dies verkürzt wiederum die Testdauer.
+%         \item \textbf{Device-ID-Register}: Enthält eine ID des Chips. Dieses Register kann während dem Test ausgelesen wertden um z.B. auf korrekte Bestückung zu prüfen.
+%         \item \textbf{TAP (Test Access Port)}: Schnittstelle nach Aussen
+%         \item \textbf{Instruction-Register}: Steuert die internen notwendigen Multiplexer Einstellungen.
+%     \end{compactitem}
+%     \begin{figure}[H]
+%         \includegraphics[width=0.5\textwidth]{images/bst_aufbau.png}
+%     \end{figure} \ \\ \ \\
+% \end{multicols}
+%
+% \begin{multicols}{2}
+%     \subsubsection{TAP-Kontroller}
+%     Die Funktion des TAP-Kontrollers ist in nebenstehender Grafik dargestellt. In den Zustand \textit{Test-Logic-Reset} wird gewechselt wenn das \textit{TRST*}-Signal gesetzt wird oder indem das Signal \textit{TMS} während fünf Taktzyklen auf einem High-Pegel gehalten wird.
+%
+%     \subsubsection{Instruktionen}
+%     \paragraph{Instruktions-Register}
+%     Das Instruktions-Register muss mindestens eine Länge von zwei Bit aufweisen um die verbindlichen Befehle dekodieren zu können. Das Register kann aber durchaus grösser sein, da viele Hersteller noch eigene Befehle implementieren. \\
+%     Wenn der TAP-Kontroller sich im Zustand \textit{Shift\_IR} befindet, wird die Instruktion seriell vom Eingang \textit{TDI} in das Instruktions-Register geladen.
+%
+%     \begin{figure}[H]
+%         \includegraphics[width=0.5\textwidth]{images/bst_tapkontroller.png}
+%     \end{figure}
+% \end{multicols}
+%
+% \paragraph{Verbindliche Befehle}$~$ \\
+% Die folgenden Befehle müssen in jedem Fall implementiert sein:
+% \begin{compactitem}
+%     \item \textbf{BYPASS}: Der Befehlscode besteht aus lauter Einsen (11...1). Ist dieser Befehl aktiv, muss im Zustand \textit{Shift\_DR} das Bypass-Register in den \textit{TDI}/\textit{TDO} Pfad geschaltet sein. Ebenfalls dürfen die Testregister die Kernlogik nicht beeinflussen.
+%     \item \textbf{SAMPLE} / \textbf{RELOAD}: Nimmt eine Momentanaufnahme des aktuellen Zustandes der IC-Anschlüsse auf oder setzt die IC-Anschlüsse auf einen definierten Zustand. Das BSR wird im Zustand \textit{Shift\_DR} bei diesem Befehl in den \textit{TDI}/\textit{TDO} Pfad geschalten.
+%     \item \textbf{EXTEST}: Der Befehlscode besteht aus lauter Nullen (00...0). Die Chiplogik wird bei diesem Befehl von der Leiterplatte isoliert (Die Kernlogik muss so abgeschottet sein, dass sie nicht beschädigt werden kann). Das BSR wird im Zustand \textit{Shift\_DR} bei diesem Befehl in den \textit{TDI}/\textit{TDO} Pfad geschalten.
+% \end{compactitem}
+%
+% \paragraph{Interner Aufbau}$~$ \\
+% Nachfolgend ist dargestellt, wie der TAP-Kontroller intern mit den vorhandenen Registern verschaltet ist.
+% \begin{figure}[H]
+%     \includegraphics[width=0.75\textwidth]{images/bst_tapkontroller_verschaltung.png}
+% \end{figure}
+%
+% \paragraph{Optionale Befehle}$~$ \\
+% Die nachfolgenden Befehle sind optional, werden jedoch auch häufig implementiert:
+% \begin{compactitem}
+%     \item \textbf{INTEST}: Testet die Kernlogik eines Chips. Die Kernlogik wird zu diesem Zweck von den Ein- und Ausgängen isoliert.
+%     \item \textbf{RUNBIST}: Startet einen eingebauten BIST-Selbsttest. Der Vorteil dieser Variante ist (im Gegensatz zum \textit{INTEST}) dass die Konfiguration des Chips nicht selber vorgenommen werden muss und am Schluss nur das Ergebnis überprüft werden muss.
+%     \item \textbf{IDCODE}: Liefert den Inhalt aus dem Identifikations-Register zurück.
+% \end{compactitem}
+% \begin{multicols}{2}
+% \subsubsection{Aufbau BYPASS-Register}
+% \begin{figure}[H]
+%     \includegraphics[width=0.5\textwidth]{images/bst_bypassregister.png}
+% \end{figure}
+%
+% \subsubsection{Aufbau ID-Register}
+% Das Identifikations-Register ist immer 32bit breit.
+% \begin{compactitem}
+%     \item \textbf{Bit 31-28}: Chip-Version
+%     \item \textbf{Bit 27-12}: Frei verwendbar vom Hersteller
+%     \item \textbf{Bit 11-1}: Standardisierter Hersteller Code
+%     \item \textbf{Bit 0}: Immer 1
+% \end{compactitem}
+% \end{multicols}
+% \subsubsection{Aufbau BSC}
+% \begin{multicols}{2}
+% \begin{figure}[H]
+%     \includegraphics[width=0.5\textwidth]{images/bst_bsc.png}
+% \end{figure}
+% Für jeden Ein- und Ausgang eines Chips wird eine Zelle benötigt. Falls aber Three State-Ausgänge oder bidirektionale Anschlüsse vorkommen, dann muss auch deren Enable-Signal mit einer BSC versehen werden. Falls mehrere solcher Signale zu einem Bus zusammengefasst werden, dann werden alle entsprechenden Enable-Signale von derselben BSC geschaltet.
+% \end{multicols}

@@ -15,7 +15,7 @@ n: Anzahl integer bits (inkl. eines allfälligen Vorzeichenbits); m: Anzahl der 
 Es gibt zwei Möglichkeiten, eine Fix-point Zahl in VHDL zu implementieren:
 \begin{compactitem}
   \item Nur mit dem 'numeric\_std'-Package und dabie unsigned und signed Typen zu verwenden. Der Programmierer muss praktisch alles selbst machen (z.B. Dezimalpunkt tracken)
-  \item Mithilfe des 'fixed\_pkg-Packages' (basiert auf 'numeric\_std') $\rightarrow$ einfacherer, übersichtlicherer Code; fast alle Operatoren sind für integer und reelle Typen überladen; Overflows sind nicht möglich $\rightarrow$ führt immer zu sicherer Implementation, aber nicht immer zur optimalen Lösung in Bezug auf die Vektorbreite
+  \item Mithilfe des 'fixed\_pkg'-Packages (basiert auf 'numeric\_std') $\rightarrow$ einfacherer, übersichtlicherer Code; fast alle Operatoren sind für integer und reelle Typen überladen; Overflows sind nicht möglich $\rightarrow$ führt immer zu sicherer Implementation, aber nicht immer zur optimalen Lösung in Bezug auf die Vektorbreite
 \end{compactitem}
 Sizing-Regeln für 'fixed\_pkg':\\
 \begin{tabular}{| l | l |}
@@ -177,7 +177,7 @@ Divisionen mit Mehrfachen von 2 ($2^n$) sind einfache Schiebeoperationen. Für a
 \lstinputlisting[language=VHDL,style=VHDL]{code/division.vhd}
 
 \subsection{Overflow and Saturation}$~$ \\
-Bei Verwendung des 'fixed\_pkg'-Packages werden Overflow und Saturation automatisch gelöst. Ansonsten gibt es zwei Lösungen mit einem Over-/Underflow umzugehen: Das Resultat sättigen (Maximum oder Minimum) oder das Resultat erhält ein zusätzliched integer bit.\\
+Bei Verwendung des 'fixed\_pkg'-Packages werden Overflow und Saturation automatisch gelöst. Ansonsten gibt es zwei Lösungen mit einem Over-/Underflow umzugehen: Das Resultat sättigen (Maximum oder Minimum) oder das Resultat erhält ein zusätzliches integer bit.\\
 Erkennung bei vorzeichenbehafteten Zahlen:
 \begin{compactitem}
   \item Overflow, wenn Summe von zwei positiven Zahlen ein negatives Resultat liefert.
